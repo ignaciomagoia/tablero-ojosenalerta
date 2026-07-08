@@ -1,0 +1,46 @@
+{
+  "id": "segundo-archivo",
+  "name": "Segundo Archivo",
+  "sheets": [
+    {
+      "name": "Operativos",
+      "data": [
+        {
+          "Fecha": "2026-07-01",
+          "Equipo": "Turno manana",
+          "Operativos": 8
+        },
+        {
+          "Fecha": "2026-07-02",
+          "Equipo": "Turno tarde",
+          "Operativos": 11
+        },
+        {
+          "Fecha": "2026-07-03",
+          "Equipo": "Turno noche",
+          "Operativos": 6
+        }
+      ]
+    },
+    {
+      "name": "Contactos",
+      "data": [
+        {
+          "Canal": "Telefono",
+          "Contactos": 54,
+          "Pendientes": 7
+        },
+        {
+          "Canal": "WhatsApp",
+          "Contactos": 89,
+          "Pendientes": 12
+        },
+        {
+          "Canal": "Formulario web",
+          "Contactos": 23,
+          "Pendientes": 3
+        }
+      ]
+    }
+  ]
+}

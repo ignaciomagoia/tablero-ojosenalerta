@@ -1,0 +1,5562 @@
+{
+  "id": "tablero-totales",
+  "fileName": "Tablero totales .xlsx",
+  "sheets": {
+    "Alertas - Positivos - Aprehendi": {
+      "columns": [
+        "anio",
+        "mes",
+        "totalAlertas",
+        "totalPositivos",
+        "porcentajePositivos",
+        "aprehendidos",
+        "elementosSecuestrados",
+        "fechaOrden"
+      ],
+      "rows": [
+        {
+          "anio": 2024,
+          "mes": "Octubre",
+          "totalAlertas": 51,
+          "totalPositivos": 3,
+          "porcentajePositivos": 5.88,
+          "aprehendidos": null,
+          "elementosSecuestrados": null,
+          "fechaOrden": "2024-10"
+        },
+        {
+          "anio": 2024,
+          "mes": "Noviembre",
+          "totalAlertas": 91,
+          "totalPositivos": 2,
+          "porcentajePositivos": 2.2,
+          "aprehendidos": null,
+          "elementosSecuestrados": null,
+          "fechaOrden": "2024-11"
+        },
+        {
+          "anio": 2024,
+          "mes": "Diciembre",
+          "totalAlertas": 74,
+          "totalPositivos": 6,
+          "porcentajePositivos": 8.11,
+          "aprehendidos": null,
+          "elementosSecuestrados": null,
+          "fechaOrden": "2024-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "totalAlertas": 86,
+          "totalPositivos": 4,
+          "porcentajePositivos": 4.65,
+          "aprehendidos": null,
+          "elementosSecuestrados": null,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "totalAlertas": 474,
+          "totalPositivos": 18,
+          "porcentajePositivos": 3.8,
+          "aprehendidos": null,
+          "elementosSecuestrados": null,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "totalAlertas": 1332,
+          "totalPositivos": 83,
+          "porcentajePositivos": 6.23,
+          "aprehendidos": null,
+          "elementosSecuestrados": null,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "totalAlertas": 946,
+          "totalPositivos": 163,
+          "porcentajePositivos": 17.23,
+          "aprehendidos": null,
+          "elementosSecuestrados": null,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "totalAlertas": 1355,
+          "totalPositivos": 150,
+          "porcentajePositivos": 11.07,
+          "aprehendidos": null,
+          "elementosSecuestrados": null,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "totalAlertas": 1767,
+          "totalPositivos": 228,
+          "porcentajePositivos": 12.9,
+          "aprehendidos": null,
+          "elementosSecuestrados": null,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "totalAlertas": 2219,
+          "totalPositivos": 236,
+          "porcentajePositivos": 10.64,
+          "aprehendidos": null,
+          "elementosSecuestrados": null,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "totalAlertas": 3409,
+          "totalPositivos": 321,
+          "porcentajePositivos": 9.42,
+          "aprehendidos": null,
+          "elementosSecuestrados": null,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "totalAlertas": 3686,
+          "totalPositivos": 339,
+          "porcentajePositivos": 9.2,
+          "aprehendidos": null,
+          "elementosSecuestrados": null,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "totalAlertas": 4382,
+          "totalPositivos": 318,
+          "porcentajePositivos": 7.26,
+          "aprehendidos": null,
+          "elementosSecuestrados": null,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "totalAlertas": 5074,
+          "totalPositivos": 297,
+          "porcentajePositivos": 5.85,
+          "aprehendidos": null,
+          "elementosSecuestrados": null,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "totalAlertas": 5387,
+          "totalPositivos": 254,
+          "porcentajePositivos": 4.72,
+          "aprehendidos": null,
+          "elementosSecuestrados": null,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "totalAlertas": 5105,
+          "totalPositivos": 234,
+          "porcentajePositivos": 4.34,
+          "aprehendidos": null,
+          "elementosSecuestrados": null,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "totalAlertas": 5147,
+          "totalPositivos": 222,
+          "porcentajePositivos": 4.12,
+          "aprehendidos": null,
+          "elementosSecuestrados": null,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "totalAlertas": 5886,
+          "totalPositivos": 192,
+          "porcentajePositivos": 3.56,
+          "aprehendidos": null,
+          "elementosSecuestrados": null,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "totalAlertas": 5688,
+          "totalPositivos": 188,
+          "porcentajePositivos": 3.49,
+          "aprehendidos": null,
+          "elementosSecuestrados": null,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "totalAlertas": 5815,
+          "totalPositivos": 171,
+          "porcentajePositivos": 3.17,
+          "aprehendidos": null,
+          "elementosSecuestrados": null,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "totalAlertas": 5593,
+          "totalPositivos": 197,
+          "porcentajePositivos": 3.66,
+          "aprehendidos": 153,
+          "elementosSecuestrados": 425,
+          "fechaOrden": "2026-06"
+        }
+      ],
+      "metadata": {
+        "headerRowIndex": -1,
+        "detectedLabelColumns": [
+          "mes"
+        ],
+        "detectedNumericColumns": [
+          "totalAlertas",
+          "totalPositivos",
+          "porcentajePositivos",
+          "aprehendidos",
+          "elementosSecuestrados"
+        ],
+        "generatedColumns": [],
+        "parser": "alertasParser",
+        "chartLabel": "mesAnio"
+      }
+    },
+    "Tipologia - Medio de Ingreso": {
+      "columns": [
+        "anio",
+        "mes",
+        "totalAlertas",
+        "prevencion",
+        "persecucion",
+        "codigo107",
+        "whatsapp",
+        "radio",
+        "videovigilancia",
+        "fechaOrden"
+      ],
+      "rows": [
+        {
+          "anio": 2024,
+          "mes": "Octubre",
+          "totalAlertas": 46,
+          "prevencion": 0,
+          "persecucion": 0,
+          "codigo107": 0,
+          "whatsapp": 0,
+          "radio": 0,
+          "videovigilancia": 0,
+          "fechaOrden": "2024-10"
+        },
+        {
+          "anio": 2024,
+          "mes": "Noviembre",
+          "totalAlertas": 89,
+          "prevencion": 0,
+          "persecucion": 0,
+          "codigo107": 0,
+          "whatsapp": 0,
+          "radio": 0,
+          "videovigilancia": 0,
+          "fechaOrden": "2024-11"
+        },
+        {
+          "anio": 2024,
+          "mes": "Diciembre",
+          "totalAlertas": 68,
+          "prevencion": 0,
+          "persecucion": 0,
+          "codigo107": 0,
+          "whatsapp": 0,
+          "radio": 0,
+          "videovigilancia": 0,
+          "fechaOrden": "2024-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "totalAlertas": 86,
+          "prevencion": 0,
+          "persecucion": 0,
+          "codigo107": 0,
+          "whatsapp": 0,
+          "radio": 0,
+          "videovigilancia": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "totalAlertas": 474,
+          "prevencion": 380,
+          "persecucion": 85,
+          "codigo107": 9,
+          "whatsapp": 299,
+          "radio": 172,
+          "videovigilancia": 3,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "totalAlertas": 1332,
+          "prevencion": 1120,
+          "persecucion": 186,
+          "codigo107": 26,
+          "whatsapp": 576,
+          "radio": 450,
+          "videovigilancia": 306,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "totalAlertas": 946,
+          "prevencion": 715,
+          "persecucion": 206,
+          "codigo107": 25,
+          "whatsapp": 788,
+          "radio": 125,
+          "videovigilancia": 33,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "totalAlertas": 1355,
+          "prevencion": 1101,
+          "persecucion": 231,
+          "codigo107": 23,
+          "whatsapp": 1189,
+          "radio": 139,
+          "videovigilancia": 27,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "totalAlertas": 1767,
+          "prevencion": 1375,
+          "persecucion": 335,
+          "codigo107": 57,
+          "whatsapp": 1504,
+          "radio": 236,
+          "videovigilancia": 27,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "totalAlertas": 2219,
+          "prevencion": 1629,
+          "persecucion": 513,
+          "codigo107": 77,
+          "whatsapp": 1872,
+          "radio": 331,
+          "videovigilancia": 16,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "totalAlertas": 3409,
+          "prevencion": 2627,
+          "persecucion": 672,
+          "codigo107": 110,
+          "whatsapp": 2947,
+          "radio": 444,
+          "videovigilancia": 18,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "totalAlertas": 3686,
+          "prevencion": 2838,
+          "persecucion": 708,
+          "codigo107": 140,
+          "whatsapp": 3121,
+          "radio": 556,
+          "videovigilancia": 9,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "totalAlertas": 4382,
+          "prevencion": 3472,
+          "persecucion": 716,
+          "codigo107": 194,
+          "whatsapp": 3805,
+          "radio": 570,
+          "videovigilancia": 7,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "totalAlertas": 5074,
+          "prevencion": 4108,
+          "persecucion": 794,
+          "codigo107": 172,
+          "whatsapp": 4535,
+          "radio": 527,
+          "videovigilancia": 12,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "totalAlertas": 5387,
+          "prevencion": 4349,
+          "persecucion": 822,
+          "codigo107": 216,
+          "whatsapp": 4807,
+          "radio": 575,
+          "videovigilancia": 5,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "totalAlertas": 5105,
+          "prevencion": 4100,
+          "persecucion": 854,
+          "codigo107": 151,
+          "whatsapp": 4632,
+          "radio": 462,
+          "videovigilancia": 11,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "totalAlertas": 5147,
+          "prevencion": 4077,
+          "persecucion": 894,
+          "codigo107": 176,
+          "whatsapp": 4626,
+          "radio": 519,
+          "videovigilancia": 2,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "totalAlertas": 5886,
+          "prevencion": 4653,
+          "persecucion": 1027,
+          "codigo107": 206,
+          "whatsapp": 5317,
+          "radio": 557,
+          "videovigilancia": 12,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "totalAlertas": 5688,
+          "prevencion": 4529,
+          "persecucion": 938,
+          "codigo107": 221,
+          "whatsapp": 5182,
+          "radio": 496,
+          "videovigilancia": 10,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "totalAlertas": 5815,
+          "prevencion": 4719,
+          "persecucion": 845,
+          "codigo107": 251,
+          "whatsapp": 5248,
+          "radio": 555,
+          "videovigilancia": 12,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "totalAlertas": 5593,
+          "prevencion": 4504,
+          "persecucion": 839,
+          "codigo107": 250,
+          "whatsapp": 5074,
+          "radio": 505,
+          "videovigilancia": 14,
+          "fechaOrden": "2026-06"
+        }
+      ],
+      "metadata": {
+        "headerRowIndex": -1,
+        "detectedLabelColumns": [
+          "mes"
+        ],
+        "detectedNumericColumns": [
+          "totalAlertas",
+          "prevencion",
+          "persecucion",
+          "codigo107",
+          "whatsapp",
+          "radio",
+          "videovigilancia"
+        ],
+        "generatedColumns": [],
+        "parser": "tipologiaParser",
+        "chartLabel": "mesAnio"
+      }
+    },
+    "Clasificación": {
+      "type": "clasificacion",
+      "resumenAnual": [
+        {
+          "2024": 6,
+          "2025": 919,
+          "2026": 845,
+          "tipo": "ALARMA"
+        },
+        {
+          "2024": 0,
+          "2025": 1,
+          "2026": 1,
+          "tipo": "AMENAZA DE BOMBA"
+        },
+        {
+          "2024": 2,
+          "2025": 31,
+          "2026": 0,
+          "tipo": "APREHENSIONES"
+        },
+        {
+          "2024": 0,
+          "2025": 363,
+          "2026": 458,
+          "tipo": "ASISTENCIA A PERSONA"
+        },
+        {
+          "2024": 0,
+          "2025": 1,
+          "2026": 2,
+          "tipo": "BOTON DE PANICO"
+        },
+        {
+          "2024": 0,
+          "2025": 0,
+          "2026": 0,
+          "tipo": "COLABORACION A MOVIL"
+        },
+        {
+          "2024": 0,
+          "2025": 0,
+          "2026": 277,
+          "tipo": "CONSTATADORES"
+        },
+        {
+          "2024": 0,
+          "2025": 85,
+          "2026": 299,
+          "tipo": "CONSUMO"
+        },
+        {
+          "2024": 0,
+          "2025": 26,
+          "2026": 2,
+          "tipo": "CONTROL POLICIAL"
+        },
+        {
+          "2024": 2,
+          "2025": 303,
+          "2026": 243,
+          "tipo": "DAÑO"
+        },
+        {
+          "2024": 0,
+          "2025": 2,
+          "2026": 9,
+          "tipo": "DELITO SEXUAL"
+        },
+        {
+          "2024": 0,
+          "2025": 20,
+          "2026": 51,
+          "tipo": "DESAPARICION DE PERSONAS"
+        },
+        {
+          "2024": 0,
+          "2025": 5,
+          "2026": 5,
+          "tipo": "DESPERFECTO MECANICO"
+        },
+        {
+          "2024": 0,
+          "2025": 12,
+          "2026": 0,
+          "tipo": "DETENIDOS"
+        },
+        {
+          "2024": 37,
+          "2025": 4851,
+          "2026": 8035,
+          "tipo": "DISTURBIOS"
+        },
+        {
+          "2024": 0,
+          "2025": 104,
+          "2026": 49,
+          "tipo": "DROGAS"
+        },
+        {
+          "2024": 2,
+          "2025": 405,
+          "2026": 458,
+          "tipo": "EMERGENCIA CIVIL"
+        },
+        {
+          "2024": 6,
+          "2025": 808,
+          "2026": 1289,
+          "tipo": "EMERGENCIA DE SALUD (107)"
+        },
+        {
+          "2024": 0,
+          "2025": 15,
+          "2026": 0,
+          "tipo": "ENGAÑO"
+        },
+        {
+          "2024": 1,
+          "2025": 17,
+          "2026": 73,
+          "tipo": "ESTAFA"
+        },
+        {
+          "2024": 1,
+          "2025": 161,
+          "2026": 200,
+          "tipo": "HURTO"
+        },
+        {
+          "2024": 0,
+          "2025": 362,
+          "2026": 440,
+          "tipo": "INCENDIO"
+        },
+        {
+          "2024": 4,
+          "2025": 814,
+          "2026": 1041,
+          "tipo": "INCIDENTES VIALES"
+        },
+        {
+          "2024": 0,
+          "2025": 48,
+          "2026": 0,
+          "tipo": "PEDIDO DE PARADERO"
+        },
+        {
+          "2024": 15,
+          "2025": 1494,
+          "2026": 1843,
+          "tipo": "ROBO"
+        },
+        {
+          "2024": 0,
+          "2025": 1,
+          "2026": 0,
+          "tipo": "SALIDERA BANCARIA"
+        },
+        {
+          "2024": 0,
+          "2025": 78,
+          "2026": 12,
+          "tipo": "SECUESTRO DE ELEMENTOS"
+        },
+        {
+          "2024": 0,
+          "2025": 11,
+          "2026": 0,
+          "tipo": "SISTEMA - EN INVESTIGACION"
+        },
+        {
+          "2024": 29,
+          "2025": 4809,
+          "2026": 5594,
+          "tipo": "SOLICITUD DE PRESENCIA POLICIAL"
+        },
+        {
+          "2024": 104,
+          "2025": 9411,
+          "2026": 9684,
+          "tipo": "SOSPECHOSO"
+        },
+        {
+          "2024": 1,
+          "2025": 7,
+          "2026": 4,
+          "tipo": "SUJETO ARMADO"
+        },
+        {
+          "2024": 0,
+          "2025": 226,
+          "2026": 490,
+          "tipo": "SUJETO EN EL PATIO - SUJETO EN LOS TECHOS"
+        },
+        {
+          "2024": 4,
+          "2025": 764,
+          "2026": 895,
+          "tipo": "TENTATIVA DE ROBO"
+        },
+        {
+          "2024": 0,
+          "2025": 23,
+          "2026": 33,
+          "tipo": "TENTATIVA DE SUICIDIO"
+        },
+        {
+          "2024": 0,
+          "2025": 0,
+          "2026": 22,
+          "tipo": "TENTATIVA DE USURPACION"
+        },
+        {
+          "2024": 0,
+          "2025": 5,
+          "2026": 6,
+          "tipo": "TIROTEO"
+        },
+        {
+          "2024": 0,
+          "2025": 21,
+          "2026": 19,
+          "tipo": "USURPACION"
+        },
+        {
+          "2024": 2,
+          "2025": 602,
+          "2026": 855,
+          "tipo": "VIOLENCIA"
+        }
+      ],
+      "detalleMensual": [
+        {
+          "anio": 2024,
+          "mes": "Octubre",
+          "tipo": "ALARMA",
+          "cantidad": 3,
+          "fechaOrden": "2024-10"
+        },
+        {
+          "anio": 2024,
+          "mes": "Octubre",
+          "tipo": "APREHENSIONES",
+          "cantidad": 0,
+          "fechaOrden": "2024-10"
+        },
+        {
+          "anio": 2024,
+          "mes": "Octubre",
+          "tipo": "DAÑO",
+          "cantidad": 0,
+          "fechaOrden": "2024-10"
+        },
+        {
+          "anio": 2024,
+          "mes": "Octubre",
+          "tipo": "DISTURBIOS",
+          "cantidad": 9,
+          "fechaOrden": "2024-10"
+        },
+        {
+          "anio": 2024,
+          "mes": "Octubre",
+          "tipo": "EMERGENCIA CIVIL",
+          "cantidad": 0,
+          "fechaOrden": "2024-10"
+        },
+        {
+          "anio": 2024,
+          "mes": "Octubre",
+          "tipo": "EMERGENCIA DE SALUD (107)",
+          "cantidad": 0,
+          "fechaOrden": "2024-10"
+        },
+        {
+          "anio": 2024,
+          "mes": "Octubre",
+          "tipo": "ESTAFA",
+          "cantidad": 0,
+          "fechaOrden": "2024-10"
+        },
+        {
+          "anio": 2024,
+          "mes": "Octubre",
+          "tipo": "HURTO",
+          "cantidad": 0,
+          "fechaOrden": "2024-10"
+        },
+        {
+          "anio": 2024,
+          "mes": "Octubre",
+          "tipo": "INCIDENTES VIALES",
+          "cantidad": 1,
+          "fechaOrden": "2024-10"
+        },
+        {
+          "anio": 2024,
+          "mes": "Octubre",
+          "tipo": "ROBO",
+          "cantidad": 3,
+          "fechaOrden": "2024-10"
+        },
+        {
+          "anio": 2024,
+          "mes": "Octubre",
+          "tipo": "SOLICITUD DE PRESENCIA POLICIAL",
+          "cantidad": 5,
+          "fechaOrden": "2024-10"
+        },
+        {
+          "anio": 2024,
+          "mes": "Octubre",
+          "tipo": "SOSPECHOSO",
+          "cantidad": 27,
+          "fechaOrden": "2024-10"
+        },
+        {
+          "anio": 2024,
+          "mes": "Octubre",
+          "tipo": "SUJETO ARMADO",
+          "cantidad": 1,
+          "fechaOrden": "2024-10"
+        },
+        {
+          "anio": 2024,
+          "mes": "Octubre",
+          "tipo": "TENTATIVA DE ROBO",
+          "cantidad": 1,
+          "fechaOrden": "2024-10"
+        },
+        {
+          "anio": 2024,
+          "mes": "Octubre",
+          "tipo": "VIOLENCIA",
+          "cantidad": 1,
+          "fechaOrden": "2024-10"
+        },
+        {
+          "anio": 2024,
+          "mes": "Noviembre",
+          "tipo": "ALARMA",
+          "cantidad": 2,
+          "fechaOrden": "2024-11"
+        },
+        {
+          "anio": 2024,
+          "mes": "Noviembre",
+          "tipo": "APREHENSIONES",
+          "cantidad": 1,
+          "fechaOrden": "2024-11"
+        },
+        {
+          "anio": 2024,
+          "mes": "Noviembre",
+          "tipo": "DAÑO",
+          "cantidad": 2,
+          "fechaOrden": "2024-11"
+        },
+        {
+          "anio": 2024,
+          "mes": "Noviembre",
+          "tipo": "DISTURBIOS",
+          "cantidad": 19,
+          "fechaOrden": "2024-11"
+        },
+        {
+          "anio": 2024,
+          "mes": "Noviembre",
+          "tipo": "EMERGENCIA CIVIL",
+          "cantidad": 1,
+          "fechaOrden": "2024-11"
+        },
+        {
+          "anio": 2024,
+          "mes": "Noviembre",
+          "tipo": "EMERGENCIA DE SALUD (107)",
+          "cantidad": 2,
+          "fechaOrden": "2024-11"
+        },
+        {
+          "anio": 2024,
+          "mes": "Noviembre",
+          "tipo": "ESTAFA",
+          "cantidad": 0,
+          "fechaOrden": "2024-11"
+        },
+        {
+          "anio": 2024,
+          "mes": "Noviembre",
+          "tipo": "HURTO",
+          "cantidad": 0,
+          "fechaOrden": "2024-11"
+        },
+        {
+          "anio": 2024,
+          "mes": "Noviembre",
+          "tipo": "INCIDENTES VIALES",
+          "cantidad": 1,
+          "fechaOrden": "2024-11"
+        },
+        {
+          "anio": 2024,
+          "mes": "Noviembre",
+          "tipo": "ROBO",
+          "cantidad": 4,
+          "fechaOrden": "2024-11"
+        },
+        {
+          "anio": 2024,
+          "mes": "Noviembre",
+          "tipo": "SOLICITUD DE PRESENCIA POLICIAL",
+          "cantidad": 15,
+          "fechaOrden": "2024-11"
+        },
+        {
+          "anio": 2024,
+          "mes": "Noviembre",
+          "tipo": "SOSPECHOSO",
+          "cantidad": 41,
+          "fechaOrden": "2024-11"
+        },
+        {
+          "anio": 2024,
+          "mes": "Noviembre",
+          "tipo": "SUJETO ARMADO",
+          "cantidad": 0,
+          "fechaOrden": "2024-11"
+        },
+        {
+          "anio": 2024,
+          "mes": "Noviembre",
+          "tipo": "TENTATIVA DE ROBO",
+          "cantidad": 2,
+          "fechaOrden": "2024-11"
+        },
+        {
+          "anio": 2024,
+          "mes": "Noviembre",
+          "tipo": "VIOLENCIA",
+          "cantidad": 1,
+          "fechaOrden": "2024-11"
+        },
+        {
+          "anio": 2024,
+          "mes": "Diciembre",
+          "tipo": "ALARMA",
+          "cantidad": 1,
+          "fechaOrden": "2024-12"
+        },
+        {
+          "anio": 2024,
+          "mes": "Diciembre",
+          "tipo": "APREHENSIONES",
+          "cantidad": 1,
+          "fechaOrden": "2024-12"
+        },
+        {
+          "anio": 2024,
+          "mes": "Diciembre",
+          "tipo": "DAÑO",
+          "cantidad": 0,
+          "fechaOrden": "2024-12"
+        },
+        {
+          "anio": 2024,
+          "mes": "Diciembre",
+          "tipo": "DISTURBIOS",
+          "cantidad": 9,
+          "fechaOrden": "2024-12"
+        },
+        {
+          "anio": 2024,
+          "mes": "Diciembre",
+          "tipo": "EMERGENCIA CIVIL",
+          "cantidad": 1,
+          "fechaOrden": "2024-12"
+        },
+        {
+          "anio": 2024,
+          "mes": "Diciembre",
+          "tipo": "EMERGENCIA DE SALUD (107)",
+          "cantidad": 4,
+          "fechaOrden": "2024-12"
+        },
+        {
+          "anio": 2024,
+          "mes": "Diciembre",
+          "tipo": "ESTAFA",
+          "cantidad": 1,
+          "fechaOrden": "2024-12"
+        },
+        {
+          "anio": 2024,
+          "mes": "Diciembre",
+          "tipo": "HURTO",
+          "cantidad": 1,
+          "fechaOrden": "2024-12"
+        },
+        {
+          "anio": 2024,
+          "mes": "Diciembre",
+          "tipo": "INCIDENTES VIALES",
+          "cantidad": 2,
+          "fechaOrden": "2024-12"
+        },
+        {
+          "anio": 2024,
+          "mes": "Diciembre",
+          "tipo": "ROBO",
+          "cantidad": 8,
+          "fechaOrden": "2024-12"
+        },
+        {
+          "anio": 2024,
+          "mes": "Diciembre",
+          "tipo": "SOLICITUD DE PRESENCIA POLICIAL",
+          "cantidad": 9,
+          "fechaOrden": "2024-12"
+        },
+        {
+          "anio": 2024,
+          "mes": "Diciembre",
+          "tipo": "SOSPECHOSO",
+          "cantidad": 36,
+          "fechaOrden": "2024-12"
+        },
+        {
+          "anio": 2024,
+          "mes": "Diciembre",
+          "tipo": "SUJETO ARMADO",
+          "cantidad": 0,
+          "fechaOrden": "2024-12"
+        },
+        {
+          "anio": 2024,
+          "mes": "Diciembre",
+          "tipo": "TENTATIVA DE ROBO",
+          "cantidad": 1,
+          "fechaOrden": "2024-12"
+        },
+        {
+          "anio": 2024,
+          "mes": "Diciembre",
+          "tipo": "VIOLENCIA",
+          "cantidad": 0,
+          "fechaOrden": "2024-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "ALARMA",
+          "cantidad": 5,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "AMENAZA DE BOMBA",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "APREHENSIONES",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "ASISTENCIA A PERSONA",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "BOTON DE PANICO",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "CONSUMO",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "CONTROL POLICIAL",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "DAÑO",
+          "cantidad": 4,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "DELITO SEXUAL",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "DESAPARICION DE PERSONAS",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "DESPERFECTO MECANICO",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "DETENIDOS",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "DISTURBIOS",
+          "cantidad": 9,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "DROGAS",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "EMERGENCIA CIVIL",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "EMERGENCIA DE SALUD (107)",
+          "cantidad": 2,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "ENGAÑO",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "ESTAFA",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "HURTO",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "INCENDIO",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "INCIDENTES VIALES",
+          "cantidad": 1,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "PEDIDO DE PARADERO",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "ROBO",
+          "cantidad": 10,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "SALIDERA BANCARIA",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "SECUESTRO DE ELEMENTOS",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "SISTEMA - EN INVESTIGACION",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "SOLICITUD DE PRESENCIA POLICIAL",
+          "cantidad": 10,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "SOSPECHOSO",
+          "cantidad": 47,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "SUJETO ARMADO",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "SUJETO EN EL PATIO - SUJETO EN LOS TECHOS",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "TENTATIVA DE ROBO",
+          "cantidad": 1,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "TENTATIVA DE SUICIDIO",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "TIROTEO",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "USURPACION",
+          "cantidad": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "tipo": "VIOLENCIA",
+          "cantidad": 1,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "ALARMA",
+          "cantidad": 30,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "AMENAZA DE BOMBA",
+          "cantidad": 0,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "APREHENSIONES",
+          "cantidad": 0,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "ASISTENCIA A PERSONA",
+          "cantidad": 0,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "BOTON DE PANICO",
+          "cantidad": 0,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "CONSUMO",
+          "cantidad": 0,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "CONTROL POLICIAL",
+          "cantidad": 0,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "DAÑO",
+          "cantidad": 5,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "DELITO SEXUAL",
+          "cantidad": 0,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "DESAPARICION DE PERSONAS",
+          "cantidad": 0,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "DESPERFECTO MECANICO",
+          "cantidad": 0,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "DETENIDOS",
+          "cantidad": 0,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "DISTURBIOS",
+          "cantidad": 48,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "DROGAS",
+          "cantidad": 2,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "EMERGENCIA CIVIL",
+          "cantidad": 11,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "EMERGENCIA DE SALUD (107)",
+          "cantidad": 7,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "ENGAÑO",
+          "cantidad": 1,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "ESTAFA",
+          "cantidad": 0,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "HURTO",
+          "cantidad": 2,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "INCENDIO",
+          "cantidad": 5,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "INCIDENTES VIALES",
+          "cantidad": 3,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "PEDIDO DE PARADERO",
+          "cantidad": 0,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "ROBO",
+          "cantidad": 26,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "SALIDERA BANCARIA",
+          "cantidad": 0,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "SECUESTRO DE ELEMENTOS",
+          "cantidad": 0,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "SISTEMA - EN INVESTIGACION",
+          "cantidad": 4,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "SOLICITUD DE PRESENCIA POLICIAL",
+          "cantidad": 27,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "SOSPECHOSO",
+          "cantidad": 263,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "SUJETO ARMADO",
+          "cantidad": 0,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "SUJETO EN EL PATIO - SUJETO EN LOS TECHOS",
+          "cantidad": 0,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "TENTATIVA DE ROBO",
+          "cantidad": 11,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "TENTATIVA DE SUICIDIO",
+          "cantidad": 0,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "TIROTEO",
+          "cantidad": 0,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "USURPACION",
+          "cantidad": 0,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "tipo": "VIOLENCIA",
+          "cantidad": 4,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "ALARMA",
+          "cantidad": 54,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "AMENAZA DE BOMBA",
+          "cantidad": 0,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "APREHENSIONES",
+          "cantidad": 0,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "ASISTENCIA A PERSONA",
+          "cantidad": 2,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "BOTON DE PANICO",
+          "cantidad": 0,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "CONSUMO",
+          "cantidad": 0,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "CONTROL POLICIAL",
+          "cantidad": 0,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "DAÑO",
+          "cantidad": 19,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "DELITO SEXUAL",
+          "cantidad": 0,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "DESAPARICION DE PERSONAS",
+          "cantidad": 0,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "DESPERFECTO MECANICO",
+          "cantidad": 0,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "DETENIDOS",
+          "cantidad": 0,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "DISTURBIOS",
+          "cantidad": 84,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "DROGAS",
+          "cantidad": 1,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "EMERGENCIA CIVIL",
+          "cantidad": 13,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "EMERGENCIA DE SALUD (107)",
+          "cantidad": 22,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "ENGAÑO",
+          "cantidad": 3,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "ESTAFA",
+          "cantidad": 0,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "HURTO",
+          "cantidad": 5,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "INCENDIO",
+          "cantidad": 7,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "INCIDENTES VIALES",
+          "cantidad": 27,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "PEDIDO DE PARADERO",
+          "cantidad": 0,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "ROBO",
+          "cantidad": 55,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "SALIDERA BANCARIA",
+          "cantidad": 0,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "SECUESTRO DE ELEMENTOS",
+          "cantidad": 0,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "SISTEMA - EN INVESTIGACION",
+          "cantidad": 3,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "SOLICITUD DE PRESENCIA POLICIAL",
+          "cantidad": 116,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "SOSPECHOSO",
+          "cantidad": 793,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "SUJETO ARMADO",
+          "cantidad": 0,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "SUJETO EN EL PATIO - SUJETO EN LOS TECHOS",
+          "cantidad": 0,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "TENTATIVA DE ROBO",
+          "cantidad": 29,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "TENTATIVA DE SUICIDIO",
+          "cantidad": 0,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "TIROTEO",
+          "cantidad": 0,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "USURPACION",
+          "cantidad": 1,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "tipo": "VIOLENCIA",
+          "cantidad": 17,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "ALARMA",
+          "cantidad": 34,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "AMENAZA DE BOMBA",
+          "cantidad": 0,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "APREHENSIONES",
+          "cantidad": 0,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "ASISTENCIA A PERSONA",
+          "cantidad": 12,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "BOTON DE PANICO",
+          "cantidad": 0,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "CONSUMO",
+          "cantidad": 0,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "CONTROL POLICIAL",
+          "cantidad": 0,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "DAÑO",
+          "cantidad": 14,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "DELITO SEXUAL",
+          "cantidad": 0,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "DESAPARICION DE PERSONAS",
+          "cantidad": 0,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "DESPERFECTO MECANICO",
+          "cantidad": 0,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "DETENIDOS",
+          "cantidad": 0,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "DISTURBIOS",
+          "cantidad": 128,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "DROGAS",
+          "cantidad": 15,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "EMERGENCIA CIVIL",
+          "cantidad": 4,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "EMERGENCIA DE SALUD (107)",
+          "cantidad": 21,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "ENGAÑO",
+          "cantidad": 0,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "ESTAFA",
+          "cantidad": 0,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "HURTO",
+          "cantidad": 6,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "INCENDIO",
+          "cantidad": 14,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "INCIDENTES VIALES",
+          "cantidad": 19,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "PEDIDO DE PARADERO",
+          "cantidad": 0,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "ROBO",
+          "cantidad": 66,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "SALIDERA BANCARIA",
+          "cantidad": 0,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "SECUESTRO DE ELEMENTOS",
+          "cantidad": 0,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "SISTEMA - EN INVESTIGACION",
+          "cantidad": 2,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "SOLICITUD DE PRESENCIA POLICIAL",
+          "cantidad": 179,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "SOSPECHOSO",
+          "cantidad": 330,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "SUJETO ARMADO",
+          "cantidad": 0,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "SUJETO EN EL PATIO - SUJETO EN LOS TECHOS",
+          "cantidad": 0,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "TENTATIVA DE ROBO",
+          "cantidad": 35,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "TENTATIVA DE SUICIDIO",
+          "cantidad": 1,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "TIROTEO",
+          "cantidad": 0,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "USURPACION",
+          "cantidad": 0,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "tipo": "VIOLENCIA",
+          "cantidad": 20,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "ALARMA",
+          "cantidad": 48,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "AMENAZA DE BOMBA",
+          "cantidad": 0,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "APREHENSIONES",
+          "cantidad": 0,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "ASISTENCIA A PERSONA",
+          "cantidad": 22,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "BOTON DE PANICO",
+          "cantidad": 0,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "CONSUMO",
+          "cantidad": 0,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "CONTROL POLICIAL",
+          "cantidad": 0,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "DAÑO",
+          "cantidad": 14,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "DELITO SEXUAL",
+          "cantidad": 0,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "DESAPARICION DE PERSONAS",
+          "cantidad": 0,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "DESPERFECTO MECANICO",
+          "cantidad": 0,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "DETENIDOS",
+          "cantidad": 0,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "DISTURBIOS",
+          "cantidad": 187,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "DROGAS",
+          "cantidad": 15,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "EMERGENCIA CIVIL",
+          "cantidad": 12,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "EMERGENCIA DE SALUD (107)",
+          "cantidad": 20,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "ENGAÑO",
+          "cantidad": 0,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "ESTAFA",
+          "cantidad": 0,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "HURTO",
+          "cantidad": 3,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "INCENDIO",
+          "cantidad": 18,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "INCIDENTES VIALES",
+          "cantidad": 37,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "PEDIDO DE PARADERO",
+          "cantidad": 0,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "ROBO",
+          "cantidad": 68,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "SALIDERA BANCARIA",
+          "cantidad": 0,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "SECUESTRO DE ELEMENTOS",
+          "cantidad": 0,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "SISTEMA - EN INVESTIGACION",
+          "cantidad": 0,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "SOLICITUD DE PRESENCIA POLICIAL",
+          "cantidad": 315,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "SOSPECHOSO",
+          "cantidad": 439,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "SUJETO ARMADO",
+          "cantidad": 0,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "SUJETO EN EL PATIO - SUJETO EN LOS TECHOS",
+          "cantidad": 0,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "TENTATIVA DE ROBO",
+          "cantidad": 41,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "TENTATIVA DE SUICIDIO",
+          "cantidad": 1,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "TIROTEO",
+          "cantidad": 0,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "USURPACION",
+          "cantidad": 0,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "tipo": "VIOLENCIA",
+          "cantidad": 25,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "ALARMA",
+          "cantidad": 67,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "AMENAZA DE BOMBA",
+          "cantidad": 0,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "APREHENSIONES",
+          "cantidad": 0,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "ASISTENCIA A PERSONA",
+          "cantidad": 27,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "BOTON DE PANICO",
+          "cantidad": 0,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "CONSUMO",
+          "cantidad": 0,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "CONTROL POLICIAL",
+          "cantidad": 0,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "DAÑO",
+          "cantidad": 26,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "DELITO SEXUAL",
+          "cantidad": 0,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "DESAPARICION DE PERSONAS",
+          "cantidad": 0,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "DESPERFECTO MECANICO",
+          "cantidad": 0,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "DETENIDOS",
+          "cantidad": 0,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "DISTURBIOS",
+          "cantidad": 164,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "DROGAS",
+          "cantidad": 17,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "EMERGENCIA CIVIL",
+          "cantidad": 13,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "EMERGENCIA DE SALUD (107)",
+          "cantidad": 50,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "ENGAÑO",
+          "cantidad": 1,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "ESTAFA",
+          "cantidad": 0,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "HURTO",
+          "cantidad": 19,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "INCENDIO",
+          "cantidad": 27,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "INCIDENTES VIALES",
+          "cantidad": 59,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "PEDIDO DE PARADERO",
+          "cantidad": 0,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "ROBO",
+          "cantidad": 102,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "SALIDERA BANCARIA",
+          "cantidad": 0,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "SECUESTRO DE ELEMENTOS",
+          "cantidad": 0,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "SISTEMA - EN INVESTIGACION",
+          "cantidad": 0,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "SOLICITUD DE PRESENCIA POLICIAL",
+          "cantidad": 436,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "SOSPECHOSO",
+          "cantidad": 569,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "SUJETO ARMADO",
+          "cantidad": 0,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "SUJETO EN EL PATIO - SUJETO EN LOS TECHOS",
+          "cantidad": 0,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "TENTATIVA DE ROBO",
+          "cantidad": 48,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "TENTATIVA DE SUICIDIO",
+          "cantidad": 1,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "TIROTEO",
+          "cantidad": 0,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "USURPACION",
+          "cantidad": 2,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "tipo": "VIOLENCIA",
+          "cantidad": 27,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "ALARMA",
+          "cantidad": 75,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "AMENAZA DE BOMBA",
+          "cantidad": 0,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "APREHENSIONES",
+          "cantidad": 15,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "ASISTENCIA A PERSONA",
+          "cantidad": 22,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "BOTON DE PANICO",
+          "cantidad": 0,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "CONSUMO",
+          "cantidad": 17,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "CONTROL POLICIAL",
+          "cantidad": 13,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "DAÑO",
+          "cantidad": 30,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "DELITO SEXUAL",
+          "cantidad": 1,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "DESAPARICION DE PERSONAS",
+          "cantidad": 2,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "DESPERFECTO MECANICO",
+          "cantidad": 0,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "DETENIDOS",
+          "cantidad": 5,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "DISTURBIOS",
+          "cantidad": 237,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "DROGAS",
+          "cantidad": 7,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "EMERGENCIA CIVIL",
+          "cantidad": 23,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "EMERGENCIA DE SALUD (107)",
+          "cantidad": 58,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "ENGAÑO",
+          "cantidad": 1,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "ESTAFA",
+          "cantidad": 0,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "HURTO",
+          "cantidad": 11,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "INCENDIO",
+          "cantidad": 20,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "INCIDENTES VIALES",
+          "cantidad": 52,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "PEDIDO DE PARADERO",
+          "cantidad": 22,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "ROBO",
+          "cantidad": 124,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "SALIDERA BANCARIA",
+          "cantidad": 1,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "SECUESTRO DE ELEMENTOS",
+          "cantidad": 43,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "SISTEMA - EN INVESTIGACION",
+          "cantidad": 0,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "SOLICITUD DE PRESENCIA POLICIAL",
+          "cantidad": 448,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "SOSPECHOSO",
+          "cantidad": 621,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "SUJETO ARMADO",
+          "cantidad": 1,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "SUJETO EN EL PATIO - SUJETO EN LOS TECHOS",
+          "cantidad": 40,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "TENTATIVA DE ROBO",
+          "cantidad": 68,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "TENTATIVA DE SUICIDIO",
+          "cantidad": 1,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "TIROTEO",
+          "cantidad": 1,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "USURPACION",
+          "cantidad": 5,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "tipo": "VIOLENCIA",
+          "cantidad": 46,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "ALARMA",
+          "cantidad": 76,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "AMENAZA DE BOMBA",
+          "cantidad": 1,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "APREHENSIONES",
+          "cantidad": 16,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "ASISTENCIA A PERSONA",
+          "cantidad": 28,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "BOTON DE PANICO",
+          "cantidad": 0,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "CONSUMO",
+          "cantidad": 25,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "CONTROL POLICIAL",
+          "cantidad": 7,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "DAÑO",
+          "cantidad": 46,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "DELITO SEXUAL",
+          "cantidad": 1,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "DESAPARICION DE PERSONAS",
+          "cantidad": 6,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "DESPERFECTO MECANICO",
+          "cantidad": 1,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "DETENIDOS",
+          "cantidad": 5,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "DISTURBIOS",
+          "cantidad": 398,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "DROGAS",
+          "cantidad": 8,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "EMERGENCIA CIVIL",
+          "cantidad": 33,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "EMERGENCIA DE SALUD (107)",
+          "cantidad": 89,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "ENGAÑO",
+          "cantidad": 0,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "ESTAFA",
+          "cantidad": 5,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "HURTO",
+          "cantidad": 21,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "INCENDIO",
+          "cantidad": 52,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "INCIDENTES VIALES",
+          "cantidad": 101,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "PEDIDO DE PARADERO",
+          "cantidad": 20,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "ROBO",
+          "cantidad": 195,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "SALIDERA BANCARIA",
+          "cantidad": 0,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "SECUESTRO DE ELEMENTOS",
+          "cantidad": 17,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "SISTEMA - EN INVESTIGACION",
+          "cantidad": 0,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "SOLICITUD DE PRESENCIA POLICIAL",
+          "cantidad": 572,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "SOSPECHOSO",
+          "cantidad": 1110,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "SUJETO ARMADO",
+          "cantidad": 2,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "SUJETO EN EL PATIO - SUJETO EN LOS TECHOS",
+          "cantidad": 62,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "TENTATIVA DE ROBO",
+          "cantidad": 101,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "TENTATIVA DE SUICIDIO",
+          "cantidad": 2,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "TIROTEO",
+          "cantidad": 0,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "USURPACION",
+          "cantidad": 4,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "tipo": "VIOLENCIA",
+          "cantidad": 45,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "ALARMA",
+          "cantidad": 124,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "AMENAZA DE BOMBA",
+          "cantidad": 0,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "APREHENSIONES",
+          "cantidad": 0,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "ASISTENCIA A PERSONA",
+          "cantidad": 44,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "BOTON DE PANICO",
+          "cantidad": 0,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "CONSUMO",
+          "cantidad": 28,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "CONTROL POLICIAL",
+          "cantidad": 4,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "DAÑO",
+          "cantidad": 35,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "DELITO SEXUAL",
+          "cantidad": 0,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "DESAPARICION DE PERSONAS",
+          "cantidad": 6,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "DESPERFECTO MECANICO",
+          "cantidad": 3,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "DETENIDOS",
+          "cantidad": 1,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "DISTURBIOS",
+          "cantidad": 602,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "DROGAS",
+          "cantidad": 4,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "EMERGENCIA CIVIL",
+          "cantidad": 51,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "EMERGENCIA DE SALUD (107)",
+          "cantidad": 119,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "ENGAÑO",
+          "cantidad": 0,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "ESTAFA",
+          "cantidad": 6,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "HURTO",
+          "cantidad": 27,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "INCENDIO",
+          "cantidad": 36,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "INCIDENTES VIALES",
+          "cantidad": 102,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "PEDIDO DE PARADERO",
+          "cantidad": 3,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "ROBO",
+          "cantidad": 211,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "SALIDERA BANCARIA",
+          "cantidad": 0,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "SECUESTRO DE ELEMENTOS",
+          "cantidad": 9,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "SISTEMA - EN INVESTIGACION",
+          "cantidad": 0,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "SOLICITUD DE PRESENCIA POLICIAL",
+          "cantidad": 551,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "SOSPECHOSO",
+          "cantidad": 1110,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "SUJETO ARMADO",
+          "cantidad": 2,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "SUJETO EN EL PATIO - SUJETO EN LOS TECHOS",
+          "cantidad": 61,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "TENTATIVA DE ROBO",
+          "cantidad": 92,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "TENTATIVA DE SUICIDIO",
+          "cantidad": 5,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "TIROTEO",
+          "cantidad": 3,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "USURPACION",
+          "cantidad": 2,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "tipo": "VIOLENCIA",
+          "cantidad": 77,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "ALARMA",
+          "cantidad": 125,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "AMENAZA DE BOMBA",
+          "cantidad": 0,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "APREHENSIONES",
+          "cantidad": 0,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "ASISTENCIA A PERSONA",
+          "cantidad": 58,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "BOTON DE PANICO",
+          "cantidad": 1,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "CONSUMO",
+          "cantidad": 15,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "CONTROL POLICIAL",
+          "cantidad": 2,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "DAÑO",
+          "cantidad": 36,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "DELITO SEXUAL",
+          "cantidad": 0,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "DESAPARICION DE PERSONAS",
+          "cantidad": 6,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "DESPERFECTO MECANICO",
+          "cantidad": 1,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "DETENIDOS",
+          "cantidad": 1,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "DISTURBIOS",
+          "cantidad": 737,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "DROGAS",
+          "cantidad": 8,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "EMERGENCIA CIVIL",
+          "cantidad": 53,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "EMERGENCIA DE SALUD (107)",
+          "cantidad": 150,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "ENGAÑO",
+          "cantidad": 0,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "ESTAFA",
+          "cantidad": 6,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "HURTO",
+          "cantidad": 22,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "INCENDIO",
+          "cantidad": 60,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "INCIDENTES VIALES",
+          "cantidad": 111,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "PEDIDO DE PARADERO",
+          "cantidad": 3,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "ROBO",
+          "cantidad": 205,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "SALIDERA BANCARIA",
+          "cantidad": 0,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "SECUESTRO DE ELEMENTOS",
+          "cantidad": 9,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "SISTEMA - EN INVESTIGACION",
+          "cantidad": 0,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "SOLICITUD DE PRESENCIA POLICIAL",
+          "cantidad": 664,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "SOSPECHOSO",
+          "cantidad": 1263,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "SUJETO ARMADO",
+          "cantidad": 2,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "SUJETO EN EL PATIO - SUJETO EN LOS TECHOS",
+          "cantidad": 63,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "TENTATIVA DE ROBO",
+          "cantidad": 100,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "TENTATIVA DE SUICIDIO",
+          "cantidad": 4,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "TIROTEO",
+          "cantidad": 1,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "USURPACION",
+          "cantidad": 3,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "tipo": "VIOLENCIA",
+          "cantidad": 87,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "ALARMA",
+          "cantidad": 129,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "AMENAZA DE BOMBA",
+          "cantidad": 0,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "APREHENSIONES",
+          "cantidad": 0,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "ASISTENCIA A PERSONA",
+          "cantidad": 74,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "BOTON DE PANICO",
+          "cantidad": 0,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "CONSUMO",
+          "cantidad": 0,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "CONTROL POLICIAL",
+          "cantidad": 0,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "DAÑO",
+          "cantidad": 40,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "DELITO SEXUAL",
+          "cantidad": 0,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "DESAPARICION DE PERSONAS",
+          "cantidad": 0,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "DESPERFECTO MECANICO",
+          "cantidad": 0,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "DETENIDOS",
+          "cantidad": 0,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "DISTURBIOS",
+          "cantidad": 1036,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "DROGAS",
+          "cantidad": 15,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "EMERGENCIA CIVIL",
+          "cantidad": 115,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "EMERGENCIA DE SALUD (107)",
+          "cantidad": 120,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "ENGAÑO",
+          "cantidad": 4,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "ESTAFA",
+          "cantidad": 0,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "HURTO",
+          "cantidad": 15,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "INCENDIO",
+          "cantidad": 55,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "INCIDENTES VIALES",
+          "cantidad": 132,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "PEDIDO DE PARADERO",
+          "cantidad": 0,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "ROBO",
+          "cantidad": 218,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "SALIDERA BANCARIA",
+          "cantidad": 0,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "SECUESTRO DE ELEMENTOS",
+          "cantidad": 0,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "SISTEMA - EN INVESTIGACION",
+          "cantidad": 1,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "SOLICITUD DE PRESENCIA POLICIAL",
+          "cantidad": 748,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "SOSPECHOSO",
+          "cantidad": 1460,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "SUJETO ARMADO",
+          "cantidad": 0,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "SUJETO EN EL PATIO - SUJETO EN LOS TECHOS",
+          "cantidad": 0,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "TENTATIVA DE ROBO",
+          "cantidad": 109,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "TENTATIVA DE SUICIDIO",
+          "cantidad": 3,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "TIROTEO",
+          "cantidad": 0,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "USURPACION",
+          "cantidad": 3,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "tipo": "VIOLENCIA",
+          "cantidad": 128,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "ALARMA",
+          "cantidad": 152,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "AMENAZA DE BOMBA",
+          "cantidad": 0,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "APREHENSIONES",
+          "cantidad": 0,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "ASISTENCIA A PERSONA",
+          "cantidad": 74,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "BOTON DE PANICO",
+          "cantidad": 0,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "CONSUMO",
+          "cantidad": 0,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "CONTROL POLICIAL",
+          "cantidad": 0,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "DAÑO",
+          "cantidad": 34,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "DELITO SEXUAL",
+          "cantidad": 0,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "DESAPARICION DE PERSONAS",
+          "cantidad": 0,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "DESPERFECTO MECANICO",
+          "cantidad": 0,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "DETENIDOS",
+          "cantidad": 0,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "DISTURBIOS",
+          "cantidad": 1221,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "DROGAS",
+          "cantidad": 12,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "EMERGENCIA CIVIL",
+          "cantidad": 77,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "EMERGENCIA DE SALUD (107)",
+          "cantidad": 150,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "ENGAÑO",
+          "cantidad": 5,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "ESTAFA",
+          "cantidad": 0,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "HURTO",
+          "cantidad": 30,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "INCENDIO",
+          "cantidad": 68,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "INCIDENTES VIALES",
+          "cantidad": 170,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "PEDIDO DE PARADERO",
+          "cantidad": 0,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "ROBO",
+          "cantidad": 214,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "SALIDERA BANCARIA",
+          "cantidad": 0,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "SECUESTRO DE ELEMENTOS",
+          "cantidad": 0,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "SISTEMA - EN INVESTIGACION",
+          "cantidad": 1,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "SOLICITUD DE PRESENCIA POLICIAL",
+          "cantidad": 743,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "SOSPECHOSO",
+          "cantidad": 1406,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "SUJETO ARMADO",
+          "cantidad": 0,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "SUJETO EN EL PATIO - SUJETO EN LOS TECHOS",
+          "cantidad": 0,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "TENTATIVA DE ROBO",
+          "cantidad": 129,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "TENTATIVA DE SUICIDIO",
+          "cantidad": 5,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "TIROTEO",
+          "cantidad": 0,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "USURPACION",
+          "cantidad": 1,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "tipo": "VIOLENCIA",
+          "cantidad": 125,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "ALARMA",
+          "cantidad": 173,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "AMENAZA DE BOMBA",
+          "cantidad": 0,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "ASISTENCIA A PERSONA",
+          "cantidad": 76,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "BOTON DE PANICO",
+          "cantidad": 1,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "CONSUMO",
+          "cantidad": 18,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "CONTROL POLICIAL",
+          "cantidad": 1,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "DAÑO",
+          "cantidad": 37,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "DELITO SEXUAL",
+          "cantidad": 1,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "DESAPARICION DE PERSONAS",
+          "cantidad": 9,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "DESPERFECTO MECANICO",
+          "cantidad": 0,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "DISTURBIOS",
+          "cantidad": 1269,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "DROGAS",
+          "cantidad": 6,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "EMERGENCIA CIVIL",
+          "cantidad": 71,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "EMERGENCIA DE SALUD (107)",
+          "cantidad": 147,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "ESTAFA",
+          "cantidad": 10,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "HURTO",
+          "cantidad": 37,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "INCENDIO",
+          "cantidad": 84,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "INCIDENTES VIALES",
+          "cantidad": 105,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "ROBO",
+          "cantidad": 276,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "SECUESTRO DE ELEMENTOS",
+          "cantidad": 2,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "SOLICITUD DE PRESENCIA POLICIAL",
+          "cantidad": 767,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "SOSPECHOSO",
+          "cantidad": 1647,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "SUJETO ARMADO",
+          "cantidad": 0,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "SUJETO EN EL PATIO - SUJETO EN LOS TECHOS",
+          "cantidad": 72,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "TENTATIVA DE ROBO",
+          "cantidad": 173,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "TENTATIVA DE SUICIDIO",
+          "cantidad": 6,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "TENTATIVA DE USURPACION",
+          "cantidad": 4,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "TIROTEO",
+          "cantidad": 2,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "USURPACION",
+          "cantidad": 4,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "tipo": "VIOLENCIA",
+          "cantidad": 107,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "ALARMA",
+          "cantidad": 133,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "AMENAZA DE BOMBA",
+          "cantidad": 1,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "ASISTENCIA A PERSONA",
+          "cantidad": 88,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "BOTON DE PANICO",
+          "cantidad": 1,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "CONSTATADORES",
+          "cantidad": 0,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "CONSUMO",
+          "cantidad": 62,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "CONTROL POLICIAL",
+          "cantidad": 1,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "DAÑO",
+          "cantidad": 46,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "DELITO SEXUAL",
+          "cantidad": 2,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "DESAPARICION DE PERSONAS",
+          "cantidad": 6,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "DESPERFECTO MECANICO",
+          "cantidad": 2,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "DISTURBIOS",
+          "cantidad": 1259,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "DROGAS",
+          "cantidad": 11,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "EMERGENCIA CIVIL",
+          "cantidad": 61,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "EMERGENCIA DE SALUD (107)",
+          "cantidad": 178,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "ESTAFA",
+          "cantidad": 11,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "HURTO",
+          "cantidad": 23,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "INCENDIO",
+          "cantidad": 76,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "INCIDENTES VIALES",
+          "cantidad": 155,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "ROBO",
+          "cantidad": 316,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "SECUESTRO DE ELEMENTOS",
+          "cantidad": 4,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "SOLICITUD DE PRESENCIA POLICIAL",
+          "cantidad": 785,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "SOSPECHOSO",
+          "cantidad": 1560,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "SUJETO ARMADO",
+          "cantidad": 1,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "SUJETO EN EL PATIO - SUJETO EN LOS TECHOS",
+          "cantidad": 76,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "TENTATIVA DE ROBO",
+          "cantidad": 132,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "TENTATIVA DE SUICIDIO",
+          "cantidad": 8,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "TENTATIVA DE USURPACION",
+          "cantidad": 3,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "TIROTEO",
+          "cantidad": 2,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "USURPACION",
+          "cantidad": 2,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "tipo": "VIOLENCIA",
+          "cantidad": 142,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "ALARMA",
+          "cantidad": 168,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "AMENAZA DE BOMBA",
+          "cantidad": 0,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "ASISTENCIA A PERSONA",
+          "cantidad": 79,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "BOTON DE PANICO",
+          "cantidad": 0,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "CONSTATADORES",
+          "cantidad": 0,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "CONSUMO",
+          "cantidad": 76,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "CONTROL POLICIAL",
+          "cantidad": 0,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "DAÑO",
+          "cantidad": 40,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "DELITO SEXUAL",
+          "cantidad": 2,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "DESAPARICION DE PERSONAS",
+          "cantidad": 12,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "DESPERFECTO MECANICO",
+          "cantidad": 0,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "DISTURBIOS",
+          "cantidad": 1548,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "DROGAS",
+          "cantidad": 15,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "EMERGENCIA CIVIL",
+          "cantidad": 85,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "EMERGENCIA DE SALUD (107)",
+          "cantidad": 219,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "ESTAFA",
+          "cantidad": 18,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "HURTO",
+          "cantidad": 34,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "INCENDIO",
+          "cantidad": 81,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "INCIDENTES VIALES",
+          "cantidad": 202,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "ROBO",
+          "cantidad": 341,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "SECUESTRO DE ELEMENTOS",
+          "cantidad": 2,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "SOLICITUD DE PRESENCIA POLICIAL",
+          "cantidad": 929,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "SOSPECHOSO",
+          "cantidad": 1636,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "SUJETO ARMADO",
+          "cantidad": 1,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "SUJETO EN EL PATIO - SUJETO EN LOS TECHOS",
+          "cantidad": 68,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "TENTATIVA DE ROBO",
+          "cantidad": 165,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "TENTATIVA DE SUICIDIO",
+          "cantidad": 6,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "TENTATIVA DE USURPACION",
+          "cantidad": 4,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "TIROTEO",
+          "cantidad": 0,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "USURPACION",
+          "cantidad": 4,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "tipo": "VIOLENCIA",
+          "cantidad": 151,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "ALARMA",
+          "cantidad": 129,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "AMENAZA DE BOMBA",
+          "cantidad": 0,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "ASISTENCIA A PERSONA",
+          "cantidad": 69,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "BOTON DE PANICO",
+          "cantidad": 0,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "CONSTATADORES",
+          "cantidad": 0,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "CONSUMO",
+          "cantidad": 66,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "CONTROL POLICIAL",
+          "cantidad": 0,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "DAÑO",
+          "cantidad": 42,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "DELITO SEXUAL",
+          "cantidad": 2,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "DESAPARICION DE PERSONAS",
+          "cantidad": 7,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "DESPERFECTO MECANICO",
+          "cantidad": 0,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "DISTURBIOS",
+          "cantidad": 1452,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "DROGAS",
+          "cantidad": 6,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "EMERGENCIA CIVIL",
+          "cantidad": 99,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "EMERGENCIA DE SALUD (107)",
+          "cantidad": 234,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "ESTAFA",
+          "cantidad": 13,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "HURTO",
+          "cantidad": 30,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "INCENDIO",
+          "cantidad": 52,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "INCIDENTES VIALES",
+          "cantidad": 177,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "ROBO",
+          "cantidad": 311,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "SECUESTRO DE ELEMENTOS",
+          "cantidad": 4,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "SOLICITUD DE PRESENCIA POLICIAL",
+          "cantidad": 997,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "SOSPECHOSO",
+          "cantidad": 1579,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "SUJETO ARMADO",
+          "cantidad": 0,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "SUJETO EN EL PATIO - SUJETO EN LOS TECHOS",
+          "cantidad": 81,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "TENTATIVA DE ROBO",
+          "cantidad": 156,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "TENTATIVA DE SUICIDIO",
+          "cantidad": 4,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "TENTATIVA DE USURPACION",
+          "cantidad": 4,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "TIROTEO",
+          "cantidad": 0,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "USURPACION",
+          "cantidad": 3,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "tipo": "VIOLENCIA",
+          "cantidad": 171,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "ALARMA",
+          "cantidad": 139,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "AMENAZA DE BOMBA",
+          "cantidad": 0,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "ASISTENCIA A PERSONA",
+          "cantidad": 74,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "BOTON DE PANICO",
+          "cantidad": 0,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "CONSTATADORES",
+          "cantidad": 102,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "CONSUMO",
+          "cantidad": 36,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "CONTROL POLICIAL",
+          "cantidad": 0,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "DAÑO",
+          "cantidad": 28,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "DELITO SEXUAL",
+          "cantidad": 0,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "DESAPARICION DE PERSONAS",
+          "cantidad": 12,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "DESPERFECTO MECANICO",
+          "cantidad": 2,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "DISTURBIOS",
+          "cantidad": 1368,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "DROGAS",
+          "cantidad": 8,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "EMERGENCIA CIVIL",
+          "cantidad": 67,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "EMERGENCIA DE SALUD (107)",
+          "cantidad": 261,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "ESTAFA",
+          "cantidad": 10,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "HURTO",
+          "cantidad": 32,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "INCENDIO",
+          "cantidad": 89,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "INCIDENTES VIALES",
+          "cantidad": 211,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "ROBO",
+          "cantidad": 283,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "SECUESTRO DE ELEMENTOS",
+          "cantidad": 0,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "SOLICITUD DE PRESENCIA POLICIAL",
+          "cantidad": 1048,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "SOSPECHOSO",
+          "cantidad": 1644,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "SUJETO ARMADO",
+          "cantidad": 0,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "SUJETO EN EL PATIO - SUJETO EN LOS TECHOS",
+          "cantidad": 96,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "TENTATIVA DE ROBO",
+          "cantidad": 137,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "TENTATIVA DE SUICIDIO",
+          "cantidad": 2,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "TENTATIVA DE USURPACION",
+          "cantidad": 5,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "TIROTEO",
+          "cantidad": 0,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "USURPACION",
+          "cantidad": 2,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "tipo": "VIOLENCIA",
+          "cantidad": 159,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "ALARMA",
+          "cantidad": 103,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "AMENAZA DE BOMBA",
+          "cantidad": 0,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "ASISTENCIA A PERSONA",
+          "cantidad": 72,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "BOTON DE PANICO",
+          "cantidad": 0,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "CONSTATADORES",
+          "cantidad": 175,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "CONSUMO",
+          "cantidad": 41,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "CONTROL POLICIAL",
+          "cantidad": 0,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "DAÑO",
+          "cantidad": 50,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "DELITO SEXUAL",
+          "cantidad": 2,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "DESAPARICION DE PERSONAS",
+          "cantidad": 5,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "DESPERFECTO MECANICO",
+          "cantidad": 1,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "DISTURBIOS",
+          "cantidad": 1139,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "DROGAS",
+          "cantidad": 3,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "EMERGENCIA CIVIL",
+          "cantidad": 75,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "EMERGENCIA DE SALUD (107)",
+          "cantidad": 250,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "ESTAFA",
+          "cantidad": 11,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "HURTO",
+          "cantidad": 44,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "INCENDIO",
+          "cantidad": 58,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "INCIDENTES VIALES",
+          "cantidad": 191,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "ROBO",
+          "cantidad": 316,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "SECUESTRO DE ELEMENTOS",
+          "cantidad": 0,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "SOLICITUD DE PRESENCIA POLICIAL",
+          "cantidad": 1068,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "SOSPECHOSO",
+          "cantidad": 1618,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "SUJETO ARMADO",
+          "cantidad": 2,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "SUJETO EN EL PATIO - SUJETO EN LOS TECHOS",
+          "cantidad": 97,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "TENTATIVA DE ROBO",
+          "cantidad": 132,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "TENTATIVA DE SUICIDIO",
+          "cantidad": 7,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "TENTATIVA DE USURPACION",
+          "cantidad": 2,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "TIROTEO",
+          "cantidad": 2,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "USURPACION",
+          "cantidad": 4,
+          "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "tipo": "VIOLENCIA",
+          "cantidad": 125,
+          "fechaOrden": "2026-06"
+        }
+      ],
+      "metadata": {
+        "parser": "clasificacionParser",
+        "version": 2
+      }
+    },
+    "Población - Adheridos": {
+      "columns": [
+        "anio",
+        "mes",
+        "cantidadBarrios",
+        "poblacion",
+        "poblacionObjetivo",
+        "adheridos",
+        "porcentajePoblacionObjetivoAdherida",
+        "fechaOrden"
+      ],
+      "rows": [
+        {
+          "anio": 2024,
+          "mes": "Octubre",
+          "cantidadBarrios": 7,
+          "poblacion": 26444,
+          "poblacionObjetivo": 19833,
+          "adheridos": 0,
+          "porcentajePoblacionObjetivoAdherida": 0,
+          "fechaOrden": "2024-10"
+        },
+        {
+          "anio": 2024,
+          "mes": "Noviembre",
+          "cantidadBarrios": 7,
+          "poblacion": 26444,
+          "poblacionObjetivo": 19833,
+          "adheridos": 0,
+          "porcentajePoblacionObjetivoAdherida": 0,
+          "fechaOrden": "2024-11"
+        },
+        {
+          "anio": 2024,
+          "mes": "Diciembre",
+          "cantidadBarrios": 7,
+          "poblacion": 26444,
+          "poblacionObjetivo": 19833,
+          "adheridos": 0,
+          "porcentajePoblacionObjetivoAdherida": 0,
+          "fechaOrden": "2024-12"
+        },
+        {
+          "anio": 2025,
+          "mes": "Enero",
+          "cantidadBarrios": 7,
+          "poblacion": 26444,
+          "poblacionObjetivo": 19833,
+          "adheridos": 0,
+          "porcentajePoblacionObjetivoAdherida": 0,
+          "fechaOrden": "2025-01"
+        },
+        {
+          "anio": 2025,
+          "mes": "Febrero",
+          "cantidadBarrios": 23,
+          "poblacion": 73858,
+          "poblacionObjetivo": 55394,
+          "adheridos": 5687,
+          "porcentajePoblacionObjetivoAdherida": 10.27,
+          "fechaOrden": "2025-02"
+        },
+        {
+          "anio": 2025,
+          "mes": "Marzo",
+          "cantidadBarrios": 34,
+          "poblacion": 102918,
+          "poblacionObjetivo": 77189,
+          "adheridos": 7310,
+          "porcentajePoblacionObjetivoAdherida": 9.47,
+          "fechaOrden": "2025-03"
+        },
+        {
+          "anio": 2025,
+          "mes": "Abril",
+          "cantidadBarrios": 48,
+          "poblacion": 127940,
+          "poblacionObjetivo": 95955,
+          "adheridos": 10437,
+          "porcentajePoblacionObjetivoAdherida": 10.88,
+          "fechaOrden": "2025-04"
+        },
+        {
+          "anio": 2025,
+          "mes": "Mayo",
+          "cantidadBarrios": 68,
+          "poblacion": 238113,
+          "poblacionObjetivo": 178585,
+          "adheridos": 16013,
+          "porcentajePoblacionObjetivoAdherida": 8.97,
+          "fechaOrden": "2025-05"
+        },
+        {
+          "anio": 2025,
+          "mes": "Junio",
+          "cantidadBarrios": 68,
+          "poblacion": 238113,
+          "poblacionObjetivo": 178585,
+          "adheridos": 27157,
+          "porcentajePoblacionObjetivoAdherida": 15.21,
+          "fechaOrden": "2025-06"
+        },
+        {
+          "anio": 2025,
+          "mes": "Julio",
+          "cantidadBarrios": 99,
+          "poblacion": 328990,
+          "poblacionObjetivo": 246743,
+          "adheridos": 40881,
+          "porcentajePoblacionObjetivoAdherida": 16.57,
+          "fechaOrden": "2025-07"
+        },
+        {
+          "anio": 2025,
+          "mes": "Agosto",
+          "cantidadBarrios": 124,
+          "poblacion": 465272,
+          "poblacionObjetivo": 348954,
+          "adheridos": 60226,
+          "porcentajePoblacionObjetivoAdherida": 17.26,
+          "fechaOrden": "2025-08"
+        },
+        {
+          "anio": 2025,
+          "mes": "Septiembre",
+          "cantidadBarrios": 143,
+          "poblacion": 506343,
+          "poblacionObjetivo": 379757,
+          "adheridos": 72327,
+          "porcentajePoblacionObjetivoAdherida": 19.05,
+          "fechaOrden": "2025-09"
+        },
+        {
+          "anio": 2025,
+          "mes": "Octubre",
+          "cantidadBarrios": 144,
+          "poblacion": 507738,
+          "poblacionObjetivo": 380804,
+          "adheridos": 80927,
+          "porcentajePoblacionObjetivoAdherida": 21.25,
+          "fechaOrden": "2025-10"
+        },
+        {
+          "anio": 2025,
+          "mes": "Noviembre",
+          "cantidadBarrios": 144,
+          "poblacion": 507738,
+          "poblacionObjetivo": 380804,
+          "adheridos": 93661,
+          "porcentajePoblacionObjetivoAdherida": 24.6,
+          "fechaOrden": "2025-11"
+        },
+        {
+          "anio": 2025,
+          "mes": "Diciembre",
+          "cantidadBarrios": 144,
+          "poblacion": 507738,
+          "poblacionObjetivo": 380804,
+          "adheridos": 106072,
+          "porcentajePoblacionObjetivoAdherida": 27.85,
+          "fechaOrden": "2025-12"
+        },
+        {
+          "anio": 2026,
+          "mes": "Enero",
+          "cantidadBarrios": 144,
+          "poblacion": 507738,
+          "poblacionObjetivo": 380804,
+          "adheridos": 110524,
+          "porcentajePoblacionObjetivoAdherida": 29.02,
+          "fechaOrden": "2026-01"
+        },
+        {
+          "anio": 2026,
+          "mes": "Febrero",
+          "cantidadBarrios": 144,
+          "poblacion": 507738,
+          "poblacionObjetivo": 380804,
+          "adheridos": 111480,
+          "porcentajePoblacionObjetivoAdherida": 29.27,
+          "fechaOrden": "2026-02"
+        },
+        {
+          "anio": 2026,
+          "mes": "Marzo",
+          "cantidadBarrios": 144,
+          "poblacion": 507738,
+          "poblacionObjetivo": 380804,
+          "adheridos": 119825,
+          "porcentajePoblacionObjetivoAdherida": 31.47,
+          "fechaOrden": "2026-03"
+        },
+        {
+          "anio": 2026,
+          "mes": "Abril",
+          "cantidadBarrios": 144,
+          "poblacion": 507738,
+          "poblacionObjetivo": 380804,
+          "adheridos": 138238,
+          "porcentajePoblacionObjetivoAdherida": 36.3,
+          "fechaOrden": "2026-04"
+        },
+        {
+          "anio": 2026,
+          "mes": "Mayo",
+          "cantidadBarrios": 144,
+          "poblacion": 507738,
+          "poblacionObjetivo": 380804,
+          "adheridos": 159024,
+          "porcentajePoblacionObjetivoAdherida": 41.76,
+          "fechaOrden": "2026-05"
+        },
+        {
+          "anio": 2026,
+          "mes": "Junio",
+          "cantidadBarrios": 144,
+          "poblacion": 507738,
+          "poblacionObjetivo": 380804,
+          "adheridos": 170040,
+          "porcentajePoblacionObjetivoAdherida": 44.65,
+          "fechaOrden": "2026-06"
+        }
+      ],
+      "metadata": {
+        "headerRowIndex": -1,
+        "detectedLabelColumns": [
+          "mes"
+        ],
+        "detectedNumericColumns": [
+          "cantidadBarrios",
+          "poblacion",
+          "poblacionObjetivo",
+          "adheridos",
+          "porcentajePoblacionObjetivoAdherida"
+        ],
+        "generatedColumns": [],
+        "parser": "poblacionParser",
+        "version": 1,
+        "chartLabel": "mesAnio"
+      }
+    }
+  }
+}
