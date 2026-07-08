@@ -23,6 +23,7 @@ body {
   min-width: 320px;
   margin: 0;
   background: var(--bg);
+  overflow-x: hidden;
 }
 
 button,
@@ -35,18 +36,15 @@ select {
 }
 
 .app-shell {
-  width: calc(100% - 32px);
+  width: 100%;
   margin: 0 auto;
-  padding: 16px 0 48px;
+  padding: 16px 16px 48px;
 }
 
 .institutional-header {
   overflow: hidden;
   border-radius: 4px;
   background: transparent;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
   margin-bottom: 18px;
 }
 
@@ -496,8 +494,8 @@ tr:last-child td {
 
 @media (max-width: 780px) {
   .app-shell {
-    width: calc(100% - 24px);
-    padding: 12px 0 28px;
+    width: 100%;
+    padding: 12px 12px 28px;
   }
 
   .app-header,
