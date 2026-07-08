@@ -20,7 +20,7 @@ npm.cmd run dev
 
 - Al iniciar, la app intenta cargar la coleccion completa desde `localStorage`.
 - Si no hay datos guardados, usa los JSON locales de `src/data/`.
-- Los JSON precargados son `tableroTotales.json` y `segundoArchivo.json`.
+- Los JSON precargados son `tableroTotales.json` y `visualizacionTablerosRecursos.json`.
 - Los archivos se guardan separados por nombre dentro de una coleccion.
 - Cada carga desde el input reemplaza por completo la coleccion anterior.
 - Si queres cargar dos o mas Excel, seleccionalos juntos en la misma carga.

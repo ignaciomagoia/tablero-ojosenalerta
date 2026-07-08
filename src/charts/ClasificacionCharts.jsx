@@ -15,16 +15,16 @@ import {
   YAxis,
 } from 'recharts';
 
-const COLORS = ['#d45b2c', '#1f6b4d', '#2f6f9f', '#9b5f27', '#7a4f9f'];
+const COLORS = ['#1f4e79', '#4ba3c7', '#2e7d59', '#d9822b', '#b64a4a'];
 const LINE_COLORS = [
-  '#d45b2c',
-  '#1f6b4d',
-  '#2f6f9f',
-  '#9b5f27',
-  '#7a4f9f',
-  '#b84242',
-  '#4f7f3f',
-  '#2d596f',
+  '#1f4e79',
+  '#4ba3c7',
+  '#2e7d59',
+  '#d9822b',
+  '#b64a4a',
+  '#6c7a89',
+  '#7aa95c',
+  '#315d73',
 ];
 const PREFERRED_MONTHLY_TYPES = [
   'DISTURBIOS',
@@ -174,7 +174,7 @@ function ClasificacionCharts({ resumenAnual, detalleMensual }) {
             <YAxis dataKey="tipo" type="category" width={150} />
             <Tooltip />
             <Legend />
-            <Bar dataKey="cantidad" name={rankingYear} fill="#d45b2c" radius={[0, 8, 8, 0]} />
+            <Bar dataKey="cantidad" name={rankingYear} fill="#1f4e79" radius={[0, 8, 8, 0]} />
           </BarChart>
         </ResponsiveContainer>
       </ChartCard>
@@ -232,7 +232,7 @@ function ClasificacionCharts({ resumenAnual, detalleMensual }) {
               type="monotone"
               dataKey="cantidad"
               name={monthlyType}
-              stroke="#d45b2c"
+              stroke="#1f4e79"
               strokeWidth={3}
               dot={{ r: 3 }}
             />

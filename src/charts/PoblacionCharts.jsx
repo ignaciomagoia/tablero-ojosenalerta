@@ -1,6 +1,4 @@
 import {
-  Bar,
-  BarChart,
   CartesianGrid,
   Legend,
   Line,
@@ -32,8 +30,12 @@ function PoblacionCharts({ rows }) {
     );
   }
 
+  const ultimo = chartRows[chartRows.length - 1];
+
   return (
     <section className="poblacion-charts">
+      <PoblacionSummaryCards ultimo={ultimo} />
+
       <ChartCard title="Evolucion de adheridos">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={chartRows} margin={chartMargin()}>
@@ -46,7 +48,7 @@ function PoblacionCharts({ rows }) {
               type="monotone"
               dataKey="adheridos"
               name="Adheridos"
-              stroke="#d45b2c"
+              stroke="#1f4e79"
               strokeWidth={3}
               dot={{ r: 3 }}
             />
@@ -66,7 +68,7 @@ function PoblacionCharts({ rows }) {
               type="monotone"
               dataKey="porcentajePoblacionObjetivoAdherida"
               name="% poblacion objetivo adherida"
-              stroke="#1f6b4d"
+              stroke="#2e7d59"
               strokeWidth={3}
               dot={{ r: 3 }}
             />
@@ -74,32 +76,63 @@ function PoblacionCharts({ rows }) {
         </ResponsiveContainer>
       </ChartCard>
 
-      <ChartCard title="Poblacion objetivo vs adheridos">
+      <ChartCard title="Evolucion de barrios incorporados">
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={chartRows} margin={chartMargin()}>
+          <LineChart data={chartRows} margin={chartMargin()}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="periodo" angle={-35} textAnchor="end" height={78} interval="preserveStartEnd" />
             <YAxis />
             <Tooltip formatter={numberTooltip} />
             <Legend />
-            <Bar dataKey="poblacionObjetivo" name="Poblacion objetivo" fill="#1f6b4d" radius={[6, 6, 0, 0]} />
-            <Bar dataKey="adheridos" name="Adheridos" fill="#d45b2c" radius={[6, 6, 0, 0]} />
-          </BarChart>
+            <Line
+              type="monotone"
+              dataKey="cantidadBarrios"
+              name="Cantidad de barrios"
+              stroke="#4ba3c7"
+              strokeWidth={3}
+              dot={{ r: 3 }}
+              activeDot={{ r: 5 }}
+              isAnimationActive
+            />
+          </LineChart>
         </ResponsiveContainer>
       </ChartCard>
+    </section>
+  );
+}
 
-      <ChartCard title="Cantidad de barrios incorporados">
-        <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={chartRows} margin={chartMargin()}>
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="periodo" angle={-35} textAnchor="end" height={78} interval="preserveStartEnd" />
-            <YAxis />
-            <Tooltip formatter={numberTooltip} />
-            <Legend />
-            <Bar dataKey="cantidadBarrios" name="Cantidad de barrios" fill="#2f6f9f" radius={[6, 6, 0, 0]} />
-          </BarChart>
-        </ResponsiveContainer>
-      </ChartCard>
+function PoblacionSummaryCards({ ultimo }) {
+  const cards = [
+    {
+      label: 'Periodo',
+      value: ultimo ? formatPeriodo(ultimo) : '-',
+    },
+    {
+      label: 'Barrios incorporados',
+      value: formatNullableNumber(ultimo?.cantidadBarrios),
+    },
+    {
+      label: 'Adheridos',
+      value: formatNullableNumber(ultimo?.adheridos),
+    },
+    {
+      label: 'Poblacion objetivo',
+      value: formatNullableNumber(ultimo?.poblacionObjetivo),
+    },
+    {
+      label: '% poblacion objetivo adherida',
+      value: formatNullablePercent(ultimo?.porcentajePoblacionObjetivoAdherida),
+    },
+  ];
+
+  return (
+    <section className="poblacion-summary-grid" aria-label="Resumen de poblacion">
+      {cards.map((card) => (
+        <article className="poblacion-summary-card" key={card.label}>
+          <span>{card.label}</span>
+          <strong>{card.value}</strong>
+        </article>
+      ))}
     </section>
   );
 }
@@ -137,6 +170,22 @@ function numberTooltip(value, name) {
 
 function percentageTooltip(value, name) {
   return [`${formatNumber(value)}%`, name];
+}
+
+function formatNullableNumber(value) {
+  if (value === null || value === undefined || value === '') {
+    return '-';
+  }
+
+  return formatNumber(value);
+}
+
+function formatNullablePercent(value) {
+  if (value === null || value === undefined || value === '') {
+    return '-';
+  }
+
+  return `${formatNumber(value)}%`;
 }
 
 function formatNumber(value) {

@@ -13,7 +13,7 @@ import {
   YAxis,
 } from 'recharts';
 
-const COLORS = ['#d45b2c', '#1f6b4d', '#2f6f9f'];
+const COLORS = ['#1f4e79', '#4ba3c7', '#2e7d59'];
 
 export function formatPeriodo(row) {
   return `${row.mes} ${row.anio}`;
@@ -97,7 +97,7 @@ function TipologiaCharts({ rows }) {
               type="monotone"
               dataKey="totalAlertas"
               name="Total alertas"
-              stroke="#d45b2c"
+              stroke="#1f4e79"
               strokeWidth={3}
               dot={{ r: 3 }}
             />

@@ -6,8 +6,8 @@ import SheetSelector from './components/SheetSelector';
 import ClasificacionCharts from './charts/ClasificacionCharts';
 import PoblacionCharts from './charts/PoblacionCharts';
 import TipologiaCharts from './charts/TipologiaCharts';
-import segundoArchivo from './data/segundoArchivo.json';
 import tableroTotales from './data/tableroTotales.json';
+import visualizacionTablerosRecursos from './data/visualizacionTablerosRecursos.json';
 import { isAlertasSheet } from './parsers/alertasParser';
 import {
   CLASIFICACION_PARSER_VERSION,
@@ -23,10 +23,14 @@ import {
 import { isTipologiaSheet } from './parsers/tipologiaParser';
 import { normalizeRows } from './utils/sheetNormalizer';
 
-const STORAGE_KEY = 'ojos-en-alerta-files-v2';
-const PRELOADED_FILES = createFilesCollection([tableroTotales, segundoArchivo]);
+const STORAGE_KEY = 'ojos-en-alerta-files-v3';
+const PRELOADED_FILES = createFilesCollection([
+  tableroTotales,
+  visualizacionTablerosRecursos,
+]);
 
 function App() {
+  const isAdmin = window.location.pathname === '/admin';
   const [files, setFiles] = useState(getInitialFiles);
   const firstFileName = getFirstFileName(files);
   const [selectedFileName, setSelectedFileName] = useState(firstFileName);
@@ -36,7 +40,6 @@ function App() {
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-  const fileList = Object.values(files);
   const selectedFile = files[selectedFileName];
   const availableSheets = Object.keys(selectedFile?.sheets || {});
   const rawCurrentSheet = selectedFile?.sheets?.[selectedSheetName];
@@ -49,19 +52,7 @@ function App() {
   const isClasificacionSheetSelected =
     currentSheet?.type === 'clasificacion' || isClasificacionSheet(selectedSheetName);
   const isTipologiaSheetSelected = isTipologiaSheet(selectedSheetName);
-  const totalSheets = fileList.reduce(
-    (total, file) => total + Object.keys(file.sheets).length,
-    0,
-  );
-  const totalRows = fileList.reduce(
-    (total, file) =>
-      total +
-      Object.values(file.sheets).reduce(
-        (sheetTotal, sheet) => sheetTotal + getSheetRowCount(sheet),
-        0,
-      ),
-    0,
-  );
+  const dashboardSummary = getDashboardSummary(files);
 
   useEffect(() => {
     if (!hasStaleSpecialSheets(files)) {
@@ -145,56 +136,66 @@ function App() {
 
   return (
     <main className="app-shell">
+      <section className="institutional-header" aria-label="Encabezado institucional">
+        <img
+          src="/encabezado.png"
+          alt="Ministerio de Seguridad de Cordoba"
+        />
+      </section>
+
       <header className="app-header">
-        <div>
-          <p className="eyebrow">Dashboard</p>
-          <h1>Ojos en Alerta</h1>
-        </div>
-        <p>Datos listos para consultar desde el inicio.</p>
+        <h1>Tablero de Gestión</h1>
+        {isAdmin && (
+          <a className="secondary-button admin-back-link" href="/">
+            Volver al tablero
+          </a>
+        )}
       </header>
 
       <section className="summary-grid" aria-label="Resumen del tablero">
         <article className="summary-card">
-          <span>Archivos</span>
-          <strong>{fileList.length}</strong>
+          <span>Periodo de datos</span>
+          <strong>{dashboardSummary.dataPeriod}</strong>
         </article>
         <article className="summary-card">
-          <span>Hojas</span>
-          <strong>{totalSheets}</strong>
+          <span>Total de alertas</span>
+          <strong>{dashboardSummary.totalAlertas}</strong>
         </article>
         <article className="summary-card">
-          <span>Filas</span>
-          <strong>{totalRows}</strong>
+          <span>Última actualización</span>
+          <strong>{dashboardSummary.latestPeriod}</strong>
         </article>
       </section>
 
-      <details className="card update-panel">
-        <summary>Actualizar datos</summary>
-        <p className="muted">
-          Carga uno o varios Excel juntos. Cada carga reemplaza por completo
-          los archivos actuales.
-        </p>
-        <FileUploader
-          onFilesLoad={handleFilesLoad}
-          onError={handleError}
-          isLoading={isLoading}
-          setIsLoading={setIsLoading}
-        />
-        <button
-          type="button"
-          className="secondary-button"
-          onClick={handleRestorePreloadedData}
-        >
-          Restaurar datos precargados
-        </button>
-        <button
-          type="button"
-          className="secondary-button"
-          onClick={handleClearSavedData}
-        >
-          Limpiar datos guardados
-        </button>
-      </details>
+      {isAdmin && (
+        <details className="card update-panel">
+          <summary>Actualizar datos</summary>
+          <p className="muted">
+            Carga uno o varios Excel juntos. Cada carga reemplaza por completo
+            los archivos actuales.
+          </p>
+          <FileUploader
+            onFilesLoad={handleFilesLoad}
+            onError={handleError}
+            isLoading={isLoading}
+            setIsLoading={setIsLoading}
+          />
+          <button
+            type="button"
+            className="secondary-button"
+            onClick={handleRestorePreloadedData}
+          >
+            Restaurar datos precargados
+          </button>
+          <button
+            type="button"
+            className="secondary-button"
+            onClick={handleClearSavedData}
+          >
+            Limpiar datos guardados
+          </button>
+        </details>
+      )}
 
       {error && <p className="alert">{error}</p>}
 
@@ -504,14 +505,6 @@ function getRowValue(row, keys) {
   return matchedKey ? row[matchedKey] : '';
 }
 
-function getSheetRowCount(sheet) {
-  if (isClasificacionSheetData(sheet)) {
-    return sheet.resumenAnual.length + sheet.detalleMensual.length;
-  }
-
-  return sheet?.rows?.length ?? 0;
-}
-
 function isClasificacionSheetData(sheetData) {
   return (
     sheetData?.type === 'clasificacion' &&
@@ -529,6 +522,90 @@ function isPoblacionSheetData(sheetData) {
     sheetData.rows.length > 0 &&
     sheetData.rows.every(isValidPoblacionRow)
   );
+}
+
+function getDashboardSummary(files) {
+  const datedRows = getRowsWithPeriods(files);
+  const sortedDatedRows = datedRows.sort((leftRow, rightRow) =>
+    leftRow.fechaOrden.localeCompare(rightRow.fechaOrden),
+  );
+  const firstRow = sortedDatedRows[0];
+  const lastRow = sortedDatedRows.at(-1);
+  const totalAlertas = getTotalAlertas(files);
+
+  return {
+    latestPeriod: lastRow ? formatPeriodLabel(lastRow) : '-',
+    dataPeriod: firstRow && lastRow
+      ? `${formatPeriodLabel(firstRow)} - ${formatPeriodLabel(lastRow)}`
+      : '-',
+    totalAlertas: totalAlertas === null ? '-' : formatNumber(totalAlertas),
+  };
+}
+
+function getRowsWithPeriods(files) {
+  return Object.values(files).flatMap((file) =>
+    Object.values(file.sheets).flatMap((sheet) => {
+      const rows = isClasificacionSheetData(sheet)
+        ? sheet.detalleMensual
+        : sheet.rows ?? [];
+
+      return rows.filter((row) => isValidPeriodRow(row));
+    }),
+  );
+}
+
+function getTotalAlertas(files) {
+  const prioritizedSheetRows = findRowsForSheet(files, isAlertasSheet) ??
+    findRowsForSheet(files, isTipologiaSheet);
+
+  if (prioritizedSheetRows) {
+    return sumTotalAlertas(prioritizedSheetRows);
+  }
+
+  const fallbackRows = Object.values(files).flatMap((file) =>
+    Object.values(file.sheets).flatMap((sheet) => sheet.rows ?? []),
+  );
+  const rowsWithAlertas = fallbackRows.filter((row) =>
+    Object.prototype.hasOwnProperty.call(row, 'totalAlertas'),
+  );
+
+  return rowsWithAlertas.length > 0 ? sumTotalAlertas(rowsWithAlertas) : null;
+}
+
+function findRowsForSheet(files, matcher) {
+  for (const file of Object.values(files)) {
+    for (const [sheetName, sheet] of Object.entries(file.sheets)) {
+      if (matcher(sheetName) && Array.isArray(sheet.rows)) {
+        return sheet.rows;
+      }
+    }
+  }
+
+  return null;
+}
+
+function sumTotalAlertas(rows) {
+  return rows.reduce((total, row) => total + (Number(row.totalAlertas) || 0), 0);
+}
+
+function isValidPeriodRow(row) {
+  return (
+    typeof row?.fechaOrden === 'string' &&
+    /^\d{4}-\d{2}$/.test(row.fechaOrden) &&
+    typeof row?.mes === 'string' &&
+    row.mes.trim() !== '' &&
+    Number.isFinite(Number(row?.anio))
+  );
+}
+
+function formatPeriodLabel(row) {
+  return `${row.mes} ${row.anio}`;
+}
+
+function formatNumber(value) {
+  return Number(value).toLocaleString('es-AR', {
+    maximumFractionDigits: 0,
+  });
 }
 
 export default App;

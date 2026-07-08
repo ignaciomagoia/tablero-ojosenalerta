@@ -115,7 +115,7 @@ function SheetChart({ rows, columns, metadata, selectedSheetName }) {
                 type="monotone"
                 dataKey="value"
                 name={activeMetric}
-                stroke="#d45b2c"
+                stroke="#1f4e79"
                 strokeWidth={3}
                 dot={{ r: 3 }}
               />
@@ -123,7 +123,7 @@ function SheetChart({ rows, columns, metadata, selectedSheetName }) {
               <Bar
                 dataKey="value"
                 name={activeMetric}
-                fill="#d45b2c"
+                fill="#1f4e79"
                 radius={[8, 8, 0, 0]}
               />
             )}

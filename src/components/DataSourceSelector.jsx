@@ -1,5 +1,5 @@
 function DataSourceSelector({ files, selectedFileName, onSelectFile }) {
-  const fileList = Object.values(files);
+  const fileList = Object.entries(files);
 
   if (fileList.length === 0) {
     return null;
@@ -9,18 +9,22 @@ function DataSourceSelector({ files, selectedFileName, onSelectFile }) {
     <section className="card">
       <h2>Archivos</h2>
       <ul className="selector-list">
-        {fileList.map((file) => (
-          <li key={file.fileName}>
-            <button
-              type="button"
-              className={file.fileName === selectedFileName ? 'active' : ''}
-              onClick={() => onSelectFile(file.fileName)}
-            >
-              <strong>{file.fileName}</strong>
-              <span>{Object.keys(file.sheets).length} hojas</span>
-            </button>
-          </li>
-        ))}
+        {fileList.map(([fileKey, file]) => {
+          const displayName = file.fileName || fileKey;
+
+          return (
+            <li key={displayName}>
+              <button
+                type="button"
+                className={displayName === selectedFileName ? 'active' : ''}
+                onClick={() => onSelectFile(displayName)}
+              >
+                <strong>{displayName}</strong>
+                <span>{Object.keys(file.sheets).length} hojas</span>
+              </button>
+            </li>
+          );
+        })}
       </ul>
     </section>
   );
