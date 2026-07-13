@@ -44,7 +44,7 @@ function MovilesView({ data }) {
     territoryMode === 'cuadrantes'
       ? data?.chalecosPorCuadrante ?? []
       : data?.chalecosPorDistrito ?? [],
-  );
+  ).sort(compareTerritorialRows);
   const filteredZoneRows = useMemo(
     () => filterRows(zoneRows, search),
     [zoneRows, search],
@@ -256,6 +256,30 @@ function normalizeKey(value) {
     .replace(/[\u0300-\u036f]/g, '')
     .toUpperCase()
     .trim();
+}
+
+function compareTerritorialRows(left, right) {
+  const leftOrder = getTerritorialOrder(left.name);
+  const rightOrder = getTerritorialOrder(right.name);
+
+  if (leftOrder !== rightOrder) {
+    return leftOrder - rightOrder;
+  }
+
+  return String(left.name).localeCompare(String(right.name), 'es', {
+    numeric: true,
+  });
+}
+
+function getTerritorialOrder(value) {
+  const text = normalizeKey(value);
+  const match = text.match(/\d+/);
+
+  if (!match) {
+    return Number.MAX_SAFE_INTEGER;
+  }
+
+  return Number(match[0]) + (text.includes('BIS') ? 0.5 : 0);
 }
 
 function MovilesTooltip({ active, payload }) {
