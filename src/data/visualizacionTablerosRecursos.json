@@ -3,44 +3,585 @@
   "fileName": "VISUALIZACIÓN tableros recursos.xlsx",
   "sheets": [
     {
-      "name": "Operativos",
-      "data": [
-        {
-          "Fecha": "2026-07-01",
-          "Equipo": "Turno manana",
-          "Operativos": 8
+      "name": "Recursos Operativos",
+      "data": {
+        "type": "recursosOperativos",
+        "fileName": "VISUALIZACIÓN tableros recursos.xlsx",
+        "sourceSheetName": "Moviles",
+        "summary": {
+          "movilesActivos": 154,
+          "movilesReparacion": 0,
+          "movilesFueraServicio": 46,
+          "chalecosDisponibles": 400,
+          "fechaActualizacion": "07 de julio de 2026",
+          "fechaActualizacionISO": "2026-07-07"
         },
-        {
-          "Fecha": "2026-07-02",
-          "Equipo": "Turno tarde",
-          "Operativos": 11
-        },
-        {
-          "Fecha": "2026-07-03",
-          "Equipo": "Turno noche",
-          "Operativos": 6
+        "estadoMoviles": [
+          {
+            "name": "Activos",
+            "value": 154
+          },
+          {
+            "name": "En reparacion",
+            "value": 0
+          },
+          {
+            "name": "Fuera de servicio",
+            "value": 46
+          }
+        ],
+        "movilesPorCuadrante": [
+          {
+            "name": "2",
+            "activos": 37,
+            "reparacion": 0,
+            "fueraServicio": 9,
+            "value": 46
+          },
+          {
+            "name": "7",
+            "activos": 26,
+            "reparacion": 0,
+            "fueraServicio": 8,
+            "value": 34
+          },
+          {
+            "name": "5",
+            "activos": 22,
+            "reparacion": 0,
+            "fueraServicio": 8,
+            "value": 30
+          },
+          {
+            "name": "6",
+            "activos": 21,
+            "reparacion": 0,
+            "fueraServicio": 6,
+            "value": 27
+          },
+          {
+            "name": "3",
+            "activos": 16,
+            "reparacion": 0,
+            "fueraServicio": 5,
+            "value": 21
+          },
+          {
+            "name": "1",
+            "activos": 15,
+            "reparacion": 0,
+            "fueraServicio": 5,
+            "value": 20
+          },
+          {
+            "name": "4",
+            "activos": 14,
+            "reparacion": 0,
+            "fueraServicio": 3,
+            "value": 17
+          },
+          {
+            "name": "8",
+            "activos": 3,
+            "reparacion": 0,
+            "fueraServicio": 2,
+            "value": 5
+          }
+        ],
+        "chalecosPorDistrito": [
+          {
+            "name": "15",
+            "value": 67
+          },
+          {
+            "name": "4",
+            "value": 45
+          },
+          {
+            "name": "8",
+            "value": 35
+          },
+          {
+            "name": "24 bis",
+            "value": 34
+          },
+          {
+            "name": "7",
+            "value": 31
+          },
+          {
+            "name": "5",
+            "value": 25
+          },
+          {
+            "name": "2",
+            "value": 24
+          },
+          {
+            "name": "12",
+            "value": 23
+          },
+          {
+            "name": "9",
+            "value": 22
+          },
+          {
+            "name": "11",
+            "value": 20
+          },
+          {
+            "name": "3",
+            "value": 17
+          },
+          {
+            "name": "6",
+            "value": 16
+          },
+          {
+            "name": "14",
+            "value": 16
+          },
+          {
+            "name": "20",
+            "value": 11
+          },
+          {
+            "name": "10",
+            "value": 8
+          },
+          {
+            "name": "13",
+            "value": 4
+          },
+          {
+            "name": "22",
+            "value": 2
+          }
+        ],
+        "movilesPorDistrito": [
+          {
+            "name": "15",
+            "activos": 30,
+            "reparacion": 0,
+            "fueraServicio": 6,
+            "value": 36
+          },
+          {
+            "name": "2",
+            "activos": 15,
+            "reparacion": 0,
+            "fueraServicio": 5,
+            "value": 20
+          },
+          {
+            "name": "5",
+            "activos": 14,
+            "reparacion": 0,
+            "fueraServicio": 6,
+            "value": 20
+          },
+          {
+            "name": "8",
+            "activos": 14,
+            "reparacion": 0,
+            "fueraServicio": 3,
+            "value": 17
+          },
+          {
+            "name": "11",
+            "activos": 10,
+            "reparacion": 0,
+            "fueraServicio": 4,
+            "value": 14
+          },
+          {
+            "name": "4",
+            "activos": 11,
+            "reparacion": 0,
+            "fueraServicio": 2,
+            "value": 13
+          },
+          {
+            "name": "7",
+            "activos": 8,
+            "reparacion": 0,
+            "fueraServicio": 3,
+            "value": 11
+          },
+          {
+            "name": "10",
+            "activos": 10,
+            "reparacion": 0,
+            "fueraServicio": 0,
+            "value": 10
+          },
+          {
+            "name": "12",
+            "activos": 8,
+            "reparacion": 0,
+            "fueraServicio": 2,
+            "value": 10
+          },
+          {
+            "name": "3",
+            "activos": 5,
+            "reparacion": 0,
+            "fueraServicio": 4,
+            "value": 9
+          },
+          {
+            "name": "22",
+            "activos": 7,
+            "reparacion": 0,
+            "fueraServicio": 2,
+            "value": 9
+          },
+          {
+            "name": "13",
+            "activos": 5,
+            "reparacion": 0,
+            "fueraServicio": 1,
+            "value": 6
+          },
+          {
+            "name": "20",
+            "activos": 4,
+            "reparacion": 0,
+            "fueraServicio": 2,
+            "value": 6
+          },
+          {
+            "name": "6",
+            "activos": 3,
+            "reparacion": 0,
+            "fueraServicio": 2,
+            "value": 5
+          },
+          {
+            "name": "14",
+            "activos": 4,
+            "reparacion": 0,
+            "fueraServicio": 1,
+            "value": 5
+          },
+          {
+            "name": "24 bis",
+            "activos": 3,
+            "reparacion": 0,
+            "fueraServicio": 2,
+            "value": 5
+          },
+          {
+            "name": "9",
+            "activos": 3,
+            "reparacion": 0,
+            "fueraServicio": 1,
+            "value": 4
+          }
+        ],
+        "zonaComparativa": [
+          {
+            "zona": "Zona Norte",
+            "moviles": 89,
+            "chalecos": 225
+          },
+          {
+            "zona": "Zona Sur",
+            "moviles": 111,
+            "chalecos": 175
+          }
+        ],
+        "metadata": {
+          "parser": "recursosParser",
+          "version": 1
         }
-      ]
+      }
     },
     {
-      "name": "Contactos",
-      "data": [
-        {
-          "Canal": "Telefono",
-          "Contactos": 54,
-          "Pendientes": 7
+      "name": "Personal",
+      "data": {
+        "type": "personalOperativo",
+        "fileName": "VISUALIZACIÓN tableros recursos.xlsx",
+        "sourceSheetName": "Personal",
+        "summary": {
+          "policial": 1030,
+          "etac": 208,
+          "civil": 356,
+          "optionalCards": [],
+          "totalGeneral": 1594
         },
-        {
-          "Canal": "WhatsApp",
-          "Contactos": 89,
-          "Pendientes": 12
-        },
-        {
-          "Canal": "Formulario web",
-          "Contactos": 23,
-          "Pendientes": 3
+        "distribucionPersonal": [
+          {
+            "name": "Policia",
+            "value": 1030
+          },
+          {
+            "name": "ETAC",
+            "value": 208
+          },
+          {
+            "name": "Civil",
+            "value": 356
+          }
+        ],
+        "personalPorZona": [
+          {
+            "name": "Dir Sur",
+            "policial": 554,
+            "etac": 64,
+            "civil": 109,
+            "value": 727
+          },
+          {
+            "name": "Dir Norte",
+            "policial": 470,
+            "etac": 143,
+            "civil": 101,
+            "value": 714
+          },
+          {
+            "name": "Dir de Monitoreo",
+            "policial": 6,
+            "etac": 1,
+            "civil": 146,
+            "value": 153
+          }
+        ],
+        "personalPolicialPorCuadrante": [
+          {
+            "name": "7",
+            "value": 207
+          },
+          {
+            "name": "2",
+            "value": 181
+          },
+          {
+            "name": "3",
+            "value": 156
+          },
+          {
+            "name": "5",
+            "value": 134
+          },
+          {
+            "name": "6",
+            "value": 132
+          },
+          {
+            "name": "1",
+            "value": 81
+          },
+          {
+            "name": "4",
+            "value": 67
+          },
+          {
+            "name": "8",
+            "value": 66
+          }
+        ],
+        "etacPorCuadrante": [
+          {
+            "name": "2",
+            "value": 73
+          },
+          {
+            "name": "3",
+            "value": 46
+          },
+          {
+            "name": "6",
+            "value": 28
+          },
+          {
+            "name": "4",
+            "value": 20
+          },
+          {
+            "name": "7",
+            "value": 20
+          },
+          {
+            "name": "5",
+            "value": 9
+          },
+          {
+            "name": "1",
+            "value": 7
+          },
+          {
+            "name": "8",
+            "value": 4
+          }
+        ],
+        "personalCivilPorCuadrante": [
+          {
+            "name": "2",
+            "value": 48
+          },
+          {
+            "name": "5",
+            "value": 35
+          },
+          {
+            "name": "7",
+            "value": 33
+          },
+          {
+            "name": "1",
+            "value": 21
+          },
+          {
+            "name": "3",
+            "value": 20
+          },
+          {
+            "name": "6",
+            "value": 20
+          },
+          {
+            "name": "4",
+            "value": 18
+          },
+          {
+            "name": "8",
+            "value": 15
+          }
+        ],
+        "personalPorDistrito": [
+          {
+            "name": "15",
+            "policial": 123,
+            "etac": 44,
+            "civil": 47,
+            "value": 214
+          },
+          {
+            "name": "7",
+            "policial": 78,
+            "etac": 45,
+            "civil": 4,
+            "value": 127
+          },
+          {
+            "name": "2",
+            "policial": 81,
+            "etac": 7,
+            "civil": 21,
+            "value": 109
+          },
+          {
+            "name": "4",
+            "policial": 72,
+            "etac": 28,
+            "civil": 5,
+            "value": 105
+          },
+          {
+            "name": "8",
+            "policial": 67,
+            "etac": 20,
+            "civil": 18,
+            "value": 105
+          },
+          {
+            "name": "5",
+            "policial": 75,
+            "etac": 3,
+            "civil": 20,
+            "value": 98
+          },
+          {
+            "name": "6",
+            "policial": 66,
+            "etac": 4,
+            "civil": 15,
+            "value": 85
+          },
+          {
+            "name": "12",
+            "policial": 59,
+            "etac": 6,
+            "civil": 15,
+            "value": 80
+          },
+          {
+            "name": "3",
+            "policial": 55,
+            "etac": 10,
+            "civil": 11,
+            "value": 76
+          },
+          {
+            "name": "11",
+            "policial": 60,
+            "etac": 0,
+            "civil": 15,
+            "value": 75
+          },
+          {
+            "name": "13",
+            "policial": 61,
+            "etac": 1,
+            "civil": 11,
+            "value": 73
+          },
+          {
+            "name": "10",
+            "policial": 53,
+            "etac": 10,
+            "civil": 7,
+            "value": 70
+          },
+          {
+            "name": "22",
+            "policial": 53,
+            "etac": 0,
+            "civil": 4,
+            "value": 57
+          },
+          {
+            "name": "20",
+            "policial": 41,
+            "etac": 0,
+            "civil": 11,
+            "value": 52
+          },
+          {
+            "name": "14",
+            "policial": 32,
+            "etac": 17,
+            "civil": 1,
+            "value": 50
+          },
+          {
+            "name": "24 bis",
+            "policial": 26,
+            "etac": 12,
+            "civil": 0,
+            "value": 38
+          },
+          {
+            "name": "9",
+            "policial": 17,
+            "etac": 0,
+            "civil": 5,
+            "value": 22
+          },
+          {
+            "name": "19",
+            "policial": 5,
+            "etac": 0,
+            "civil": 0,
+            "value": 5
+          }
+        ],
+        "metadata": {
+          "parser": "personalParser",
+          "version": 1
         }
-      ]
+      }
     }
   ]
 }

@@ -4,7 +4,9 @@ import FileUploader from './components/FileUploader';
 import SheetChart from './components/SheetChart';
 import SheetSelector from './components/SheetSelector';
 import ClasificacionCharts from './charts/ClasificacionCharts';
+import PersonalCharts from './charts/PersonalCharts';
 import PoblacionCharts from './charts/PoblacionCharts';
+import RecursosOperativosCharts from './charts/RecursosOperativosCharts';
 import TipologiaCharts from './charts/TipologiaCharts';
 import tableroTotales from './data/tableroTotales.json';
 import visualizacionTablerosRecursos from './data/visualizacionTablerosRecursos.json';
@@ -14,16 +16,24 @@ import {
   isClasificacionSheet,
 } from './parsers/clasificacionParser';
 import {
+  PERSONAL_PARSER_VERSION,
+  isPersonalSheetData,
+} from './parsers/personalParser';
+import {
   POBLACION_NUMERIC_COLUMNS,
   POBLACION_PARSER_VERSION,
   POBLACION_SHEET_COLUMNS,
   isPoblacionSheet,
   parsePoblacionSheet,
 } from './parsers/poblacionParser';
+import {
+  RECURSOS_PARSER_VERSION,
+  isRecursosSheetData,
+} from './parsers/recursosParser';
 import { isTipologiaSheet } from './parsers/tipologiaParser';
 import { normalizeRows } from './utils/sheetNormalizer';
 
-const STORAGE_KEY = 'ojos-en-alerta-files-v3';
+const STORAGE_KEY = 'ojos-en-alerta-files-v5';
 const PRELOADED_FILES = createFilesCollection([
   tableroTotales,
   visualizacionTablerosRecursos,
@@ -51,6 +61,8 @@ function App() {
   const currentColumns = currentSheet?.columns || [];
   const isClasificacionSheetSelected =
     currentSheet?.type === 'clasificacion' || isClasificacionSheet(selectedSheetName);
+  const isPersonalSheetSelected = isPersonalSheetData(currentSheet);
+  const isRecursosSheetSelected = isRecursosSheetData(currentSheet);
   const isTipologiaSheetSelected = isTipologiaSheet(selectedSheetName);
   const dashboardSummary = getDashboardSummary(files);
 
@@ -137,10 +149,18 @@ function App() {
   return (
     <main className="app-shell">
       <section className="institutional-header" aria-label="Encabezado institucional">
-        <img
-          src="/encabezado.png"
-          alt="Ministerio de Seguridad de Cordoba"
-        />
+        <div className="institutional-logo-slot institutional-logo-slot-left">
+          <img
+            src="/ojosenalerta.png"
+            alt="Ojos en Alerta"
+          />
+        </div>
+        <div className="institutional-logo-slot institutional-logo-slot-right">
+          <img
+            src="/ministerio.png"
+            alt="Ministerio de Seguridad de Cordoba"
+          />
+        </div>
       </section>
 
       <header className="app-header">
@@ -215,7 +235,11 @@ function App() {
 
         {selectedFile && (
           <div className="content-panel">
-            {isClasificacionSheetSelected ? (
+            {isPersonalSheetSelected ? (
+              <PersonalCharts data={currentSheet} />
+            ) : isRecursosSheetSelected ? (
+              <RecursosOperativosCharts data={currentSheet} />
+            ) : isClasificacionSheetSelected ? (
               <>
                 <ClasificacionCharts
                   resumenAnual={currentSheet?.resumenAnual ?? []}
@@ -327,6 +351,14 @@ function normalizeSheets(sheets) {
 }
 
 function normalizeSheetData(sheetData, sheetName = '') {
+  if (isPersonalSheetData(sheetData)) {
+    return sheetData;
+  }
+
+  if (isRecursosSheetData(sheetData)) {
+    return sheetData;
+  }
+
   if (isPoblacionSheet(sheetName)) {
     return normalizePoblacionSheetData(sheetData);
   }
@@ -374,6 +406,8 @@ function isValidFilesCollection(data) {
         !Array.isArray(file.sheets) &&
         Object.values(file.sheets).every(
           (sheet) =>
+            isPersonalSheetData(sheet) ||
+            isRecursosSheetData(sheet) ||
             isClasificacionSheetData(sheet) ||
             (Array.isArray(sheet?.rows) && Array.isArray(sheet?.columns)),
         ),
@@ -400,11 +434,37 @@ function hasStaleSpecialSheets(files) {
       ([sheetName, sheet]) =>
         (isTipologiaSheet(sheetName) &&
           sheet.metadata?.parser !== 'tipologiaParser') ||
+        isStalePersonalSheet(sheet) ||
+        isStaleRecursosSheet(sheet) ||
         isStaleClasificacionSheet(sheetName, sheet) ||
         isStalePoblacionSheet(sheetName, sheet) ||
         (isAlertasSheet(sheetName) &&
           sheet.metadata?.parser !== 'alertasParser'),
     ),
+  );
+}
+
+function isStalePersonalSheet(sheet) {
+  if (sheet?.type !== 'personalOperativo') {
+    return false;
+  }
+
+  return (
+    sheet?.metadata?.parser !== 'personalParser' ||
+    sheet.metadata?.version !== PERSONAL_PARSER_VERSION ||
+    !isPersonalSheetData(sheet)
+  );
+}
+
+function isStaleRecursosSheet(sheet) {
+  if (sheet?.type !== 'recursosOperativos') {
+    return false;
+  }
+
+  return (
+    sheet?.metadata?.parser !== 'recursosParser' ||
+    sheet.metadata?.version !== RECURSOS_PARSER_VERSION ||
+    !isRecursosSheetData(sheet)
   );
 }
 

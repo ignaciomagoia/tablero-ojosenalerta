@@ -23,6 +23,16 @@ import {
   isPoblacionSheet,
   parsePoblacionSheet,
 } from '../parsers/poblacionParser';
+import {
+  PERSONAL_SHEET_NAME,
+  findPersonalSheet,
+  parsePersonalSheet,
+} from '../parsers/personalParser';
+import {
+  RECURSOS_SHEET_NAME,
+  isRecursosWorkbook,
+  parseRecursosWorkbook,
+} from '../parsers/recursosParser';
 import { normalizeMatrix } from './sheetNormalizer';
 
 // Lee cada hoja como matriz cruda y la normaliza antes de usarla en React.
@@ -35,7 +45,7 @@ export function parseExcelFile(file) {
         const bytes = new Uint8Array(event.target.result);
         const workbook = XLSX.read(bytes, { type: 'array' });
 
-        const sheets = workbook.SheetNames.map((sheetName) => {
+        const rawSheets = workbook.SheetNames.map((sheetName) => {
           const worksheet = workbook.Sheets[sheetName];
           const matrix = XLSX.utils.sheet_to_json(worksheet, {
             header: 1,
@@ -43,6 +53,36 @@ export function parseExcelFile(file) {
             raw: false,
           });
 
+          return {
+            sheetName,
+            matrix,
+          };
+        });
+
+        if (isRecursosWorkbook(file.name, rawSheets)) {
+          const personalSheet = findPersonalSheet(rawSheets);
+          const parsedSheets = [
+            {
+              name: RECURSOS_SHEET_NAME,
+              data: parseRecursosWorkbook(rawSheets, file.name),
+            },
+          ];
+
+          if (personalSheet) {
+            parsedSheets.push({
+              name: PERSONAL_SHEET_NAME,
+              data: parsePersonalSheet(personalSheet.matrix, {
+                fileName: file.name,
+                sourceSheetName: personalSheet.sheetName,
+              }),
+            });
+          }
+
+          resolve(parsedSheets);
+          return;
+        }
+
+        const sheets = rawSheets.map(({ sheetName, matrix }) => {
           return {
             name: sheetName,
             data: parseSheet(matrix, sheetName),
