@@ -222,16 +222,14 @@ function parseMovilesSection(matrix, sectionName, labelCol, columns, nameKey) {
     const fueraDeServicio = parseMovilesNumber(row[columns.fueraDeServicio]) ?? 0;
     const total = activos + enReparacion + fueraDeServicio;
 
-    if (total > 0) {
-      rows.push({
-        [nameKey]: name,
-        name,
-        activos,
-        enReparacion,
-        fueraDeServicio,
-        total,
-      });
-    }
+    rows.push({
+      [nameKey]: name,
+      name,
+      activos,
+      enReparacion,
+      fueraDeServicio,
+      total,
+    });
   }
 
   return rows;
@@ -265,13 +263,11 @@ function parseChalecosSection(matrix, sectionName, labelCol, valueCol, nameKey) 
 
     const cantidad = parseMovilesNumber(row[valueCol]) ?? 0;
 
-    if (cantidad > 0) {
-      rows.push({
-        [nameKey]: name,
-        name,
-        cantidad,
-      });
-    }
+    rows.push({
+      [nameKey]: name,
+      name,
+      cantidad,
+    });
   }
 
   return rows;

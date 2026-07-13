@@ -44,14 +44,18 @@ function MovilesView({ data }) {
     territoryMode === 'cuadrantes'
       ? data?.chalecosPorCuadrante ?? []
       : data?.chalecosPorDistrito ?? [],
+  );
+  const completedTerritoryRows = completeTerritorialRows(
+    territoryRows,
+    territoryMode,
   ).sort(compareTerritorialRows);
   const filteredZoneRows = useMemo(
     () => filterRows(zoneRows, search),
     [zoneRows, search],
   );
   const filteredTerritoryRows = useMemo(
-    () => filterRows(territoryRows, search),
-    [territoryRows, search],
+    () => filterRows(completedTerritoryRows, search),
+    [completedTerritoryRows, search],
   );
 
   return (
@@ -248,6 +252,50 @@ function filterRows(rows, search) {
   }
 
   return rows.filter((row) => normalizeKey(row.name).includes(normalizedSearch));
+}
+
+function completeTerritorialRows(rows, territoryMode) {
+  if (!['cuadrantes', 'distritos'].includes(territoryMode) || rows.length === 0) {
+    return rows;
+  }
+
+  const rowsByName = new Map(rows.map((row) => [normalizeKey(row.name), row]));
+  const maxNumber = rows.reduce((maxValue, row) => {
+    const match = normalizeKey(row.name).match(/\d+/);
+
+    return match ? Math.max(maxValue, Number(match[0])) : maxValue;
+  }, 0);
+  const completedRows = [];
+  const usedNames = new Set();
+
+  for (let number = 1; number <= maxNumber; number += 1) {
+    const key = String(number);
+    const row = rowsByName.get(key) ?? createEmptyTerritoryRow(key);
+
+    completedRows.push(row);
+    usedNames.add(normalizeKey(row.name));
+  }
+
+  rows.forEach((row) => {
+    const key = normalizeKey(row.name);
+
+    if (!usedNames.has(key)) {
+      completedRows.push(row);
+    }
+  });
+
+  return completedRows;
+}
+
+function createEmptyTerritoryRow(name) {
+  return {
+    name,
+    activos: 0,
+    enReparacion: 0,
+    fueraDeServicio: 0,
+    total: 0,
+    chalecos: 0,
+  };
 }
 
 function normalizeKey(value) {
