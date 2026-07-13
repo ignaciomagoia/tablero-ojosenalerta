@@ -165,13 +165,26 @@ function ClasificacionCharts({ resumenAnual, detalleMensual }) {
             />
           </>
         )}
-        height={Math.max(360, rankingRows.length * 30)}
+        height={getRankingChartHeight(rankingRows.length)}
       >
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={rankingRows} layout="vertical" margin={{ top: 12, right: 24, left: 90, bottom: 12 }}>
+          <BarChart
+            data={rankingRows}
+            layout="vertical"
+            margin={{ top: 12, right: 24, left: 150, bottom: 12 }}
+            barCategoryGap={8}
+          >
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis type="number" />
-            <YAxis dataKey="tipo" type="category" width={150} />
+            <YAxis
+              dataKey="tipo"
+              type="category"
+              width={220}
+              interval={0}
+              tickLine={false}
+              tick={{ fontSize: 12 }}
+              tickFormatter={formatRankingLabel}
+            />
             <Tooltip />
             <Legend />
             <Bar dataKey="cantidad" name={rankingYear} fill="#1f4e79" radius={[0, 8, 8, 0]} />
@@ -459,6 +472,16 @@ function getRankingRows(resumenAnual, year, limit) {
     .sort((leftRow, rightRow) => rightRow.cantidad - leftRow.cantidad);
 
   return limit === 'all' ? rows : rows.slice(0, limit);
+}
+
+function getRankingChartHeight(rowCount) {
+  return Math.max(420, rowCount * 42 + 80);
+}
+
+function formatRankingLabel(value) {
+  const text = String(value ?? '');
+
+  return text.length > 30 ? `${text.slice(0, 29)}...` : text;
 }
 
 function getComparisonRow(resumenAnual, type, years) {
