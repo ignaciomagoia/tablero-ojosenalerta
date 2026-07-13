@@ -150,6 +150,18 @@ h2 {
   text-transform: uppercase;
 }
 
+.summary-card .summary-dynamic-label {
+  display: none;
+}
+
+.summary-card:nth-child(3) > span:first-child {
+  display: none;
+}
+
+.summary-card:nth-child(3) .summary-dynamic-label {
+  display: block;
+}
+
 .summary-card strong {
   font-size: clamp(1.2rem, 2.4vw, 2rem);
   line-height: 1.1;
@@ -418,6 +430,16 @@ h2 {
   gap: 18px;
 }
 
+.personal-view {
+  display: grid;
+  gap: 18px;
+}
+
+.moviles-view {
+  display: grid;
+  gap: 18px;
+}
+
 .poblacion-summary-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -425,6 +447,18 @@ h2 {
 }
 
 .recursos-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 12px;
+}
+
+.personal-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 12px;
+}
+
+.moviles-summary-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   gap: 12px;
@@ -485,6 +519,187 @@ h2 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
+}
+
+.personal-status-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  gap: 18px;
+}
+
+.moviles-top-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.5fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.moviles-donut-card {
+  min-width: 0;
+}
+
+.moviles-donut-wrapper {
+  height: 240px;
+}
+
+.moviles-search-card label {
+  display: grid;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.moviles-search-card input {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #ffffff;
+  color: var(--ink);
+  padding: 12px 14px;
+  text-transform: none;
+}
+
+.moviles-row-list {
+  display: grid;
+  gap: 8px;
+  overflow-x: auto;
+}
+
+.moviles-row {
+  display: grid;
+  grid-template-columns: minmax(140px, 1fr) minmax(150px, 0.9fr) repeat(5, minmax(82px, 105px));
+  gap: 10px;
+  align-items: center;
+  min-width: 860px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #f8fbfd;
+  padding: 10px 12px;
+}
+
+.moviles-row-header {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-size: 0.76rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.moviles-row strong {
+  color: var(--accent-dark);
+}
+
+.moviles-row span:nth-child(n + 3) {
+  text-align: right;
+}
+
+.status-badge {
+  width: fit-content;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 900;
+  padding: 6px 10px;
+}
+
+.status-badge-success {
+  background: rgba(46, 125, 89, 0.12);
+  color: #1f6b48;
+}
+
+.status-badge-warning {
+  background: rgba(217, 130, 43, 0.14);
+  color: #915818;
+}
+
+.status-badge-danger {
+  background: rgba(182, 74, 74, 0.14);
+  color: #8a2f2f;
+}
+
+.personal-status-card {
+  min-width: 0;
+}
+
+.personal-status-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.personal-mini-card {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #f8fbfd;
+  padding: 14px;
+}
+
+.personal-mini-card span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.personal-mini-card strong {
+  color: var(--accent-dark);
+  font-size: clamp(1.25rem, 2vw, 1.8rem);
+}
+
+.personal-donut-wrapper {
+  height: 220px;
+}
+
+.personal-resumen-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.compact-list-card,
+.personal-detail-card {
+  min-width: 0;
+}
+
+.compact-row-list {
+  display: grid;
+  gap: 8px;
+}
+
+.compact-row {
+  display: grid;
+  grid-template-columns: minmax(140px, 1fr) repeat(3, minmax(80px, 110px));
+  gap: 10px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #f8fbfd;
+  padding: 10px 12px;
+}
+
+.compact-row-header {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.compact-row strong {
+  color: var(--accent-dark);
+}
+
+.compact-row span:not(:first-child) {
+  text-align: right;
+}
+
+.compact-row-total {
+  border-color: rgba(31, 78, 121, 0.32);
+  background: #eef6fb;
+  font-weight: 900;
 }
 
 .recursos-wide-card {
@@ -674,15 +889,29 @@ tr:last-child td {
   .summary-grid,
   .poblacion-summary-grid,
   .recursos-summary-grid,
+  .personal-summary-grid,
+  .moviles-summary-grid,
   .dashboard-grid,
   .annual-distribution-layout,
   .pie-chart-grid,
   .recursos-chart-grid,
+  .personal-status-grid,
+  .moviles-top-grid,
+  .personal-resumen-grid,
   .executive-filter-card {
     grid-template-columns: 1fr;
   }
 
   .executive-filter-card {
     display: grid;
+  }
+
+  .personal-status-cards,
+  .compact-row {
+    grid-template-columns: 1fr;
+  }
+
+  .compact-row span:not(:first-child) {
+    text-align: left;
   }
 }

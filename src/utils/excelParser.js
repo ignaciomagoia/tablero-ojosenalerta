@@ -29,10 +29,11 @@ import {
   parsePersonalSheet,
 } from '../parsers/personalParser';
 import {
-  RECURSOS_SHEET_NAME,
+  MOVILES_SHEET_NAME,
+  findMovilesSheet,
   isRecursosWorkbook,
-  parseRecursosWorkbook,
-} from '../parsers/recursosParser';
+  parseMovilesSheet,
+} from '../parsers/movilesParser';
 import { normalizeMatrix } from './sheetNormalizer';
 
 // Lee cada hoja como matriz cruda y la normaliza antes de usarla en React.
@@ -60,13 +61,19 @@ export function parseExcelFile(file) {
         });
 
         if (isRecursosWorkbook(file.name, rawSheets)) {
+          const movilesSheet = findMovilesSheet(rawSheets);
           const personalSheet = findPersonalSheet(rawSheets);
-          const parsedSheets = [
-            {
-              name: RECURSOS_SHEET_NAME,
-              data: parseRecursosWorkbook(rawSheets, file.name),
-            },
-          ];
+          const parsedSheets = [];
+
+          if (movilesSheet) {
+            parsedSheets.push({
+              name: MOVILES_SHEET_NAME,
+              data: parseMovilesSheet(movilesSheet.matrix, {
+                fileName: file.name,
+                sourceSheetName: movilesSheet.sheetName,
+              }),
+            });
+          }
 
           if (personalSheet) {
             parsedSheets.push({

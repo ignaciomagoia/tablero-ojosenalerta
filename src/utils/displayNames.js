@@ -35,11 +35,11 @@ export function getFriendlySheetName(sheetName) {
   }
 
   if (normalizedName.includes('RECURSOS OPERATIVOS') || normalizedName.includes('MOVILES')) {
-    return 'Móviles';
+    return 'Móviles y equipamiento';
   }
 
   if (normalizedName.includes('PERSONAL')) {
-    return 'Personal';
+    return 'Personal operativo';
   }
 
   return 'Sección';

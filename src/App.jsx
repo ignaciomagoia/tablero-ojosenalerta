@@ -4,9 +4,7 @@ import FileUploader from './components/FileUploader';
 import SheetChart from './components/SheetChart';
 import SheetSelector from './components/SheetSelector';
 import ClasificacionCharts from './charts/ClasificacionCharts';
-import PersonalCharts from './charts/PersonalCharts';
 import PoblacionCharts from './charts/PoblacionCharts';
-import RecursosOperativosCharts from './charts/RecursosOperativosCharts';
 import TipologiaCharts from './charts/TipologiaCharts';
 import tableroTotales from './data/tableroTotales.json';
 import visualizacionTablerosRecursos from './data/visualizacionTablerosRecursos.json';
@@ -18,7 +16,13 @@ import {
 import {
   PERSONAL_PARSER_VERSION,
   isPersonalSheetData,
+  normalizePersonalSheetData,
 } from './parsers/personalParser';
+import {
+  MOVILES_PARSER_VERSION,
+  isMovilesSheetData,
+  normalizeMovilesSheetData,
+} from './parsers/movilesParser';
 import {
   POBLACION_NUMERIC_COLUMNS,
   POBLACION_PARSER_VERSION,
@@ -26,14 +30,12 @@ import {
   isPoblacionSheet,
   parsePoblacionSheet,
 } from './parsers/poblacionParser';
-import {
-  RECURSOS_PARSER_VERSION,
-  isRecursosSheetData,
-} from './parsers/recursosParser';
 import { isTipologiaSheet } from './parsers/tipologiaParser';
 import { normalizeRows } from './utils/sheetNormalizer';
+import MovilesView from './views/MovilesView';
+import PersonalView from './views/PersonalView';
 
-const STORAGE_KEY = 'ojos-en-alerta-files-v5';
+const STORAGE_KEY = 'ojos-en-alerta-files-v9';
 const PRELOADED_FILES = createFilesCollection([
   tableroTotales,
   visualizacionTablerosRecursos,
@@ -61,10 +63,10 @@ function App() {
   const currentColumns = currentSheet?.columns || [];
   const isClasificacionSheetSelected =
     currentSheet?.type === 'clasificacion' || isClasificacionSheet(selectedSheetName);
+  const isMovilesSheetSelected = isMovilesSheetData(currentSheet);
   const isPersonalSheetSelected = isPersonalSheetData(currentSheet);
-  const isRecursosSheetSelected = isRecursosSheetData(currentSheet);
   const isTipologiaSheetSelected = isTipologiaSheet(selectedSheetName);
-  const dashboardSummary = getDashboardSummary(files);
+  const dashboardSummary = getDashboardSummary(files, selectedFile);
 
   useEffect(() => {
     if (!hasStaleSpecialSheets(files)) {
@@ -174,16 +176,17 @@ function App() {
 
       <section className="summary-grid" aria-label="Resumen del tablero">
         <article className="summary-card">
-          <span>Periodo de datos</span>
-          <strong>{dashboardSummary.dataPeriod}</strong>
+          <span>{dashboardSummary.cards[0]?.label ?? '-'}</span>
+          <strong>{dashboardSummary.cards[0]?.value ?? '-'}</strong>
         </article>
         <article className="summary-card">
-          <span>Total de alertas</span>
-          <strong>{dashboardSummary.totalAlertas}</strong>
+          <span>{dashboardSummary.cards[1]?.label ?? '-'}</span>
+          <strong>{dashboardSummary.cards[1]?.value ?? '-'}</strong>
         </article>
         <article className="summary-card">
           <span>Última actualización</span>
-          <strong>{dashboardSummary.latestPeriod}</strong>
+          <span className="summary-dynamic-label">{dashboardSummary.cards[2]?.label ?? '-'}</span>
+          <strong>{dashboardSummary.cards[2]?.value ?? '-'}</strong>
         </article>
       </section>
 
@@ -235,10 +238,10 @@ function App() {
 
         {selectedFile && (
           <div className="content-panel">
-            {isPersonalSheetSelected ? (
-              <PersonalCharts data={currentSheet} />
-            ) : isRecursosSheetSelected ? (
-              <RecursosOperativosCharts data={currentSheet} />
+            {isMovilesSheetSelected ? (
+              <MovilesView data={currentSheet} />
+            ) : isPersonalSheetSelected ? (
+              <PersonalView data={currentSheet} />
             ) : isClasificacionSheetSelected ? (
               <>
                 <ClasificacionCharts
@@ -351,12 +354,16 @@ function normalizeSheets(sheets) {
 }
 
 function normalizeSheetData(sheetData, sheetName = '') {
-  if (isPersonalSheetData(sheetData)) {
-    return sheetData;
+  if (
+    sheetData?.type === 'movilesEquipamiento' ||
+    sheetData?.type === 'recursosOperativos' ||
+    isMovilesSheetData(sheetData)
+  ) {
+    return normalizeMovilesSheetData(sheetData);
   }
 
-  if (isRecursosSheetData(sheetData)) {
-    return sheetData;
+  if (sheetData?.type === 'personalOperativo' || isPersonalSheetData(sheetData)) {
+    return normalizePersonalSheetData(sheetData);
   }
 
   if (isPoblacionSheet(sheetName)) {
@@ -406,8 +413,8 @@ function isValidFilesCollection(data) {
         !Array.isArray(file.sheets) &&
         Object.values(file.sheets).every(
           (sheet) =>
+            isMovilesSheetData(sheet) ||
             isPersonalSheetData(sheet) ||
-            isRecursosSheetData(sheet) ||
             isClasificacionSheetData(sheet) ||
             (Array.isArray(sheet?.rows) && Array.isArray(sheet?.columns)),
         ),
@@ -434,13 +441,25 @@ function hasStaleSpecialSheets(files) {
       ([sheetName, sheet]) =>
         (isTipologiaSheet(sheetName) &&
           sheet.metadata?.parser !== 'tipologiaParser') ||
+        isStaleMovilesSheet(sheet) ||
         isStalePersonalSheet(sheet) ||
-        isStaleRecursosSheet(sheet) ||
         isStaleClasificacionSheet(sheetName, sheet) ||
         isStalePoblacionSheet(sheetName, sheet) ||
         (isAlertasSheet(sheetName) &&
           sheet.metadata?.parser !== 'alertasParser'),
     ),
+  );
+}
+
+function isStaleMovilesSheet(sheet) {
+  if (sheet?.type !== 'movilesEquipamiento') {
+    return false;
+  }
+
+  return (
+    sheet?.metadata?.parser !== 'movilesParser' ||
+    sheet.metadata?.version !== MOVILES_PARSER_VERSION ||
+    !isMovilesSheetData(sheet)
   );
 }
 
@@ -453,18 +472,6 @@ function isStalePersonalSheet(sheet) {
     sheet?.metadata?.parser !== 'personalParser' ||
     sheet.metadata?.version !== PERSONAL_PARSER_VERSION ||
     !isPersonalSheetData(sheet)
-  );
-}
-
-function isStaleRecursosSheet(sheet) {
-  if (sheet?.type !== 'recursosOperativos') {
-    return false;
-  }
-
-  return (
-    sheet?.metadata?.parser !== 'recursosParser' ||
-    sheet.metadata?.version !== RECURSOS_PARSER_VERSION ||
-    !isRecursosSheetData(sheet)
   );
 }
 
@@ -584,7 +591,15 @@ function isPoblacionSheetData(sheetData) {
   );
 }
 
-function getDashboardSummary(files) {
+function getDashboardSummary(files, selectedFile) {
+  const resourceCards = getResourceDashboardCards(selectedFile);
+
+  if (resourceCards) {
+    return {
+      cards: resourceCards,
+    };
+  }
+
   const datedRows = getRowsWithPeriods(files);
   const sortedDatedRows = datedRows.sort((leftRow, rightRow) =>
     leftRow.fechaOrden.localeCompare(rightRow.fechaOrden),
@@ -593,13 +608,82 @@ function getDashboardSummary(files) {
   const lastRow = sortedDatedRows.at(-1);
   const totalAlertas = getTotalAlertas(files);
 
-  return {
-    latestPeriod: lastRow ? formatPeriodLabel(lastRow) : '-',
-    dataPeriod: firstRow && lastRow
+  const latestPeriod = lastRow ? formatPeriodLabel(lastRow) : '-';
+  const dataPeriod = firstRow && lastRow
       ? `${formatPeriodLabel(firstRow)} - ${formatPeriodLabel(lastRow)}`
-      : '-',
+      : '-';
+
+  return {
+    latestPeriod,
+    dataPeriod,
     totalAlertas: totalAlertas === null ? '-' : formatNumber(totalAlertas),
+    cards: [
+      {
+        label: 'Periodo de datos',
+        value: dataPeriod,
+      },
+      {
+        label: 'Total de alertas',
+        value: totalAlertas === null ? '-' : formatNumber(totalAlertas),
+      },
+      {
+        label: 'Última actualización',
+        value: latestPeriod,
+      },
+    ],
   };
+}
+
+function getResourceDashboardCards(selectedFile) {
+  const sheets = Object.values(selectedFile?.sheets ?? {});
+  const movilesSheet = sheets.find(isMovilesSheetData);
+  const personalSheet = sheets.find(isPersonalSheetData);
+
+  if (movilesSheet) {
+    return [
+      {
+        label: 'Móviles totales',
+        value: formatNumber(movilesSheet.resumen?.totalMoviles ?? 0),
+      },
+      {
+        label: 'Chalecos disponibles',
+        value: formatNumber(movilesSheet.resumen?.chalecos ?? 0),
+      },
+      {
+        label: 'Actualización recursos',
+        value: movilesSheet.fechaCargaLabel || '-',
+      },
+    ];
+  }
+
+  if (personalSheet) {
+    const administrativo = getPersonalGroupTotal(personalSheet.resumenGeneral?.administrativo);
+    const calle = getPersonalGroupTotal(personalSheet.resumenGeneral?.calle);
+
+    return [
+      {
+        label: 'Personal total',
+        value: formatNumber(administrativo + calle),
+      },
+      {
+        label: 'Personal administrativo',
+        value: formatNumber(administrativo),
+      },
+      {
+        label: 'Personal de calle',
+        value: formatNumber(calle),
+      },
+    ];
+  }
+
+  return null;
+}
+
+function getPersonalGroupTotal(group = {}) {
+  return ['jefes', 'subalternos', 'etac', 'civil'].reduce(
+    (total, key) => total + (Number(group[key]) || 0),
+    0,
+  );
 }
 
 function getRowsWithPeriods(files) {
