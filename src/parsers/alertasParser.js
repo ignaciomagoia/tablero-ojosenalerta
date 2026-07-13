@@ -28,7 +28,6 @@ export const ALERTAS_SHEET_COLUMNS = [
 export const ALERTAS_NUMERIC_COLUMNS = [
   'totalAlertas',
   'totalPositivos',
-  'porcentajePositivos',
   'aprehendidos',
   'elementosSecuestrados',
 ];

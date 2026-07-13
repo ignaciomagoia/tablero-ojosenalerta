@@ -1,3 +1,5 @@
+import { getFriendlyFileName } from '../utils/displayNames';
+
 function DataSourceSelector({ files, selectedFileName, onSelectFile }) {
   const fileList = Object.entries(files);
 
@@ -7,20 +9,20 @@ function DataSourceSelector({ files, selectedFileName, onSelectFile }) {
 
   return (
     <section className="card">
-      <h2>Archivos</h2>
+      <h2>Módulos</h2>
       <ul className="selector-list">
-        {fileList.map(([fileKey, file]) => {
-          const displayName = file.fileName || fileKey;
+        {fileList.map(([fileKey, file], index) => {
+          const displayName = getFriendlyFileName(file.fileName || fileKey, index);
 
           return (
-            <li key={displayName}>
+            <li key={fileKey}>
               <button
                 type="button"
-                className={displayName === selectedFileName ? 'active' : ''}
-                onClick={() => onSelectFile(displayName)}
+                className={fileKey === selectedFileName ? 'active' : ''}
+                onClick={() => onSelectFile(fileKey)}
               >
                 <strong>{displayName}</strong>
-                <span>{Object.keys(file.sheets).length} hojas</span>
+                <span>{Object.keys(file.sheets).length} secciones</span>
               </button>
             </li>
           );

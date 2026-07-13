@@ -254,24 +254,7 @@ function ClasificacionCharts({ resumenAnual, detalleMensual }) {
         {pieRows.length === 0 ? (
           <p className="muted">No hay datos para el año seleccionado.</p>
         ) : (
-          <ResponsiveContainer width="100%" height="100%">
-            <PieChart>
-              <Tooltip />
-              <Legend />
-              <Pie
-                data={pieRows}
-                dataKey="value"
-                nameKey="name"
-                innerRadius="48%"
-                outerRadius="76%"
-                paddingAngle={2}
-              >
-                {pieRows.map((entry, index) => (
-                  <Cell key={entry.name} fill={COLORS[index % COLORS.length]} />
-                ))}
-              </Pie>
-            </PieChart>
-          </ResponsiveContainer>
+          <AnnualDistributionChart rows={pieRows} />
         )}
       </ChartCard>
     </section>
@@ -334,6 +317,48 @@ function CompactTypeEditor({ values, options, onChange }) {
         <span className="control-hint">Ctrl + click para elegir varios.</span>
       </label>
     </details>
+  );
+}
+
+function AnnualDistributionChart({ rows }) {
+  return (
+    <div className="annual-distribution-layout">
+      <div className="annual-distribution-chart">
+        <ResponsiveContainer width="100%" height="100%">
+          <PieChart>
+            <Tooltip content={<ClasificacionPieTooltip />} />
+            <Pie
+              data={rows}
+              dataKey="value"
+              nameKey="name"
+              innerRadius="58%"
+              outerRadius="82%"
+              paddingAngle={2}
+              labelLine={false}
+            >
+              {rows.map((entry, index) => (
+                <Cell key={entry.name} fill={COLORS[index % COLORS.length]} />
+              ))}
+            </Pie>
+          </PieChart>
+        </ResponsiveContainer>
+      </div>
+
+      <ol className="annual-distribution-list">
+        {rows.map((row, index) => (
+          <li key={row.name}>
+            <span
+              className="distribution-color"
+              style={{ background: COLORS[index % COLORS.length] }}
+              aria-hidden="true"
+            />
+            <span className="distribution-name">{row.name}</span>
+            <strong>{formatPercentage(row.percentage)}</strong>
+            <span className="distribution-value">({formatNumber(row.value)})</span>
+          </li>
+        ))}
+      </ol>
+    </div>
   );
 }
 
@@ -468,14 +493,49 @@ function getPieRows(resumenAnual, year) {
     }))
     .filter((row) => row.value > 0)
     .sort((leftRow, rightRow) => rightRow.value - leftRow.value);
+  const totalAnual = sortedRows.reduce((total, row) => total + row.value, 0);
   const topRows = sortedRows.slice(0, 10);
   const otherValue = sortedRows
     .slice(10)
     .reduce((total, row) => total + row.value, 0);
-
-  return otherValue > 0
+  const rowsWithOthers = otherValue > 0
     ? [...topRows, { name: 'Otros', value: otherValue }]
     : topRows;
+
+  return rowsWithOthers.map((row) => ({
+    ...row,
+    totalAnual,
+    percentage: totalAnual > 0 ? (row.value / totalAnual) * 100 : 0,
+  }));
+}
+
+function ClasificacionPieTooltip({ active, payload }) {
+  if (!active || !payload?.length) {
+    return null;
+  }
+
+  const item = payload[0].payload;
+
+  return (
+    <div className="chart-tooltip">
+      <strong>{item.name}</strong>
+      <span>{formatPercentage(item.percentage)}</span>
+      <span>({formatNumber(item.value)})</span>
+    </div>
+  );
+}
+
+function formatPercentage(value) {
+  return `${Number(value).toLocaleString('es-AR', {
+    minimumFractionDigits: 1,
+    maximumFractionDigits: 1,
+  })}%`;
+}
+
+function formatNumber(value) {
+  return Number(value).toLocaleString('es-AR', {
+    maximumFractionDigits: 0,
+  });
 }
 
 function chartMargin() {

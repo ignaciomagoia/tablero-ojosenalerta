@@ -1,3 +1,5 @@
+import { getFriendlySheetName } from '../utils/displayNames';
+
 function SheetSelector({ sheets, selectedSheetName, onSelectSheet }) {
   if (sheets.length === 0) {
     return null;
@@ -5,7 +7,7 @@ function SheetSelector({ sheets, selectedSheetName, onSelectSheet }) {
 
   return (
     <section className="card">
-      <h2>Hojas</h2>
+      <h2>Secciones</h2>
       <ul className="selector-list">
         {sheets.map((sheetName) => (
           <li key={sheetName}>
@@ -14,7 +16,7 @@ function SheetSelector({ sheets, selectedSheetName, onSelectSheet }) {
               className={sheetName === selectedSheetName ? 'active' : ''}
               onClick={() => onSelectSheet(sheetName)}
             >
-              {sheetName}
+              {getFriendlySheetName(sheetName)}
             </button>
           </li>
         ))}

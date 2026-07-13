@@ -94,7 +94,7 @@ function App() {
       .filter((file) => Object.keys(file.sheets).length > 0);
 
     if (validFiles.length === 0) {
-      setError('El archivo no contiene hojas disponibles.');
+      setError('El archivo no contiene secciones disponibles.');
       return;
     }
 

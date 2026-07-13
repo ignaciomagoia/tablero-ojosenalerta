@@ -13,7 +13,7 @@ function FileUploader({ onFilesLoad, onError, isLoading, setIsLoading }) {
     );
 
     if (invalidFile) {
-      onError(`El archivo "${invalidFile.name}" no tiene extension .xlsx.`);
+      onError('Uno de los archivos seleccionados no tiene extension .xlsx.');
       event.target.value = '';
       return;
     }

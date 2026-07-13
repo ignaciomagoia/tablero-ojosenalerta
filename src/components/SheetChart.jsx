@@ -11,6 +11,7 @@ import {
   XAxis,
   YAxis,
 } from 'recharts';
+import { getFriendlySheetName } from '../utils/displayNames';
 import { parseNumericValue } from '../utils/sheetNormalizer';
 
 function SheetChart({ rows, columns, metadata, selectedSheetName }) {
@@ -68,7 +69,7 @@ function SheetChart({ rows, columns, metadata, selectedSheetName }) {
       <div className="table-heading">
         <div>
           <h2>Grafico</h2>
-          <p>{selectedSheetName}</p>
+          <p>{getFriendlySheetName(selectedSheetName)}</p>
         </div>
 
         <div className="chart-controls">
@@ -139,7 +140,9 @@ function getUsableNumericColumns(rows, metadata) {
   const generatedColumns = metadata?.generatedColumns ?? [];
 
   if (metadata?.parser === 'alertasParser') {
-    return detectedNumericColumns;
+    return detectedNumericColumns.filter(
+      (column) => column !== 'porcentajePositivos',
+    );
   }
 
   return detectedNumericColumns.filter((column) => {

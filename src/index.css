@@ -73,8 +73,8 @@ select {
 }
 
 .institutional-logo-slot-left img {
-  height: clamp(150px, 13vw, 190px);
-  max-width: min(100%, 330px);
+  height: clamp(170px, 14.5vw, 220px);
+  max-width: min(100%, 380px);
 }
 
 .institutional-logo-slot-right img {
@@ -503,6 +503,61 @@ h2 {
   min-height: 360px;
 }
 
+.annual-distribution-layout {
+  display: grid;
+  grid-template-columns: minmax(240px, 1fr) minmax(250px, 380px);
+  gap: 18px;
+  align-items: center;
+  height: 100%;
+}
+
+.annual-distribution-chart {
+  min-width: 0;
+  height: 100%;
+  min-height: 300px;
+}
+
+.annual-distribution-list {
+  display: grid;
+  gap: 8px;
+  max-height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+  list-style: none;
+}
+
+.annual-distribution-list li {
+  display: grid;
+  grid-template-columns: 12px minmax(0, 1fr) auto auto;
+  gap: 8px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #f8fbfd;
+  padding: 8px 10px;
+}
+
+.distribution-color {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+}
+
+.distribution-name {
+  overflow: hidden;
+  color: var(--accent-dark);
+  font-size: 0.84rem;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.distribution-value {
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
 .pie-chart-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -605,7 +660,7 @@ tr:last-child td {
   }
 
   .institutional-logo-slot-left img {
-    height: clamp(92px, 24vw, 118px);
+    height: clamp(108px, 28vw, 138px);
   }
 
   .institutional-logo-slot-right img {
@@ -620,6 +675,7 @@ tr:last-child td {
   .poblacion-summary-grid,
   .recursos-summary-grid,
   .dashboard-grid,
+  .annual-distribution-layout,
   .pie-chart-grid,
   .recursos-chart-grid,
   .executive-filter-card {
