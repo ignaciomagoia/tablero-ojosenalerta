@@ -1,6 +1,6 @@
 import { parseNumber } from './recursosParser.js';
 
-export const PERSONAL_PARSER_VERSION = 3;
+export const PERSONAL_PARSER_VERSION = 4;
 export const PERSONAL_SHEET_NAME = 'Personal';
 
 const MAIN_BLOCKS = [
@@ -78,6 +78,7 @@ export function parsePersonalSheet(matrix, context = {}) {
 }
 
 function parseDetailedPersonalSheet(matrix, context = {}) {
+  const overviewSummary = parseOverviewSummary(matrix);
   const administrativoRange = findMainBlockRange(matrix, 'PERSONAL ADMINISTRATIVO');
   const calleRange = findMainBlockRange(matrix, 'PERSONAL DE CALLE');
   const administrativoPorZona = administrativoRange
@@ -93,8 +94,9 @@ function parseDetailedPersonalSheet(matrix, context = {}) {
     ? parseDetailedSection(matrix, calleRange, 'DISTRITO', 'distrito')
     : [];
   const resumenGeneral = {
-    administrativo: getGroupSummary(administrativoPorZona),
-    calle: getGroupSummary(callePorZona),
+    administrativo: overviewSummary.administrativo ??
+      getGroupSummary(administrativoPorZona),
+    calle: overviewSummary.calle ?? getGroupSummary(callePorZona),
     administracion: findOptionalTotal(matrix, 'administracion'),
     puertaAPuerta: findOptionalTotal(matrix, 'puertaAPuerta'),
     comunicacion: findOptionalTotal(matrix, 'comunicacion'),
@@ -117,9 +119,7 @@ function parseDetailedPersonalSheet(matrix, context = {}) {
 }
 
 function findMainBlockRange(matrix, title) {
-  const start = matrix.findIndex((row) =>
-    row.some((cell) => normalizeText(cell).includes(title)),
-  );
+  const start = findMainBlockTitleIndex(matrix, title);
 
   if (start < 0) {
     return null;
@@ -127,19 +127,60 @@ function findMainBlockRange(matrix, title) {
 
   const end = matrix.findIndex((row, index) =>
     index > start &&
-    row.some((cell) => {
-      const normalizedCell = normalizeText(cell);
-
-      return MAIN_BLOCKS.some((blockTitle) =>
-        blockTitle !== title && normalizedCell.includes(blockTitle),
-      );
-    }),
+    MAIN_BLOCKS.some((blockTitle) =>
+      blockTitle !== title && isMainBlockTitleRow(row, blockTitle),
+    ),
   );
 
   return {
     start,
     end: end >= 0 ? end : matrix.length,
   };
+}
+
+function findMainBlockTitleIndex(matrix, title) {
+  return matrix.findIndex((row) => isMainBlockTitleRow(row, title));
+}
+
+function isMainBlockTitleRow(row = [], title) {
+  const hasTitle = row.some((cell) => normalizeText(cell).includes(title));
+
+  return hasTitle && !rowHasNumbers(row);
+}
+
+function parseOverviewSummary(matrix) {
+  return {
+    administrativo: parseOverviewGroup(matrix, 'PERSONAL ADMINISTRATIVO'),
+    calle: parseOverviewGroup(matrix, 'PERSONAL DE CALLE'),
+  };
+}
+
+function parseOverviewGroup(matrix, label) {
+  for (const row of matrix) {
+    const labelCol = row.findIndex((cell) =>
+      normalizeText(cell).includes(label),
+    );
+
+    if (labelCol === -1) {
+      continue;
+    }
+
+    const values = row
+      .slice(labelCol + 1)
+      .map(parsePersonalNumber)
+      .filter((value) => value !== null);
+
+    if (values.length >= 4) {
+      return {
+        jefes: values[0],
+        subalternos: values[1],
+        etac: values[2],
+        civil: values[3],
+      };
+    }
+  }
+
+  return null;
 }
 
 function parseDetailedSection(matrix, range, sectionName, nameKey) {
@@ -406,6 +447,10 @@ function hasMeaningfulPersonalData(sheetData) {
     sheetData.callePorCuadrante,
     sheetData.callePorDistrito,
   ].some((rows) => rows.length > 0);
+}
+
+function rowHasNumbers(row = []) {
+  return row.some((cell) => parsePersonalNumber(cell) !== null);
 }
 
 function isTechnicalLabel(normalizedName) {
