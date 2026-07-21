@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import {
   Cell,
   Legend,
@@ -9,25 +8,11 @@ import {
 } from 'recharts';
 
 const STATUS_COLORS = ['#2e7d59', '#b64a4a'];
-const DETAIL_OPTIONS = [
-  {
-    label: 'Cuadrantes',
-    value: 'cuadrantes',
-  },
-  {
-    label: 'Distritos',
-    value: 'distritos',
-  },
-];
 
 function PersonalView({ data }) {
-  const [detailMode, setDetailMode] = useState('cuadrantes');
   const resumen = data?.resumenGeneral ?? {};
   const totals = getPersonalTotals(data);
   const hasData = hasPersonalData(data, totals);
-  const detailRows = detailMode === 'cuadrantes'
-    ? data?.callePorCuadrante ?? []
-    : data?.callePorDistrito ?? [];
 
   if (!hasData) {
     return (
@@ -101,35 +86,6 @@ function PersonalView({ data }) {
           title="Personal administrativo por zona"
           rows={data?.administrativoPorZona ?? []}
         />
-        <CompactRowsCard
-          title="Personal de calle por zona"
-          rows={data?.callePorZona ?? []}
-        />
-      </section>
-
-      <section className="card personal-detail-card">
-        <div className="table-heading">
-          <div>
-            <h2>Personal de calle por {detailMode === 'cuadrantes' ? 'cuadrante' : 'distrito'}</h2>
-            <p>Totales presentes, ausentes y generales.</p>
-          </div>
-          <div className="chart-controls">
-            <label>
-              Ver
-              <select
-                value={detailMode}
-                onChange={(event) => setDetailMode(event.target.value)}
-              >
-                {DETAIL_OPTIONS.map((option) => (
-                  <option key={option.value} value={option.value}>
-                    {option.label}
-                  </option>
-                ))}
-              </select>
-            </label>
-          </div>
-        </div>
-        <CompactRows rows={detailRows} emptyMessage="No hay datos disponibles." />
       </section>
     </section>
   );
