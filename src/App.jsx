@@ -43,7 +43,7 @@ const PRELOADED_FILES = createFilesCollection([
 
 function App() {
   const isAdmin = window.location.pathname === '/admin';
-  const [files, setFiles] = useState(getInitialFiles);
+  const [files, setFiles] = useState(() => getInitialFiles(isAdmin));
   const firstFileName = getFirstFileName(files);
   const [selectedFileName, setSelectedFileName] = useState(firstFileName);
   const [selectedSheetName, setSelectedSheetName] = useState(
@@ -268,7 +268,11 @@ function App() {
   );
 }
 
-function getInitialFiles() {
+function getInitialFiles(isAdmin = false) {
+  if (!isAdmin) {
+    return PRELOADED_FILES;
+  }
+
   const savedData = localStorage.getItem(STORAGE_KEY);
 
   if (!savedData) {

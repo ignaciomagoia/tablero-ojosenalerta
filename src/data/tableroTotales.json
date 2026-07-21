@@ -1,6 +1,6 @@
 {
   "id": "tablero-totales",
-  "fileName": "Tablero totales .xlsx",
+  "fileName": "Tablero totales  (1).xlsx",
   "sheets": {
     "Alertas - Positivos - Aprehendi": {
       "columns": [
@@ -20,8 +20,8 @@
           "totalAlertas": 51,
           "totalPositivos": 3,
           "porcentajePositivos": 5.88,
-          "aprehendidos": null,
-          "elementosSecuestrados": null,
+          "aprehendidos": 2,
+          "elementosSecuestrados": 2,
           "fechaOrden": "2024-10"
         },
         {
@@ -30,8 +30,8 @@
           "totalAlertas": 91,
           "totalPositivos": 2,
           "porcentajePositivos": 2.2,
-          "aprehendidos": null,
-          "elementosSecuestrados": null,
+          "aprehendidos": 3,
+          "elementosSecuestrados": 1,
           "fechaOrden": "2024-11"
         },
         {
@@ -40,8 +40,8 @@
           "totalAlertas": 74,
           "totalPositivos": 6,
           "porcentajePositivos": 8.11,
-          "aprehendidos": null,
-          "elementosSecuestrados": null,
+          "aprehendidos": 3,
+          "elementosSecuestrados": 2,
           "fechaOrden": "2024-12"
         },
         {
@@ -50,8 +50,8 @@
           "totalAlertas": 86,
           "totalPositivos": 4,
           "porcentajePositivos": 4.65,
-          "aprehendidos": null,
-          "elementosSecuestrados": null,
+          "aprehendidos": 2,
+          "elementosSecuestrados": 1,
           "fechaOrden": "2025-01"
         },
         {
@@ -60,8 +60,8 @@
           "totalAlertas": 474,
           "totalPositivos": 18,
           "porcentajePositivos": 3.8,
-          "aprehendidos": null,
-          "elementosSecuestrados": null,
+          "aprehendidos": 16,
+          "elementosSecuestrados": 2,
           "fechaOrden": "2025-02"
         },
         {
@@ -70,8 +70,8 @@
           "totalAlertas": 1332,
           "totalPositivos": 83,
           "porcentajePositivos": 6.23,
-          "aprehendidos": null,
-          "elementosSecuestrados": null,
+          "aprehendidos": 24,
+          "elementosSecuestrados": 4,
           "fechaOrden": "2025-03"
         },
         {
@@ -80,8 +80,8 @@
           "totalAlertas": 946,
           "totalPositivos": 163,
           "porcentajePositivos": 17.23,
-          "aprehendidos": null,
-          "elementosSecuestrados": null,
+          "aprehendidos": 57,
+          "elementosSecuestrados": 5,
           "fechaOrden": "2025-04"
         },
         {
@@ -90,8 +90,8 @@
           "totalAlertas": 1355,
           "totalPositivos": 150,
           "porcentajePositivos": 11.07,
-          "aprehendidos": null,
-          "elementosSecuestrados": null,
+          "aprehendidos": 57,
+          "elementosSecuestrados": 13,
           "fechaOrden": "2025-05"
         },
         {
@@ -100,8 +100,8 @@
           "totalAlertas": 1767,
           "totalPositivos": 228,
           "porcentajePositivos": 12.9,
-          "aprehendidos": null,
-          "elementosSecuestrados": null,
+          "aprehendidos": 68,
+          "elementosSecuestrados": 6,
           "fechaOrden": "2025-06"
         },
         {
@@ -110,8 +110,8 @@
           "totalAlertas": 2219,
           "totalPositivos": 236,
           "porcentajePositivos": 10.64,
-          "aprehendidos": null,
-          "elementosSecuestrados": null,
+          "aprehendidos": 63,
+          "elementosSecuestrados": 6,
           "fechaOrden": "2025-07"
         },
         {
@@ -120,8 +120,8 @@
           "totalAlertas": 3409,
           "totalPositivos": 321,
           "porcentajePositivos": 9.42,
-          "aprehendidos": null,
-          "elementosSecuestrados": null,
+          "aprehendidos": 98,
+          "elementosSecuestrados": 3,
           "fechaOrden": "2025-08"
         },
         {
@@ -130,8 +130,8 @@
           "totalAlertas": 3686,
           "totalPositivos": 339,
           "porcentajePositivos": 9.2,
-          "aprehendidos": null,
-          "elementosSecuestrados": null,
+          "aprehendidos": 40,
+          "elementosSecuestrados": 119,
           "fechaOrden": "2025-09"
         },
         {
@@ -140,8 +140,8 @@
           "totalAlertas": 4382,
           "totalPositivos": 318,
           "porcentajePositivos": 7.26,
-          "aprehendidos": null,
-          "elementosSecuestrados": null,
+          "aprehendidos": 51,
+          "elementosSecuestrados": 246,
           "fechaOrden": "2025-10"
         },
         {
@@ -150,8 +150,8 @@
           "totalAlertas": 5074,
           "totalPositivos": 297,
           "porcentajePositivos": 5.85,
-          "aprehendidos": null,
-          "elementosSecuestrados": null,
+          "aprehendidos": 150,
+          "elementosSecuestrados": 423,
           "fechaOrden": "2025-11"
         },
         {
@@ -160,8 +160,8 @@
           "totalAlertas": 5387,
           "totalPositivos": 254,
           "porcentajePositivos": 4.72,
-          "aprehendidos": null,
-          "elementosSecuestrados": null,
+          "aprehendidos": 137,
+          "elementosSecuestrados": 519,
           "fechaOrden": "2025-12"
         },
         {
@@ -233,7 +233,6 @@
         "detectedNumericColumns": [
           "totalAlertas",
           "totalPositivos",
-          "porcentajePositivos",
           "aprehendidos",
           "elementosSecuestrados"
         ],
