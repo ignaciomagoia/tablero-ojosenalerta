@@ -1,6 +1,6 @@
 import { parseNumber } from './recursosParser.js';
 
-export const PERSONAL_PARSER_VERSION = 4;
+export const PERSONAL_PARSER_VERSION = 5;
 export const PERSONAL_SHEET_NAME = 'Personal';
 
 const MAIN_BLOCKS = [
@@ -229,9 +229,7 @@ function parseDetailedSection(matrix, range, sectionName, nameKey) {
     ]);
     parsedRow.total = parsedRow.presentes + parsedRow.ausentes;
 
-    if (parsedRow.total > 0 || parsedRow.isTotal) {
-      rows.push(parsedRow);
-    }
+    rows.push(parsedRow);
   }
 
   return rows;

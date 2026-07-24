@@ -39,11 +39,27 @@ const TOP_OPTIONS = [
   { label: 'Top 20', value: 20 },
   { label: 'Todos', value: 'all' },
 ];
+const PERIOD_OPTIONS = [
+  { label: 'Año completo', value: 'all' },
+  { label: 'Enero', value: 'Enero' },
+  { label: 'Febrero', value: 'Febrero' },
+  { label: 'Marzo', value: 'Marzo' },
+  { label: 'Abril', value: 'Abril' },
+  { label: 'Mayo', value: 'Mayo' },
+  { label: 'Junio', value: 'Junio' },
+  { label: 'Julio', value: 'Julio' },
+  { label: 'Agosto', value: 'Agosto' },
+  { label: 'Septiembre', value: 'Septiembre' },
+  { label: 'Octubre', value: 'Octubre' },
+  { label: 'Noviembre', value: 'Noviembre' },
+  { label: 'Diciembre', value: 'Diciembre' },
+];
 
 function ClasificacionCharts({ resumenAnual, detalleMensual }) {
-  const years = getAvailableYears(resumenAnual);
+  const years = getAvailableYears(resumenAnual, detalleMensual);
   const types = getAvailableTypes(resumenAnual, detalleMensual);
   const [rankingYear, setRankingYear] = useState(years.at(-1) ?? '');
+  const [rankingPeriod, setRankingPeriod] = useState('all');
   const [rankingLimit, setRankingLimit] = useState(10);
   const [comparisonType, setComparisonType] = useState(types[0] ?? '');
   const [monthlyType, setMonthlyType] = useState(types[0] ?? '');
@@ -51,6 +67,7 @@ function ClasificacionCharts({ resumenAnual, detalleMensual }) {
     PREFERRED_MONTHLY_TYPES,
   );
   const [pieYear, setPieYear] = useState(years.at(-1) ?? '');
+  const [piePeriod, setPiePeriod] = useState('all');
 
   useEffect(() => {
     setRankingYear((currentYear) =>
@@ -91,7 +108,15 @@ function ClasificacionCharts({ resumenAnual, detalleMensual }) {
     );
   }
 
-  const rankingRows = getRankingRows(resumenAnual, rankingYear, rankingLimit);
+  const rankingPeriodLabel = getPeriodLabel(rankingYear, rankingPeriod);
+  const piePeriodLabel = getPeriodLabel(pieYear, piePeriod);
+  const rankingRows = getRankingRows(
+    resumenAnual,
+    detalleMensual,
+    rankingYear,
+    rankingPeriod,
+    rankingLimit,
+  );
   const comparisonRows = comparisonType
     ? [getComparisonRow(resumenAnual, comparisonType, years)]
     : [];
@@ -104,7 +129,12 @@ function ClasificacionCharts({ resumenAnual, detalleMensual }) {
     detalleMensual,
     visibleMonthlyTypes,
   );
-  const pieRows = getPieRows(resumenAnual, pieYear);
+  const pieRows = getPieRows(
+    resumenAnual,
+    detalleMensual,
+    pieYear,
+    piePeriod,
+  );
 
   return (
     <section className="clasificacion-charts">
@@ -148,7 +178,7 @@ function ClasificacionCharts({ resumenAnual, detalleMensual }) {
       </ChartCard>
 
       <ChartCard
-        title="Ranking de tipos de alerta por año"
+        title={`Ranking de tipos de alerta - ${rankingPeriodLabel}`}
         controls={(
           <>
             <SelectControl
@@ -156,6 +186,12 @@ function ClasificacionCharts({ resumenAnual, detalleMensual }) {
               value={rankingYear}
               onChange={setRankingYear}
               options={years.map((year) => ({ label: year, value: year }))}
+            />
+            <SelectControl
+              label="Mes"
+              value={rankingPeriod}
+              onChange={setRankingPeriod}
+              options={PERIOD_OPTIONS}
             />
             <SelectControl
               label="Cantidad"
@@ -167,29 +203,33 @@ function ClasificacionCharts({ resumenAnual, detalleMensual }) {
         )}
         height={getRankingChartHeight(rankingRows.length)}
       >
-        <ResponsiveContainer width="100%" height="100%">
-          <BarChart
-            data={rankingRows}
-            layout="vertical"
-            margin={{ top: 12, right: 24, left: 150, bottom: 12 }}
-            barCategoryGap={8}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis type="number" />
-            <YAxis
-              dataKey="tipo"
-              type="category"
-              width={220}
-              interval={0}
-              tickLine={false}
-              tick={{ fontSize: 12 }}
-              tickFormatter={formatRankingLabel}
-            />
-            <Tooltip />
-            <Legend />
-            <Bar dataKey="cantidad" name={rankingYear} fill="#1f4e79" radius={[0, 8, 8, 0]} />
-          </BarChart>
-        </ResponsiveContainer>
+        {rankingRows.length === 0 ? (
+          <p className="muted">No hay datos para el periodo seleccionado.</p>
+        ) : (
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart
+              data={rankingRows}
+              layout="vertical"
+              margin={{ top: 12, right: 24, left: 150, bottom: 12 }}
+              barCategoryGap={8}
+            >
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis type="number" />
+              <YAxis
+                dataKey="tipo"
+                type="category"
+                width={220}
+                interval={0}
+                tickLine={false}
+                tick={{ fontSize: 12 }}
+                tickFormatter={formatRankingLabel}
+              />
+              <Tooltip />
+              <Legend />
+              <Bar dataKey="cantidad" name={rankingPeriodLabel} fill="#1f4e79" radius={[0, 8, 8, 0]} />
+            </BarChart>
+          </ResponsiveContainer>
+        )}
       </ChartCard>
 
       <ChartCard
@@ -254,18 +294,26 @@ function ClasificacionCharts({ resumenAnual, detalleMensual }) {
       </ChartCard>
 
       <ChartCard
-        title="Distribución anual de tipos"
+        title={`Distribución de clasificaciones - ${piePeriodLabel}`}
         controls={(
-          <SelectControl
-            label="Año"
-            value={pieYear}
-            onChange={setPieYear}
-            options={years.map((year) => ({ label: year, value: year }))}
-          />
+          <>
+            <SelectControl
+              label="Año"
+              value={pieYear}
+              onChange={setPieYear}
+              options={years.map((year) => ({ label: year, value: year }))}
+            />
+            <SelectControl
+              label="Mes"
+              value={piePeriod}
+              onChange={setPiePeriod}
+              options={PERIOD_OPTIONS}
+            />
+          </>
         )}
       >
         {pieRows.length === 0 ? (
-          <p className="muted">No hay datos para el año seleccionado.</p>
+          <p className="muted">No hay datos para el periodo seleccionado.</p>
         ) : (
           <AnnualDistributionChart rows={pieRows} />
         )}
@@ -375,12 +423,17 @@ function AnnualDistributionChart({ rows }) {
   );
 }
 
-function getAvailableYears(resumenAnual) {
+function getAvailableYears(resumenAnual, detalleMensual) {
   return Array.from(
     new Set(
-      resumenAnual.flatMap((row) =>
-        Object.keys(row).filter((key) => /^(19|20)\d{2}$/.test(key)),
-      ),
+      [
+        ...resumenAnual.flatMap((row) =>
+          Object.keys(row).filter((key) => /^(19|20)\d{2}$/.test(key)),
+        ),
+        ...detalleMensual
+          .map((row) => String(row.anio))
+          .filter((year) => /^(19|20)\d{2}$/.test(year)),
+      ],
     ),
   ).sort();
 }
@@ -462,12 +515,8 @@ function hashText(text) {
     .reduce((hash, character) => hash + character.charCodeAt(0), 0);
 }
 
-function getRankingRows(resumenAnual, year, limit) {
-  const rows = resumenAnual
-    .map((row) => ({
-      tipo: row.tipo,
-      cantidad: Number(row[year]) || 0,
-    }))
+function getRankingRows(resumenAnual, detalleMensual, year, period, limit) {
+  const rows = getPeriodTypeTotals(resumenAnual, detalleMensual, year, period)
     .filter((row) => row.cantidad > 0)
     .sort((leftRow, rightRow) => rightRow.cantidad - leftRow.cantidad);
 
@@ -508,15 +557,20 @@ function getMonthlyRows(detalleMensual, type) {
     }));
 }
 
-function getPieRows(resumenAnual, year) {
-  const sortedRows = resumenAnual
+function getPieRows(resumenAnual, detalleMensual, year, period) {
+  const sortedRows = getPeriodTypeTotals(
+    resumenAnual,
+    detalleMensual,
+    year,
+    period,
+  )
     .map((row) => ({
       name: row.tipo,
-      value: Number(row[year]) || 0,
+      value: row.cantidad,
     }))
     .filter((row) => row.value > 0)
     .sort((leftRow, rightRow) => rightRow.value - leftRow.value);
-  const totalAnual = sortedRows.reduce((total, row) => total + row.value, 0);
+  const totalPeriodo = sortedRows.reduce((total, row) => total + row.value, 0);
   const topRows = sortedRows.slice(0, 10);
   const otherValue = sortedRows
     .slice(10)
@@ -527,9 +581,45 @@ function getPieRows(resumenAnual, year) {
 
   return rowsWithOthers.map((row) => ({
     ...row,
-    totalAnual,
-    percentage: totalAnual > 0 ? (row.value / totalAnual) * 100 : 0,
+    totalPeriodo,
+    percentage: totalPeriodo > 0 ? (row.value / totalPeriodo) * 100 : 0,
   }));
+}
+
+function getPeriodTypeTotals(resumenAnual, detalleMensual, year, period) {
+  if (!year) {
+    return [];
+  }
+
+  if (period === 'all') {
+    return resumenAnual.map((row) => ({
+      tipo: row.tipo,
+      cantidad: Number(row[year]) || 0,
+    }));
+  }
+
+  const totalsByType = detalleMensual.reduce((totals, row) => {
+    if (String(row.anio) !== String(year) || row.mes !== period) {
+      return totals;
+    }
+
+    totals[row.tipo] = (totals[row.tipo] ?? 0) + (Number(row.cantidad) || 0);
+
+    return totals;
+  }, {});
+
+  return Object.entries(totalsByType).map(([tipo, cantidad]) => ({
+    tipo,
+    cantidad,
+  }));
+}
+
+function getPeriodLabel(year, period) {
+  if (!year) {
+    return 'Sin periodo';
+  }
+
+  return period === 'all' ? `Año ${year}` : `${period} ${year}`;
 }
 
 function ClasificacionPieTooltip({ active, payload }) {

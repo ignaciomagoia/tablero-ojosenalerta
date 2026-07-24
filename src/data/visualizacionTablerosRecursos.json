@@ -641,6 +641,22 @@
           "total": 852
         },
         {
+          "zona": "DIRECCIÓN MONITOREO CORDOBESES EN ALERTA",
+          "name": "DIRECCIÓN MONITOREO CORDOBESES EN ALERTA",
+          "isTotal": false,
+          "jefesAusentes": 0,
+          "jefesPresentes": 0,
+          "subalternosAusentes": 0,
+          "subalternosPresentes": 0,
+          "etacAusentes": 0,
+          "etacPresentes": 0,
+          "civilAusentes": 0,
+          "civilPresentes": 0,
+          "presentes": 0,
+          "ausentes": 0,
+          "total": 0
+        },
+        {
           "zona": "TOTAL",
           "name": "TOTAL",
           "isTotal": true,
@@ -804,6 +820,22 @@
         }
       ],
       "callePorDistrito": [
+        {
+          "distrito": "1",
+          "name": "1",
+          "isTotal": false,
+          "jefesAusentes": 0,
+          "jefesPresentes": 0,
+          "subalternosAusentes": 0,
+          "subalternosPresentes": 0,
+          "etacAusentes": 0,
+          "etacPresentes": 0,
+          "civilAusentes": 0,
+          "civilPresentes": 0,
+          "presentes": 0,
+          "ausentes": 0,
+          "total": 0
+        },
         {
           "distrito": "2",
           "name": "2",
@@ -1029,6 +1061,54 @@
           "total": 236
         },
         {
+          "distrito": "16",
+          "name": "16",
+          "isTotal": false,
+          "jefesAusentes": 0,
+          "jefesPresentes": 0,
+          "subalternosAusentes": 0,
+          "subalternosPresentes": 0,
+          "etacAusentes": 0,
+          "etacPresentes": 0,
+          "civilAusentes": 0,
+          "civilPresentes": 0,
+          "presentes": 0,
+          "ausentes": 0,
+          "total": 0
+        },
+        {
+          "distrito": "17",
+          "name": "17",
+          "isTotal": false,
+          "jefesAusentes": 0,
+          "jefesPresentes": 0,
+          "subalternosAusentes": 0,
+          "subalternosPresentes": 0,
+          "etacAusentes": 0,
+          "etacPresentes": 0,
+          "civilAusentes": 0,
+          "civilPresentes": 0,
+          "presentes": 0,
+          "ausentes": 0,
+          "total": 0
+        },
+        {
+          "distrito": "18",
+          "name": "18",
+          "isTotal": false,
+          "jefesAusentes": 0,
+          "jefesPresentes": 0,
+          "subalternosAusentes": 0,
+          "subalternosPresentes": 0,
+          "etacAusentes": 0,
+          "etacPresentes": 0,
+          "civilAusentes": 0,
+          "civilPresentes": 0,
+          "presentes": 0,
+          "ausentes": 0,
+          "total": 0
+        },
+        {
           "distrito": "19",
           "name": "19",
           "isTotal": false,
@@ -1061,6 +1141,22 @@
           "total": 62
         },
         {
+          "distrito": "21",
+          "name": "21",
+          "isTotal": false,
+          "jefesAusentes": 0,
+          "jefesPresentes": 0,
+          "subalternosAusentes": 0,
+          "subalternosPresentes": 0,
+          "etacAusentes": 0,
+          "etacPresentes": 0,
+          "civilAusentes": 0,
+          "civilPresentes": 0,
+          "presentes": 0,
+          "ausentes": 0,
+          "total": 0
+        },
+        {
           "distrito": "22",
           "name": "22",
           "isTotal": false,
@@ -1075,6 +1171,38 @@
           "presentes": 20,
           "ausentes": 0,
           "total": 20
+        },
+        {
+          "distrito": "23",
+          "name": "23",
+          "isTotal": false,
+          "jefesAusentes": 0,
+          "jefesPresentes": 0,
+          "subalternosAusentes": 0,
+          "subalternosPresentes": 0,
+          "etacAusentes": 0,
+          "etacPresentes": 0,
+          "civilAusentes": 0,
+          "civilPresentes": 0,
+          "presentes": 0,
+          "ausentes": 0,
+          "total": 0
+        },
+        {
+          "distrito": "24",
+          "name": "24",
+          "isTotal": false,
+          "jefesAusentes": 0,
+          "jefesPresentes": 0,
+          "subalternosAusentes": 0,
+          "subalternosPresentes": 0,
+          "etacAusentes": 0,
+          "etacPresentes": 0,
+          "civilAusentes": 0,
+          "civilPresentes": 0,
+          "presentes": 0,
+          "ausentes": 0,
+          "total": 0
         },
         {
           "distrito": "24 bis",
@@ -1111,7 +1239,7 @@
       ],
       "metadata": {
         "parser": "personalParser",
-        "version": 4
+        "version": 5
       }
     }
   }

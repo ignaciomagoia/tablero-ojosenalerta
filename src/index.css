@@ -542,6 +542,77 @@ h2 {
   height: 240px;
 }
 
+.personal-header-card {
+  display: flex;
+  align-items: center;
+  min-height: 104px;
+}
+
+.personal-header-card h2 {
+  margin-bottom: 6px;
+}
+
+.personal-street-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+  gap: 18px;
+}
+
+.personal-zone-card {
+  display: grid;
+  gap: 18px;
+  min-width: 0;
+}
+
+.personal-zone-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 14px;
+}
+
+.personal-zone-heading h3 {
+  margin: 0;
+  color: var(--accent-dark);
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  line-height: 1.25;
+}
+
+.personal-zone-heading strong {
+  color: var(--accent-dark);
+  font-size: clamp(1.45rem, 2.2vw, 2rem);
+  line-height: 1;
+}
+
+.personal-zone-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.personal-zone-metric {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #f8fbfd;
+  padding: 12px;
+}
+
+.personal-zone-metric span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.personal-zone-metric strong {
+  color: var(--ink);
+  font-size: 1.2rem;
+}
+
 .moviles-search-card label {
   display: grid;
   gap: 8px;
