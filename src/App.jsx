@@ -32,6 +32,7 @@ import {
 } from './parsers/poblacionParser';
 import { isTipologiaSheet } from './parsers/tipologiaParser';
 import { normalizeRows } from './utils/sheetNormalizer';
+import HomePage from './views/HomePage';
 import MovilesView from './views/MovilesView';
 import PersonalView from './views/PersonalView';
 
@@ -42,7 +43,16 @@ const PRELOADED_FILES = createFilesCollection([
 ]);
 
 function App() {
-  const isAdmin = window.location.pathname === '/admin';
+  const routePath = getRoutePath();
+
+  if (routePath === '/') {
+    return <HomePage />;
+  }
+
+  return <DashboardApp isAdmin={routePath === '/admin'} />;
+}
+
+function DashboardApp({ isAdmin }) {
   const [files, setFiles] = useState(() => getInitialFiles(isAdmin));
   const firstFileName = getFirstFileName(files);
   const [selectedFileName, setSelectedFileName] = useState(firstFileName);
@@ -167,11 +177,17 @@ function App() {
 
       <header className="app-header">
         <h1>Tablero de Gestión</h1>
-        {isAdmin && (
-          <a className="secondary-button admin-back-link" href="/">
-            Volver al tablero
-          </a>
-        )}
+        <div className="header-actions">
+          {isAdmin ? (
+            <a className="secondary-button admin-back-link" href="/dashboard">
+              Volver al tablero
+            </a>
+          ) : (
+            <a className="secondary-button admin-back-link" href="/">
+              Volver al inicio
+            </a>
+          )}
+        </div>
       </header>
 
       <section className="summary-grid" aria-label="Resumen del tablero">
@@ -266,6 +282,16 @@ function App() {
       </div>
     </main>
   );
+}
+
+function getRoutePath() {
+  const pathname = window.location.pathname.replace(/\/+$/, '') || '/';
+
+  if (pathname === '/dashboard' || pathname === '/admin') {
+    return pathname;
+  }
+
+  return '/';
 }
 
 function getInitialFiles(isAdmin = false) {

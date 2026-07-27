@@ -41,6 +41,157 @@ select {
   padding: 16px 16px 48px;
 }
 
+.home-shell {
+  display: grid;
+  gap: 24px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 16px clamp(16px, 3vw, 36px) 48px;
+}
+
+.home-banner {
+  width: 100%;
+}
+
+.home-banner-image {
+  display: block;
+  width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.home-banner-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(24px, 8vw, 96px);
+  min-height: 180px;
+  padding: 0 4vw;
+}
+
+.home-banner-fallback img {
+  display: block;
+  width: auto;
+  object-fit: contain;
+}
+
+.home-banner-fallback img:first-child {
+  height: clamp(130px, 16vw, 190px);
+}
+
+.home-banner-fallback img:last-child {
+  height: clamp(52px, 6vw, 76px);
+  max-width: min(46vw, 420px);
+}
+
+.home-heading {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.access-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.access-card {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 22px;
+  min-height: 280px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--card);
+  box-shadow: 0 14px 34px rgba(31, 78, 121, 0.08);
+  padding: 26px;
+}
+
+.access-card-disabled {
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.access-card-icon {
+  display: grid;
+  width: 58px;
+  height: 58px;
+  place-items: center;
+  border-radius: 18px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.access-card-icon svg {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+}
+
+.access-status {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 14px;
+  border-radius: 999px;
+  background: rgba(98, 112, 132, 0.12);
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  padding: 7px 10px;
+  text-transform: uppercase;
+}
+
+.access-status.active {
+  background: rgba(46, 125, 89, 0.12);
+  color: var(--success);
+}
+
+.access-card h2 {
+  margin-bottom: 10px;
+  color: var(--accent-dark);
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+}
+
+.access-card p {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.access-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-width: 128px;
+  border: 1px solid var(--accent);
+  border-radius: 14px;
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 900;
+  padding: 11px 16px;
+  text-decoration: none;
+}
+
+.access-button:hover {
+  background: var(--accent-dark);
+}
+
+.access-button-disabled {
+  border-color: var(--line);
+  background: #eef3f8;
+  color: var(--muted);
+}
+
+.access-button-disabled:hover {
+  background: #eef3f8;
+}
+
 .institutional-header {
   display: flex;
   align-items: center;
@@ -113,6 +264,12 @@ h2 {
 .admin-back-link {
   display: inline-block;
   text-decoration: none;
+}
+
+.header-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
 }
 
 .card {
@@ -929,6 +1086,36 @@ tr:last-child td {
   .app-shell {
     width: 100%;
     padding: 12px 12px 28px;
+  }
+
+  .home-shell {
+    gap: 18px;
+    padding: 12px 12px 32px;
+  }
+
+  .home-banner-image {
+    max-height: 160px;
+  }
+
+  .home-banner-fallback {
+    min-height: 140px;
+    padding: 0;
+  }
+
+  .home-banner-fallback img:first-child {
+    height: clamp(96px, 30vw, 130px);
+  }
+
+  .home-banner-fallback img:last-child {
+    height: clamp(34px, 10vw, 50px);
+  }
+
+  .access-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .access-card {
+    min-height: auto;
   }
 
   .app-header,
