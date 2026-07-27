@@ -1,6 +1,6 @@
 {
   "id": "tablero-totales",
-  "fileName": "Tablero totales  (1).xlsx",
+  "fileName": "Tablero totales  (2).xlsx",
   "sheets": {
     "Alertas - Positivos - Aprehendi": {
       "columns": [
@@ -5537,6 +5537,16 @@
           "adheridos": 170040,
           "porcentajePoblacionObjetivoAdherida": 44.65,
           "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "cantidadBarrios": 234,
+          "poblacion": 795421,
+          "poblacionObjetivo": 596566,
+          "adheridos": null,
+          "porcentajePoblacionObjetivoAdherida": 0,
+          "fechaOrden": "2026-07"
         }
       ],
       "metadata": {
