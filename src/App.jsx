@@ -77,6 +77,7 @@ function DashboardApp({ isAdmin }) {
   const isPersonalSheetSelected = isPersonalSheetData(currentSheet);
   const isTipologiaSheetSelected = isTipologiaSheet(selectedSheetName);
   const dashboardSummary = getDashboardSummary(files, selectedFile);
+  const showDashboardSummary = !isPersonalSheetSelected;
 
   useEffect(() => {
     if (!hasStaleSpecialSheets(files)) {
@@ -190,21 +191,23 @@ function DashboardApp({ isAdmin }) {
         </div>
       </header>
 
-      <section className="summary-grid" aria-label="Resumen del tablero">
-        <article className="summary-card">
-          <span>{dashboardSummary.cards[0]?.label ?? '-'}</span>
-          <strong>{dashboardSummary.cards[0]?.value ?? '-'}</strong>
-        </article>
-        <article className="summary-card">
-          <span>{dashboardSummary.cards[1]?.label ?? '-'}</span>
-          <strong>{dashboardSummary.cards[1]?.value ?? '-'}</strong>
-        </article>
-        <article className="summary-card">
-          <span>Última actualización</span>
-          <span className="summary-dynamic-label">{dashboardSummary.cards[2]?.label ?? '-'}</span>
-          <strong>{dashboardSummary.cards[2]?.value ?? '-'}</strong>
-        </article>
-      </section>
+      {showDashboardSummary && (
+        <section className="summary-grid" aria-label="Resumen del tablero">
+          <article className="summary-card">
+            <span>{dashboardSummary.cards[0]?.label ?? '-'}</span>
+            <strong>{dashboardSummary.cards[0]?.value ?? '-'}</strong>
+          </article>
+          <article className="summary-card">
+            <span>{dashboardSummary.cards[1]?.label ?? '-'}</span>
+            <strong>{dashboardSummary.cards[1]?.value ?? '-'}</strong>
+          </article>
+          <article className="summary-card">
+            <span>Última actualización</span>
+            <span className="summary-dynamic-label">{dashboardSummary.cards[2]?.label ?? '-'}</span>
+            <strong>{dashboardSummary.cards[2]?.value ?? '-'}</strong>
+          </article>
+        </section>
+      )}
 
       {isAdmin && (
         <details className="card update-panel">
