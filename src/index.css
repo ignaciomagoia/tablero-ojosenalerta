@@ -102,6 +102,7 @@ select {
 }
 
 .access-card {
+  position: relative;
   display: grid;
   grid-template-rows: auto 1fr auto;
   gap: 22px;
@@ -110,7 +111,53 @@ select {
   border-radius: 24px;
   background: var(--card);
   box-shadow: 0 14px 34px rgba(31, 78, 121, 0.08);
+  overflow: hidden;
   padding: 26px;
+}
+
+.access-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.access-grid .access-card:first-child {
+  border-color: rgba(255, 255, 255, 0.28);
+  background-image: url("/imagenfondocard.png");
+  background-position: center;
+  background-size: cover;
+  color: rgba(255, 255, 255, 0.94);
+}
+
+.access-grid .access-card:first-child::before {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: rgba(8, 24, 42, 0.4);
+  content: "";
+}
+
+.access-grid .access-card:first-child .access-card-icon {
+  background: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+}
+
+.access-grid .access-card:first-child .access-status.active {
+  background: rgba(255, 255, 255, 0.18);
+  color: #f8fbfd;
+}
+
+.access-grid .access-card:first-child h2,
+.access-grid .access-card:first-child p {
+  color: rgba(255, 255, 255, 0.94);
+}
+
+.access-grid .access-card:first-child .access-button {
+  box-shadow: 0 10px 22px rgba(8, 24, 42, 0.28);
+}
+
+.access-grid .access-card:first-child .access-button:hover {
+  background: #163a5a;
+  transform: translateY(-1px);
 }
 
 .access-card-disabled {
