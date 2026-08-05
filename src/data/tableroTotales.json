@@ -1,6 +1,6 @@
 {
   "id": "tablero-totales",
-  "fileName": "Tablero totales  (3).xlsx",
+  "fileName": "Tablero totales  (4).xlsx",
   "sheets": {
     "Alertas - Positivos - Aprehendi": {
       "columns": [
@@ -223,6 +223,16 @@
           "aprehendidos": 153,
           "elementosSecuestrados": 425,
           "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "totalAlertas": 6072,
+          "totalPositivos": 190,
+          "porcentajePositivos": 3.53,
+          "aprehendidos": 120,
+          "elementosSecuestrados": 446,
+          "fechaOrden": "2026-07"
         }
       ],
       "metadata": {
@@ -506,6 +516,18 @@
           "radio": 505,
           "videovigilancia": 14,
           "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "totalAlertas": 6072,
+          "prevencion": 4884,
+          "persecucion": 921,
+          "codigo107": 267,
+          "whatsapp": 5490,
+          "radio": 565,
+          "videovigilancia": 17,
+          "fechaOrden": "2026-07"
         }
       ],
       "metadata": {
@@ -533,7 +555,7 @@
         {
           "2024": 6,
           "2025": 919,
-          "2026": 845,
+          "2026": 984,
           "tipo": "ALARMA"
         },
         {
@@ -551,13 +573,13 @@
         {
           "2024": 0,
           "2025": 363,
-          "2026": 458,
+          "2026": 530,
           "tipo": "ASISTENCIA A PERSONA"
         },
         {
           "2024": 0,
           "2025": 1,
-          "2026": 2,
+          "2026": 3,
           "tipo": "BOTON DE PANICO"
         },
         {
@@ -569,13 +591,13 @@
         {
           "2024": 0,
           "2025": 0,
-          "2026": 277,
+          "2026": 435,
           "tipo": "CONSTATADORES"
         },
         {
           "2024": 0,
           "2025": 85,
-          "2026": 299,
+          "2026": 330,
           "tipo": "CONSUMO"
         },
         {
@@ -587,7 +609,7 @@
         {
           "2024": 2,
           "2025": 303,
-          "2026": 243,
+          "2026": 296,
           "tipo": "DAÑO"
         },
         {
@@ -599,13 +621,13 @@
         {
           "2024": 0,
           "2025": 20,
-          "2026": 51,
+          "2026": 56,
           "tipo": "DESAPARICION DE PERSONAS"
         },
         {
           "2024": 0,
           "2025": 5,
-          "2026": 5,
+          "2026": 8,
           "tipo": "DESPERFECTO MECANICO"
         },
         {
@@ -617,25 +639,25 @@
         {
           "2024": 37,
           "2025": 4851,
-          "2026": 8035,
+          "2026": 9323,
           "tipo": "DISTURBIOS"
         },
         {
           "2024": 0,
           "2025": 104,
-          "2026": 49,
+          "2026": 54,
           "tipo": "DROGAS"
         },
         {
           "2024": 2,
           "2025": 405,
-          "2026": 458,
+          "2026": 529,
           "tipo": "EMERGENCIA CIVIL"
         },
         {
           "2024": 6,
           "2025": 808,
-          "2026": 1289,
+          "2026": 1564,
           "tipo": "EMERGENCIA DE SALUD (107)"
         },
         {
@@ -647,25 +669,25 @@
         {
           "2024": 1,
           "2025": 17,
-          "2026": 73,
+          "2026": 84,
           "tipo": "ESTAFA"
         },
         {
           "2024": 1,
           "2025": 161,
-          "2026": 200,
+          "2026": 234,
           "tipo": "HURTO"
         },
         {
           "2024": 0,
           "2025": 362,
-          "2026": 440,
+          "2026": 533,
           "tipo": "INCENDIO"
         },
         {
           "2024": 4,
           "2025": 814,
-          "2026": 1041,
+          "2026": 1195,
           "tipo": "INCIDENTES VIALES"
         },
         {
@@ -677,7 +699,7 @@
         {
           "2024": 15,
           "2025": 1494,
-          "2026": 1843,
+          "2026": 2183,
           "tipo": "ROBO"
         },
         {
@@ -689,7 +711,7 @@
         {
           "2024": 0,
           "2025": 78,
-          "2026": 12,
+          "2026": 14,
           "tipo": "SECUESTRO DE ELEMENTOS"
         },
         {
@@ -701,61 +723,61 @@
         {
           "2024": 29,
           "2025": 4809,
-          "2026": 5594,
+          "2026": 6823,
           "tipo": "SOLICITUD DE PRESENCIA POLICIAL"
         },
         {
           "2024": 104,
           "2025": 9411,
-          "2026": 9684,
+          "2026": 11371,
           "tipo": "SOSPECHOSO"
         },
         {
           "2024": 1,
           "2025": 7,
-          "2026": 4,
+          "2026": 6,
           "tipo": "SUJETO ARMADO"
         },
         {
           "2024": 0,
           "2025": 226,
-          "2026": 490,
+          "2026": 599,
           "tipo": "SUJETO EN EL PATIO - SUJETO EN LOS TECHOS"
         },
         {
           "2024": 4,
           "2025": 764,
-          "2026": 895,
+          "2026": 1077,
           "tipo": "TENTATIVA DE ROBO"
         },
         {
           "2024": 0,
           "2025": 23,
-          "2026": 33,
+          "2026": 37,
           "tipo": "TENTATIVA DE SUICIDIO"
         },
         {
           "2024": 0,
           "2025": 0,
-          "2026": 22,
+          "2026": 29,
           "tipo": "TENTATIVA DE USURPACION"
         },
         {
           "2024": 0,
           "2025": 5,
-          "2026": 6,
+          "2026": 7,
           "tipo": "TIROTEO"
         },
         {
           "2024": 0,
           "2025": 21,
-          "2026": 19,
+          "2026": 22,
           "tipo": "USURPACION"
         },
         {
           "2024": 2,
           "2025": 602,
-          "2026": 855,
+          "2026": 968,
           "tipo": "VIOLENCIA"
         }
       ],
@@ -5309,6 +5331,223 @@
           "tipo": "VIOLENCIA",
           "cantidad": 125,
           "fechaOrden": "2026-06"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "ALARMA",
+          "cantidad": 139,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "AMENAZA DE BOMBA",
+          "cantidad": 0,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "ASISTENCIA A PERSONA",
+          "cantidad": 72,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "BOTON DE PANICO",
+          "cantidad": 1,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "CONSTATADORES",
+          "cantidad": 158,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "CONSUMO",
+          "cantidad": 31,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "CONTROL POLICIAL",
+          "cantidad": 0,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "DAÑO",
+          "cantidad": 53,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "DELITO SEXUAL",
+          "cantidad": 0,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "DESAPARICION DE PERSONAS",
+          "cantidad": 5,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "DESPERFECTO MECANICO",
+          "cantidad": 3,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "DISTURBIOS",
+          "cantidad": 1288,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "DROGAS",
+          "cantidad": 5,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "EMERGENCIA CIVIL",
+          "cantidad": 71,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "EMERGENCIA DE SALUD (107)",
+          "cantidad": 275,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "ESTAFA",
+          "cantidad": 11,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "HURTO",
+          "cantidad": 34,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "INCENDIO",
+          "cantidad": 93,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "INCIDENTES VIALES",
+          "cantidad": 154,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "ROBO",
+          "cantidad": 340,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "SECUESTRO DE ELEMENTOS",
+          "cantidad": 2,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "SOLICITUD DE PRESENCIA POLICIAL",
+          "cantidad": 1229,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "SOSPECHOSO",
+          "cantidad": 1687,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "SUJETO ARMADO",
+          "cantidad": 2,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "SUJETO EN EL PATIO - SUJETO EN LOS TECHOS",
+          "cantidad": 109,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "TENTATIVA DE ROBO",
+          "cantidad": 182,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "TENTATIVA DE SUICIDIO",
+          "cantidad": 4,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "TENTATIVA DE USURPACION",
+          "cantidad": 7,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "TIROTEO",
+          "cantidad": 1,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "USURPACION",
+          "cantidad": 3,
+          "fechaOrden": "2026-07"
+        },
+        {
+          "anio": 2026,
+          "mes": "Julio",
+          "tipo": "VIOLENCIA",
+          "cantidad": 113,
+          "fechaOrden": "2026-07"
         }
       ],
       "metadata": {
@@ -5544,8 +5783,8 @@
           "cantidadBarrios": 234,
           "poblacion": 795421,
           "poblacionObjetivo": 596566,
-          "adheridos": null,
-          "porcentajePoblacionObjetivoAdherida": 0,
+          "adheridos": 152480,
+          "porcentajePoblacionObjetivoAdherida": 25.56,
           "fechaOrden": "2026-07"
         }
       ],
