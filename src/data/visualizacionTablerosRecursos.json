@@ -1,37 +1,37 @@
 {
   "id": "visualizacion-tableros-recursos",
-  "fileName": "VISUALIZACIÓN tableros recursos (4).xlsx",
+  "fileName": "VISUALIZACIÓN tableros recursos (5).xlsx",
   "sheets": {
     "Móviles": {
       "type": "movilesEquipamiento",
-      "fileName": "VISUALIZACIÓN tableros recursos (4).xlsx",
+      "fileName": "VISUALIZACIÓN tableros recursos (5).xlsx",
       "sourceSheetName": "Moviles",
-      "fechaCarga": "2026-08-05",
-      "fechaCargaLabel": "05 de agosto de 2026",
+      "fechaCarga": "2026-08-12",
+      "fechaCargaLabel": "12 de agosto de 2026",
       "resumen": {
-        "activos": 214,
+        "activos": 225,
         "enReparacion": 0,
-        "fueraDeServicio": 58,
-        "totalMoviles": 272,
+        "fueraDeServicio": 57,
+        "totalMoviles": 282,
         "chalecos": 400,
-        "porcentajeOperatividad": 78.67647058823529
+        "porcentajeOperatividad": 79.7872340425532
       },
       "movilesPorZona": [
         {
           "zona": "Norte",
           "name": "Norte",
-          "activos": 102,
+          "activos": 108,
           "enReparacion": 0,
-          "fueraDeServicio": 25,
-          "total": 127
+          "fueraDeServicio": 26,
+          "total": 134
         },
         {
           "zona": "Sur",
           "name": "Sur",
-          "activos": 112,
+          "activos": 117,
           "enReparacion": 0,
-          "fueraDeServicio": 33,
-          "total": 145
+          "fueraDeServicio": 31,
+          "total": 148
         }
       ],
       "chalecosPorZona": [
@@ -58,18 +58,18 @@
         {
           "cuadrante": "2",
           "name": "2",
-          "activos": 57,
+          "activos": 62,
           "enReparacion": 0,
           "fueraDeServicio": 14,
-          "total": 71
+          "total": 76
         },
         {
           "cuadrante": "3",
           "name": "3",
-          "activos": 24,
+          "activos": 26,
           "enReparacion": 0,
           "fueraDeServicio": 4,
-          "total": 28
+          "total": 30
         },
         {
           "cuadrante": "4",
@@ -82,33 +82,33 @@
         {
           "cuadrante": "5",
           "name": "5",
-          "activos": 27,
+          "activos": 26,
           "enReparacion": 0,
-          "fueraDeServicio": 7,
-          "total": 34
+          "fueraDeServicio": 5,
+          "total": 31
         },
         {
           "cuadrante": "6",
           "name": "6",
-          "activos": 21,
+          "activos": 28,
           "enReparacion": 0,
-          "fueraDeServicio": 12,
-          "total": 33
+          "fueraDeServicio": 11,
+          "total": 39
         },
         {
           "cuadrante": "7",
           "name": "7",
-          "activos": 45,
+          "activos": 44,
           "enReparacion": 0,
-          "fueraDeServicio": 10,
+          "fueraDeServicio": 11,
           "total": 55
         },
         {
           "cuadrante": "8",
           "name": "8",
-          "activos": 7,
+          "activos": 6,
           "enReparacion": 0,
-          "fueraDeServicio": 1,
+          "fueraDeServicio": 2,
           "total": 8
         }
       ],
@@ -182,33 +182,33 @@
         {
           "distrito": "4",
           "name": "4",
-          "activos": 13,
+          "activos": 17,
           "enReparacion": 0,
-          "fueraDeServicio": 3,
-          "total": 16
+          "fueraDeServicio": 2,
+          "total": 19
         },
         {
           "distrito": "5",
           "name": "5",
-          "activos": 16,
+          "activos": 14,
           "enReparacion": 0,
-          "fueraDeServicio": 5,
-          "total": 21
+          "fueraDeServicio": 4,
+          "total": 18
         },
         {
           "distrito": "6",
           "name": "6",
-          "activos": 7,
+          "activos": 6,
           "enReparacion": 0,
-          "fueraDeServicio": 1,
+          "fueraDeServicio": 2,
           "total": 8
         },
         {
           "distrito": "7",
           "name": "7",
-          "activos": 13,
+          "activos": 12,
           "enReparacion": 0,
-          "fueraDeServicio": 1,
+          "fueraDeServicio": 2,
           "total": 14
         },
         {
@@ -222,42 +222,42 @@
         {
           "distrito": "9",
           "name": "9",
-          "activos": 4,
+          "activos": 5,
           "enReparacion": 0,
-          "fueraDeServicio": 2,
+          "fueraDeServicio": 1,
           "total": 6
         },
         {
           "distrito": "10",
           "name": "10",
-          "activos": 7,
+          "activos": 6,
           "enReparacion": 0,
-          "fueraDeServicio": 3,
+          "fueraDeServicio": 4,
           "total": 10
         },
         {
           "distrito": "11",
           "name": "11",
-          "activos": 8,
+          "activos": 11,
           "enReparacion": 0,
           "fueraDeServicio": 9,
-          "total": 17
+          "total": 20
         },
         {
           "distrito": "12",
           "name": "12",
-          "activos": 11,
+          "activos": 12,
           "enReparacion": 0,
-          "fueraDeServicio": 2,
+          "fueraDeServicio": 1,
           "total": 13
         },
         {
           "distrito": "13",
           "name": "13",
-          "activos": 7,
+          "activos": 9,
           "enReparacion": 0,
           "fueraDeServicio": 1,
-          "total": 8
+          "total": 10
         },
         {
           "distrito": "14",
@@ -270,10 +270,10 @@
         {
           "distrito": "15",
           "name": "15",
-          "activos": 33,
+          "activos": 36,
           "enReparacion": 0,
           "fueraDeServicio": 10,
-          "total": 43
+          "total": 46
         },
         {
           "distrito": "16",
@@ -310,9 +310,9 @@
         {
           "distrito": "20",
           "name": "20",
-          "activos": 16,
+          "activos": 15,
           "enReparacion": 0,
-          "fueraDeServicio": 1,
+          "fueraDeServicio": 2,
           "total": 17
         },
         {
@@ -326,9 +326,9 @@
         {
           "distrito": "22",
           "name": "22",
-          "activos": 6,
+          "activos": 7,
           "enReparacion": 0,
-          "fueraDeServicio": 3,
+          "fueraDeServicio": 2,
           "total": 9
         },
         {
@@ -350,10 +350,10 @@
         {
           "distrito": "24 bis",
           "name": "24 bis",
-          "activos": 16,
+          "activos": 18,
           "enReparacion": 0,
           "fueraDeServicio": 2,
-          "total": 18
+          "total": 20
         }
       ],
       "chalecosPorDistrito": [
@@ -490,7 +490,7 @@
     },
     "Personal": {
       "type": "personalOperativo",
-      "fileName": "VISUALIZACIÓN tableros recursos (4).xlsx",
+      "fileName": "VISUALIZACIÓN tableros recursos (5).xlsx",
       "sourceSheetName": "Personal",
       "resumenGeneral": {
         "administrativo": {
