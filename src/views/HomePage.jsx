@@ -9,20 +9,40 @@ const accessItems = [
     enabled: true,
   },
   {
-    title: 'Reportes',
-    description: 'Acceso a reportes institucionales y documentos de gestión.',
-    path: '',
+    title: 'SAE',
+    description: 'Acceso al Sistema de Atención de Emergencias.',
+    url: 'https://xiriussae.geoposicionamiento.com.ar/saeweb/#/login',
+    openInSameTab: true,
     icon: 'report',
-    enabled: false,
+    enabled: true,
   },
   {
-    title: 'Otros servicios',
-    description: 'Nuevos accesos operativos para futuras herramientas.',
-    path: '',
+    title: 'SISEP',
+    description: 'Acceso al sistema SISEP.',
+    url: 'https://xirius.geoposicionamiento.com.ar/#/',
     icon: 'services',
-    enabled: false,
+    enabled: true,
+  },
+  {
+    title: 'Mapas',
+    description: 'Accesos a mapas operativos.',
+    icon: 'map',
+    enabled: true,
+    links: [
+      {
+        label: 'SECTORES',
+        url: 'https://www.google.com/maps/d/u/0/viewer?mid=11aDfct4fltEMX5F8scbS5iqsqcUY2aA&ll=-31.453965980523513%2C-64.18211926280797&z=14',
+      },
+      {
+        label: 'PROYECCIÓN',
+        url: 'https://www.google.com/maps/d/u/0/edit?mid=1y20baibi-p9wBXK2nFuUhgHkO1XSGMo&ll=-31.36505198669365%2C-64.2247009437767&z=13',
+      },
+    ],
   },
 ];
+
+// Para sumar una cuarta card de Mapas despues, se puede agregar un item con:
+// links: [{ label: 'Mapa operativo', url: 'https://...' }, { label: 'Otro mapa', url: 'https://...' }]
 
 function HomePage() {
   const [showBanner, setShowBanner] = useState(true);
@@ -59,8 +79,7 @@ function HomePage() {
 }
 
 function AccessCard({ item }) {
-  const target = item.path || item.url || '#';
-  const isExternal = Boolean(item.url);
+  const links = getAccessLinks(item);
 
   return (
     <article className={`access-card ${item.enabled ? '' : 'access-card-disabled'}`}>
@@ -68,26 +87,52 @@ function AccessCard({ item }) {
         <AccessIcon name={item.icon} />
       </div>
       <div>
-        <span className={`access-status ${item.enabled ? 'active' : ''}`}>
-          {item.enabled ? 'Disponible' : 'Próximamente'}
-        </span>
         <h2>{item.title}</h2>
         <p>{item.description}</p>
       </div>
       {item.enabled ? (
-        <a
-          className="access-button"
-          href={target}
-          target={isExternal ? '_blank' : undefined}
-          rel={isExternal ? 'noreferrer' : undefined}
-        >
-          Ingresar
-        </a>
+        <div className="access-actions">
+          {links.map((link) => (
+            <a
+              className="access-button"
+              href={link.href}
+              key={`${item.title}-${link.label}`}
+              target={link.opensInNewTab ? '_blank' : undefined}
+              rel={link.rel}
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
       ) : (
         <span className="access-button access-button-disabled">Próximamente</span>
       )}
     </article>
   );
+}
+
+function getAccessLinks(item) {
+  if (Array.isArray(item.links) && item.links.length > 0) {
+    return item.links.map((link) => ({
+      label: link.label || 'Ingresar',
+      href: link.path || link.url || '#',
+      opensInNewTab: Boolean(link.url) && !link.openInSameTab,
+      rel: Boolean(link.url) && !link.openInSameTab
+        ? link.rel || 'noreferrer'
+        : undefined,
+    }));
+  }
+
+  return [
+    {
+      label: 'Ingresar',
+      href: item.path || item.url || '#',
+      opensInNewTab: Boolean(item.url) && !item.openInSameTab,
+      rel: Boolean(item.url) && !item.openInSameTab
+        ? item.rel || 'noreferrer'
+        : undefined,
+    },
+  ];
 }
 
 function AccessIcon({ name }) {
@@ -103,6 +148,14 @@ function AccessIcon({ name }) {
     return (
       <svg viewBox="0 0 24 24" role="img">
         <path d="M4 5h7v7H4V5Zm2 2v3h3V7H6Zm7-2h7v7h-7V5Zm2 2v3h3V7h-3ZM4 14h7v7H4v-7Zm2 2v3h3v-3H6Zm10.5-2 1.3 2.4 2.7.5-1.9 2 0.4 2.8-2.5-1.2-2.5 1.2.4-2.8-1.9-2 2.7-.5 1.3-2.4Z" />
+      </svg>
+    );
+  }
+
+  if (name === 'map') {
+    return (
+      <svg viewBox="0 0 24 24" role="img">
+        <path d="m9 4 6 2.1L20 4v15l-5 2.1L9 19l-5 2V6l5-2Zm1.2 2.2v11.1l3.6 1.3V7.5l-3.6-1.3ZM6 7.4v10.3l2.2-.9V6.5L6 7.4Zm10 0v10.4l2-.9V6.5l-2 .9Z" />
       </svg>
     );
   }
