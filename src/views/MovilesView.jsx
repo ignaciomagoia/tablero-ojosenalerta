@@ -57,6 +57,11 @@ function MovilesView({ data }) {
     () => filterRows(completedTerritoryRows, search),
     [completedTerritoryRows, search],
   );
+  const dependenciaRows = data?.movilesPorDependencia ?? [];
+  const filteredDependenciaRows = useMemo(
+    () => filterRows(dependenciaRows, search),
+    [dependenciaRows, search],
+  );
 
   return (
     <section className="moviles-view">
@@ -91,12 +96,12 @@ function MovilesView({ data }) {
 
       <section className="card moviles-search-card">
         <label>
-          Buscar zona, cuadrante o distrito
+          Buscar zona, cuadrante, distrito o dependencia
           <input
             type="search"
             value={search}
             onChange={(event) => setSearch(event.target.value)}
-            placeholder="Ej: Norte, 7, 24 bis"
+            placeholder="Ej: Norte, 7, 24 bis, Departamento"
           />
         </label>
       </section>
@@ -135,6 +140,21 @@ function MovilesView({ data }) {
           emptyMessage="No hay datos territoriales para mostrar."
         />
       </section>
+
+      {dependenciaRows.length > 0 && (
+        <section className="card personal-detail-card">
+          <div className="table-heading">
+            <div>
+              <h2>Móviles por dependencia</h2>
+              <p>Disponibilidad de móviles por dependencia operativa.</p>
+            </div>
+          </div>
+          <DependenciaRows
+            rows={filteredDependenciaRows}
+            emptyMessage="No hay dependencias para mostrar."
+          />
+        </section>
+      )}
     </section>
   );
 }
@@ -196,6 +216,35 @@ function MovilesRows({ rows, emptyMessage }) {
           <span>{formatNumber(row.fueraDeServicio)}</span>
           <span>{formatNumber(row.total)}</span>
           <span>{formatNumber(row.chalecos)}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function DependenciaRows({ rows, emptyMessage }) {
+  if (!rows || rows.length === 0) {
+    return <p className="muted">{emptyMessage}</p>;
+  }
+
+  return (
+    <div className="moviles-row-list">
+      <div className="moviles-row moviles-row-dependencia moviles-row-header">
+        <span>Dependencia</span>
+        <span>Estado</span>
+        <span>Activos</span>
+        <span>Reparación</span>
+        <span>Fuera servicio</span>
+        <span>Total móviles</span>
+      </div>
+      {rows.map((row, index) => (
+        <div className="moviles-row moviles-row-dependencia" key={`${row.name}-${index}`}>
+          <strong>{row.name}</strong>
+          <StatusBadge row={row} />
+          <span>{formatNumber(row.activos)}</span>
+          <span>{formatNumber(row.enReparacion)}</span>
+          <span>{formatNumber(row.fueraDeServicio)}</span>
+          <span>{formatNumber(row.total)}</span>
         </div>
       ))}
     </div>

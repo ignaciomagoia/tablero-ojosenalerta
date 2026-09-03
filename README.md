@@ -37,3 +37,5 @@ npm.cmd run build
 ```
 
 Despues commitear/subir los cambios y desplegar en Vercel. La carga desde `/admin` no publica datos para otros usuarios; solo actualiza tu navegador.
+
+npm.cmd run data:update -- "C:\Users\ignac\Downloads\VISUALIZACIÓN tableros recursos.xlsx"

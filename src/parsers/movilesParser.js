@@ -1,7 +1,7 @@
 export const MOVILES_PARSER_VERSION = 1;
 export const MOVILES_SHEET_NAME = 'Móviles';
 
-const SECTION_NAMES = ['ZONA', 'CUADRANTE', 'DISTRITO'];
+const SECTION_NAMES = ['ZONA', 'CUADRANTE', 'DISTRITO', 'DEPENDENCIA'];
 
 export function isRecursosWorkbook(fileName = '', sheets = []) {
   const normalizedFileName = normalizeText(fileName);
@@ -33,7 +33,9 @@ export function isMovilesSheetData(sheetData) {
     Array.isArray(sheetData.movilesPorCuadrante) &&
     Array.isArray(sheetData.chalecosPorCuadrante) &&
     Array.isArray(sheetData.movilesPorDistrito) &&
-    Array.isArray(sheetData.chalecosPorDistrito)
+    Array.isArray(sheetData.chalecosPorDistrito) &&
+    (!sheetData.movilesPorDependencia ||
+      Array.isArray(sheetData.movilesPorDependencia))
   );
 }
 
@@ -84,6 +86,17 @@ export function parseMovilesSheet(matrix, context = {}) {
   const chalecosPorDistrito = sortTerritorialRows(
     parseChalecosSection(matrix, 'DISTRITO', chalecosHeader.col, chalecosValueCol, 'distrito'),
   );
+  const movilesPorDependencia = parseMovilesSection(
+    matrix,
+    'DEPENDENCIA',
+    movilesHeader.col,
+    movilesColumns,
+    'dependencia',
+  ).sort((left, right) =>
+    String(left.name).localeCompare(String(right.name), 'es', {
+      numeric: true,
+    }),
+  );
   const activos = resumenMoviles.activos ?? sumRows(movilesPorZona, 'activos');
   const enReparacion = resumenMoviles.enReparacion ?? sumRows(movilesPorZona, 'enReparacion');
   const fueraDeServicio = resumenMoviles.fueraDeServicio ?? sumRows(movilesPorZona, 'fueraDeServicio');
@@ -109,6 +122,7 @@ export function parseMovilesSheet(matrix, context = {}) {
     chalecosPorCuadrante,
     movilesPorDistrito,
     chalecosPorDistrito,
+    movilesPorDependencia,
     metadata: {
       parser: 'movilesParser',
       version: MOVILES_PARSER_VERSION,
@@ -398,6 +412,7 @@ function convertLegacyRecursosData(sheetData) {
       name: row.name,
       cantidad: Number(row.value) || 0,
     })),
+    movilesPorDependencia: [],
     metadata: {
       parser: 'movilesParser',
       version: MOVILES_PARSER_VERSION,
@@ -535,6 +550,7 @@ function createEmptyMovilesData(fileName = '', sourceSheetName = '', fechaCarga 
     chalecosPorCuadrante: [],
     movilesPorDistrito: [],
     chalecosPorDistrito: [],
+    movilesPorDependencia: [],
     metadata: {
       parser: 'movilesParser',
       version: MOVILES_PARSER_VERSION,
