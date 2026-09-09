@@ -534,6 +534,8 @@
       "type": "personalOperativo",
       "fileName": "VISUALIZACIÓN tableros recursos (9).xlsx",
       "sourceSheetName": "Personal",
+      "fechaCarga": "2026-09-04",
+      "fechaCargaLabel": "04 de septiembre de 2026",
       "resumenGeneral": {
         "administrativo": {
           "jefes": 18,

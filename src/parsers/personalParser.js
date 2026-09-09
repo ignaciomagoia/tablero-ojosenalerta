@@ -53,7 +53,10 @@ export function normalizePersonalSheetData(sheetData) {
   }
 
   if (sheetData?.type === 'personalOperativo') {
-    return createEmptyPersonalData(sheetData.fileName, sheetData.sourceSheetName);
+    return createEmptyPersonalData(sheetData.fileName, sheetData.sourceSheetName, {
+      iso: sheetData.fechaCarga ?? '',
+      label: sheetData.fechaCargaLabel ?? '-',
+    });
   }
 
   return createEmptyPersonalData();
@@ -74,10 +77,15 @@ export function parsePersonalSheet(matrix, context = {}) {
     return parsed;
   }
 
-  return createEmptyPersonalData(context.fileName, context.sourceSheetName);
+  return createEmptyPersonalData(
+    context.fileName,
+    context.sourceSheetName,
+    detectLoadDate(matrix),
+  );
 }
 
 function parseDetailedPersonalSheet(matrix, context = {}) {
+  const fechaCarga = detectLoadDate(matrix);
   const overviewSummary = parseOverviewSummary(matrix);
   const administrativoRange = findMainBlockRange(matrix, 'PERSONAL ADMINISTRATIVO');
   const calleRange = findMainBlockRange(matrix, 'PERSONAL DE CALLE');
@@ -106,6 +114,8 @@ function parseDetailedPersonalSheet(matrix, context = {}) {
     type: 'personalOperativo',
     fileName: context.fileName ?? '',
     sourceSheetName: context.sourceSheetName ?? '',
+    fechaCarga: fechaCarga.iso,
+    fechaCargaLabel: fechaCarga.label,
     resumenGeneral,
     administrativoPorZona,
     callePorZona,
@@ -403,6 +413,73 @@ function findNearestNumber(matrix, rowIndex, colIndex) {
   return null;
 }
 
+function detectLoadDate(matrix) {
+  const fechaCell = findCell(matrix, (cell) => normalizeText(cell).includes('FECHA'));
+
+  if (fechaCell) {
+    const nearbyDate = getNearbyCells(matrix, fechaCell.row, fechaCell.col)
+      .map(parseDate)
+      .find(Boolean);
+
+    if (nearbyDate) {
+      return formatDatePayload(nearbyDate);
+    }
+  }
+
+  const anyDate = matrix.flat().map(parseDate).find(Boolean);
+
+  return anyDate ? formatDatePayload(anyDate) : { iso: '', label: '-' };
+}
+
+function getNearbyCells(matrix, rowIndex, colIndex) {
+  const cells = [];
+
+  for (let row = rowIndex; row <= Math.min(matrix.length - 1, rowIndex + 3); row += 1) {
+    for (let col = colIndex; col <= colIndex + 4; col += 1) {
+      cells.push(matrix[row]?.[col]);
+    }
+  }
+
+  return cells;
+}
+
+function parseDate(value) {
+  const text = String(value ?? '').trim();
+  const match = text.match(/^(\d{1,2})[/-](\d{1,2})[/-](\d{2,4})$/);
+
+  if (!match) {
+    return null;
+  }
+
+  const day = Number(match[1]);
+  const month = Number(match[2]);
+  const year = Number(match[3].length === 2 ? `20${match[3]}` : match[3]);
+  const date = new Date(year, month - 1, day);
+
+  return date.getFullYear() === year &&
+    date.getMonth() === month - 1 &&
+    date.getDate() === day
+    ? date
+    : null;
+}
+
+function formatDatePayload(date) {
+  const iso = [
+    date.getFullYear(),
+    String(date.getMonth() + 1).padStart(2, '0'),
+    String(date.getDate()).padStart(2, '0'),
+  ].join('-');
+
+  return {
+    iso,
+    label: date.toLocaleDateString('es-AR', {
+      day: '2-digit',
+      month: 'long',
+      year: 'numeric',
+    }),
+  };
+}
+
 function findCell(matrix, predicate) {
   for (let rowIndex = 0; rowIndex < matrix.length; rowIndex += 1) {
     const row = matrix[rowIndex] ?? [];
@@ -515,11 +592,17 @@ function getAdministrativeOrder(value) {
   return Number(match[0]) + (text.includes('BIS') ? 0.5 : 0);
 }
 
-function createEmptyPersonalData(fileName = '', sourceSheetName = '') {
+function createEmptyPersonalData(
+  fileName = '',
+  sourceSheetName = '',
+  fechaCarga = { iso: '', label: '-' },
+) {
   return {
     type: 'personalOperativo',
     fileName,
     sourceSheetName,
+    fechaCarga: fechaCarga.iso,
+    fechaCargaLabel: fechaCarga.label,
     resumenGeneral: {
       administrativo: createEmptyGroupSummary(),
       calle: createEmptyGroupSummary(),

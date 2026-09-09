@@ -38,6 +38,10 @@ function PersonalView({ data }) {
           label="Total disponible"
           value={totals.totalDisponible}
         />
+        <SummaryCard
+          label="Última actualización"
+          value={data?.fechaCargaLabel || '-'}
+        />
       </section>
 
       <section className="personal-street-grid" aria-label="Personal de calle por zona">
@@ -129,7 +133,17 @@ function getStreetTotals(rows) {
 }
 
 function formatNumber(value) {
-  return Number(value || 0).toLocaleString('es-AR', {
+  if (value === null || value === undefined || value === '') {
+    return '-';
+  }
+
+  const numericValue = Number(value);
+
+  if (!Number.isFinite(numericValue)) {
+    return String(value);
+  }
+
+  return numericValue.toLocaleString('es-AR', {
     maximumFractionDigits: 0,
   });
 }
