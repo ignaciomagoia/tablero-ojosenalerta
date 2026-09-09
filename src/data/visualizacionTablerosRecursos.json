@@ -1,20 +1,20 @@
 {
   "id": "visualizacion-tableros-recursos",
-  "fileName": "VISUALIZACIÓN tableros recursos (8).xlsx",
+  "fileName": "VISUALIZACIÓN tableros recursos (9).xlsx",
   "sheets": {
     "Móviles": {
       "type": "movilesEquipamiento",
-      "fileName": "VISUALIZACIÓN tableros recursos (8).xlsx",
+      "fileName": "VISUALIZACIÓN tableros recursos (9).xlsx",
       "sourceSheetName": "Moviles",
-      "fechaCarga": "2026-09-02",
-      "fechaCargaLabel": "02 de septiembre de 2026",
+      "fechaCarga": "2026-09-04",
+      "fechaCargaLabel": "04 de septiembre de 2026",
       "resumen": {
-        "activos": 231,
+        "activos": 236,
         "enReparacion": 0,
-        "fueraDeServicio": 61,
+        "fueraDeServicio": 56,
         "totalMoviles": 292,
         "chalecos": 400,
-        "porcentajeOperatividad": 79.1095890410959
+        "porcentajeOperatividad": 80.82191780821918
       },
       "movilesPorZona": [
         {
@@ -28,9 +28,9 @@
         {
           "zona": "Sur",
           "name": "Sur",
-          "activos": 121,
+          "activos": 126,
           "enReparacion": 0,
-          "fueraDeServicio": 33,
+          "fueraDeServicio": 28,
           "total": 154
         }
       ],
@@ -82,25 +82,25 @@
         {
           "cuadrante": "5",
           "name": "5",
-          "activos": 26,
+          "activos": 28,
           "enReparacion": 0,
-          "fueraDeServicio": 7,
+          "fueraDeServicio": 5,
           "total": 33
         },
         {
           "cuadrante": "6",
           "name": "6",
-          "activos": 30,
+          "activos": 31,
           "enReparacion": 0,
-          "fueraDeServicio": 11,
+          "fueraDeServicio": 10,
           "total": 41
         },
         {
           "cuadrante": "7",
           "name": "7",
-          "activos": 46,
+          "activos": 48,
           "enReparacion": 0,
-          "fueraDeServicio": 8,
+          "fueraDeServicio": 6,
           "total": 54
         },
         {
@@ -190,9 +190,9 @@
         {
           "distrito": "5",
           "name": "5",
-          "activos": 14,
+          "activos": 15,
           "enReparacion": 0,
-          "fueraDeServicio": 5,
+          "fueraDeServicio": 4,
           "total": 19
         },
         {
@@ -230,25 +230,25 @@
         {
           "distrito": "10",
           "name": "10",
-          "activos": 6,
+          "activos": 7,
           "enReparacion": 0,
-          "fueraDeServicio": 4,
+          "fueraDeServicio": 3,
           "total": 10
         },
         {
           "distrito": "11",
           "name": "11",
-          "activos": 14,
+          "activos": 15,
           "enReparacion": 0,
-          "fueraDeServicio": 7,
+          "fueraDeServicio": 6,
           "total": 21
         },
         {
           "distrito": "12",
           "name": "12",
-          "activos": 12,
+          "activos": 13,
           "enReparacion": 0,
-          "fueraDeServicio": 2,
+          "fueraDeServicio": 1,
           "total": 14
         },
         {
@@ -262,17 +262,17 @@
         {
           "distrito": "14",
           "name": "14",
-          "activos": 5,
+          "activos": 4,
           "enReparacion": 0,
-          "fueraDeServicio": 2,
+          "fueraDeServicio": 3,
           "total": 7
         },
         {
           "distrito": "15",
           "name": "15",
-          "activos": 35,
+          "activos": 36,
           "enReparacion": 0,
-          "fueraDeServicio": 10,
+          "fueraDeServicio": 9,
           "total": 45
         },
         {
@@ -326,9 +326,9 @@
         {
           "distrito": "22",
           "name": "22",
-          "activos": 7,
+          "activos": 8,
           "enReparacion": 0,
-          "fueraDeServicio": 2,
+          "fueraDeServicio": 1,
           "total": 9
         },
         {
@@ -532,7 +532,7 @@
     },
     "Personal": {
       "type": "personalOperativo",
-      "fileName": "VISUALIZACIÓN tableros recursos (8).xlsx",
+      "fileName": "VISUALIZACIÓN tableros recursos (9).xlsx",
       "sourceSheetName": "Personal",
       "resumenGeneral": {
         "administrativo": {
