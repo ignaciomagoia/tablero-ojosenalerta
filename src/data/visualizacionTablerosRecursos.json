@@ -1,36 +1,36 @@
 {
   "id": "visualizacion-tableros-recursos",
-  "fileName": "VISUALIZACIÓN tableros recursos (9).xlsx",
+  "fileName": "VISUALIZACIÓN tableros recursos (10).xlsx",
   "sheets": {
     "Móviles": {
       "type": "movilesEquipamiento",
-      "fileName": "VISUALIZACIÓN tableros recursos (9).xlsx",
+      "fileName": "VISUALIZACIÓN tableros recursos (10).xlsx",
       "sourceSheetName": "Moviles",
-      "fechaCarga": "2026-09-04",
-      "fechaCargaLabel": "04 de septiembre de 2026",
+      "fechaCarga": "2026-09-14",
+      "fechaCargaLabel": "14 de septiembre de 2026",
       "resumen": {
-        "activos": 236,
+        "activos": 229,
         "enReparacion": 0,
-        "fueraDeServicio": 56,
+        "fueraDeServicio": 63,
         "totalMoviles": 292,
         "chalecos": 400,
-        "porcentajeOperatividad": 80.82191780821918
+        "porcentajeOperatividad": 78.42465753424658
       },
       "movilesPorZona": [
         {
           "zona": "Norte",
           "name": "Norte",
-          "activos": 105,
+          "activos": 104,
           "enReparacion": 0,
-          "fueraDeServicio": 28,
+          "fueraDeServicio": 29,
           "total": 133
         },
         {
           "zona": "Sur",
           "name": "Sur",
-          "activos": 126,
+          "activos": 120,
           "enReparacion": 0,
-          "fueraDeServicio": 28,
+          "fueraDeServicio": 34,
           "total": 154
         }
       ],
@@ -66,9 +66,9 @@
         {
           "cuadrante": "3",
           "name": "3",
-          "activos": 23,
+          "activos": 22,
           "enReparacion": 0,
-          "fueraDeServicio": 7,
+          "fueraDeServicio": 8,
           "total": 30
         },
         {
@@ -82,9 +82,9 @@
         {
           "cuadrante": "5",
           "name": "5",
-          "activos": 28,
+          "activos": 24,
           "enReparacion": 0,
-          "fueraDeServicio": 5,
+          "fueraDeServicio": 9,
           "total": 33
         },
         {
@@ -98,9 +98,9 @@
         {
           "cuadrante": "7",
           "name": "7",
-          "activos": 48,
+          "activos": 46,
           "enReparacion": 0,
-          "fueraDeServicio": 6,
+          "fueraDeServicio": 8,
           "total": 54
         },
         {
@@ -190,9 +190,9 @@
         {
           "distrito": "5",
           "name": "5",
-          "activos": 15,
+          "activos": 12,
           "enReparacion": 0,
-          "fueraDeServicio": 4,
+          "fueraDeServicio": 7,
           "total": 19
         },
         {
@@ -206,9 +206,9 @@
         {
           "distrito": "7",
           "name": "7",
-          "activos": 9,
+          "activos": 8,
           "enReparacion": 0,
-          "fueraDeServicio": 5,
+          "fueraDeServicio": 6,
           "total": 14
         },
         {
@@ -230,9 +230,9 @@
         {
           "distrito": "10",
           "name": "10",
-          "activos": 7,
+          "activos": 6,
           "enReparacion": 0,
-          "fueraDeServicio": 3,
+          "fueraDeServicio": 4,
           "total": 10
         },
         {
@@ -246,9 +246,9 @@
         {
           "distrito": "12",
           "name": "12",
-          "activos": 13,
+          "activos": 12,
           "enReparacion": 0,
-          "fueraDeServicio": 1,
+          "fueraDeServicio": 2,
           "total": 14
         },
         {
@@ -262,17 +262,17 @@
         {
           "distrito": "14",
           "name": "14",
-          "activos": 4,
+          "activos": 5,
           "enReparacion": 0,
-          "fueraDeServicio": 3,
+          "fueraDeServicio": 2,
           "total": 7
         },
         {
           "distrito": "15",
           "name": "15",
-          "activos": 36,
+          "activos": 35,
           "enReparacion": 0,
-          "fueraDeServicio": 9,
+          "fueraDeServicio": 10,
           "total": 45
         },
         {
@@ -310,9 +310,9 @@
         {
           "distrito": "20",
           "name": "20",
-          "activos": 17,
+          "activos": 16,
           "enReparacion": 0,
-          "fueraDeServicio": 0,
+          "fueraDeServicio": 1,
           "total": 17
         },
         {
@@ -532,7 +532,7 @@
     },
     "Personal": {
       "type": "personalOperativo",
-      "fileName": "VISUALIZACIÓN tableros recursos (9).xlsx",
+      "fileName": "VISUALIZACIÓN tableros recursos (10).xlsx",
       "sourceSheetName": "Personal",
       "fechaCarga": "2026-09-04",
       "fechaCargaLabel": "04 de septiembre de 2026",
