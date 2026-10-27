@@ -1,36 +1,36 @@
 {
   "id": "visualizacion-tableros-recursos",
-  "fileName": "VISUALIZACIÓN tableros recursos (2).xlsx",
+  "fileName": "VISUALIZACIÓN tableros recursos (3).xlsx",
   "sheets": {
     "Móviles": {
       "type": "movilesEquipamiento",
-      "fileName": "VISUALIZACIÓN tableros recursos (2).xlsx",
+      "fileName": "VISUALIZACIÓN tableros recursos (3).xlsx",
       "sourceSheetName": "Moviles",
-      "fechaCarga": "2026-10-19",
-      "fechaCargaLabel": "19 de octubre de 2026",
+      "fechaCarga": "2026-10-26",
+      "fechaCargaLabel": "26 de octubre de 2026",
       "resumen": {
-        "activos": 229,
+        "activos": 225,
         "enReparacion": 0,
-        "fueraDeServicio": 63,
+        "fueraDeServicio": 67,
         "totalMoviles": 292,
         "chalecos": 400,
-        "porcentajeOperatividad": 78.42465753424658
+        "porcentajeOperatividad": 77.05479452054794
       },
       "movilesPorZona": [
         {
           "zona": "Norte",
           "name": "Norte",
-          "activos": 104,
+          "activos": 102,
           "enReparacion": 0,
-          "fueraDeServicio": 28,
+          "fueraDeServicio": 30,
           "total": 132
         },
         {
           "zona": "Sur",
           "name": "Sur",
-          "activos": 119,
+          "activos": 116,
           "enReparacion": 0,
-          "fueraDeServicio": 34,
+          "fueraDeServicio": 37,
           "total": 153
         }
       ],
@@ -66,9 +66,9 @@
         {
           "cuadrante": "3",
           "name": "3",
-          "activos": 23,
+          "activos": 21,
           "enReparacion": 0,
-          "fueraDeServicio": 7,
+          "fueraDeServicio": 9,
           "total": 30
         },
         {
@@ -82,9 +82,9 @@
         {
           "cuadrante": "5",
           "name": "5",
-          "activos": 25,
+          "activos": 22,
           "enReparacion": 0,
-          "fueraDeServicio": 7,
+          "fueraDeServicio": 10,
           "total": 32
         },
         {
@@ -222,9 +222,9 @@
         {
           "distrito": "9",
           "name": "9",
-          "activos": 4,
+          "activos": 3,
           "enReparacion": 0,
-          "fueraDeServicio": 2,
+          "fueraDeServicio": 3,
           "total": 6
         },
         {
@@ -254,25 +254,25 @@
         {
           "distrito": "13",
           "name": "13",
-          "activos": 9,
+          "activos": 8,
           "enReparacion": 0,
-          "fueraDeServicio": 1,
+          "fueraDeServicio": 2,
           "total": 10
         },
         {
           "distrito": "14",
           "name": "14",
-          "activos": 5,
+          "activos": 6,
           "enReparacion": 0,
-          "fueraDeServicio": 2,
+          "fueraDeServicio": 1,
           "total": 7
         },
         {
           "distrito": "15",
           "name": "15",
-          "activos": 32,
+          "activos": 31,
           "enReparacion": 0,
-          "fueraDeServicio": 13,
+          "fueraDeServicio": 14,
           "total": 45
         },
         {
@@ -511,9 +511,9 @@
         {
           "dependencia": "Departamento Territorial OESTE",
           "name": "Departamento Territorial OESTE",
-          "activos": 0,
+          "activos": 1,
           "enReparacion": 0,
-          "fueraDeServicio": 1,
+          "fueraDeServicio": 0,
           "total": 1
         },
         {
@@ -540,7 +540,7 @@
     },
     "Personal": {
       "type": "personalOperativo",
-      "fileName": "VISUALIZACIÓN tableros recursos (2).xlsx",
+      "fileName": "VISUALIZACIÓN tableros recursos (3).xlsx",
       "sourceSheetName": "Personal",
       "fechaCarga": "2026-10-05",
       "fechaCargaLabel": "05 de octubre de 2026",
