@@ -1,37 +1,37 @@
 {
   "id": "visualizacion-tableros-recursos",
-  "fileName": "VISUALIZACIÓN tableros recursos (3).xlsx",
+  "fileName": "VISUALIZACIÓN tableros recursos (7).xlsx",
   "sheets": {
     "Móviles": {
       "type": "movilesEquipamiento",
-      "fileName": "VISUALIZACIÓN tableros recursos (3).xlsx",
+      "fileName": "VISUALIZACIÓN tableros recursos (7).xlsx",
       "sourceSheetName": "Moviles",
-      "fechaCarga": "2026-10-26",
-      "fechaCargaLabel": "26 de octubre de 2026",
+      "fechaCarga": "2026-11-05",
+      "fechaCargaLabel": "05 de noviembre de 2026",
       "resumen": {
-        "activos": 225,
+        "activos": 257,
         "enReparacion": 0,
-        "fueraDeServicio": 67,
-        "totalMoviles": 292,
-        "chalecos": 400,
-        "porcentajeOperatividad": 77.05479452054794
+        "fueraDeServicio": 65,
+        "totalMoviles": 322,
+        "chalecos": 418,
+        "porcentajeOperatividad": 79.8136645962733
       },
       "movilesPorZona": [
         {
           "zona": "Norte",
           "name": "Norte",
-          "activos": 102,
+          "activos": 105,
           "enReparacion": 0,
-          "fueraDeServicio": 30,
-          "total": 132
+          "fueraDeServicio": 22,
+          "total": 127
         },
         {
           "zona": "Sur",
           "name": "Sur",
-          "activos": 116,
+          "activos": 123,
           "enReparacion": 0,
-          "fueraDeServicio": 37,
-          "total": 153
+          "fueraDeServicio": 14,
+          "total": 137
         }
       ],
       "chalecosPorZona": [
@@ -43,73 +43,73 @@
         {
           "zona": "Sur",
           "name": "Sur",
-          "cantidad": 175
+          "cantidad": 193
         }
       ],
       "movilesPorCuadrante": [
         {
           "cuadrante": "1",
           "name": "1",
-          "activos": 20,
+          "activos": 19,
           "enReparacion": 0,
-          "fueraDeServicio": 6,
-          "total": 26
+          "fueraDeServicio": 4,
+          "total": 23
         },
         {
           "cuadrante": "2",
           "name": "2",
           "activos": 60,
           "enReparacion": 0,
-          "fueraDeServicio": 16,
-          "total": 76
+          "fueraDeServicio": 12,
+          "total": 72
         },
         {
           "cuadrante": "3",
           "name": "3",
-          "activos": 21,
+          "activos": 23,
           "enReparacion": 0,
-          "fueraDeServicio": 9,
-          "total": 30
+          "fueraDeServicio": 6,
+          "total": 29
         },
         {
           "cuadrante": "4",
           "name": "4",
-          "activos": 14,
+          "activos": 15,
           "enReparacion": 0,
-          "fueraDeServicio": 4,
-          "total": 18
+          "fueraDeServicio": 2,
+          "total": 17
         },
         {
           "cuadrante": "5",
           "name": "5",
-          "activos": 22,
+          "activos": 27,
           "enReparacion": 0,
-          "fueraDeServicio": 10,
-          "total": 32
+          "fueraDeServicio": 2,
+          "total": 29
         },
         {
           "cuadrante": "6",
           "name": "6",
-          "activos": 29,
+          "activos": 31,
           "enReparacion": 0,
-          "fueraDeServicio": 12,
-          "total": 41
+          "fueraDeServicio": 5,
+          "total": 36
         },
         {
           "cuadrante": "7",
           "name": "7",
-          "activos": 45,
+          "activos": 46,
           "enReparacion": 0,
-          "fueraDeServicio": 9,
-          "total": 54
+          "fueraDeServicio": 3,
+          "total": 49
         },
         {
           "cuadrante": "8",
           "name": "8",
           "activos": 7,
           "enReparacion": 0,
-          "fueraDeServicio": 1,
-          "total": 8
+          "fueraDeServicio": 2,
+          "total": 9
         }
       ],
       "chalecosPorCuadrante": [
@@ -146,7 +146,7 @@
         {
           "cuadrante": "7",
           "name": "7",
-          "cantidad": 43
+          "cantidad": 61
         },
         {
           "cuadrante": "8",
@@ -168,63 +168,63 @@
           "name": "2",
           "activos": 19,
           "enReparacion": 0,
-          "fueraDeServicio": 7,
-          "total": 26
+          "fueraDeServicio": 4,
+          "total": 23
         },
         {
           "distrito": "3",
           "name": "3",
           "activos": 9,
           "enReparacion": 0,
-          "fueraDeServicio": 2,
-          "total": 11
+          "fueraDeServicio": 0,
+          "total": 9
         },
         {
           "distrito": "4",
           "name": "4",
-          "activos": 17,
+          "activos": 15,
           "enReparacion": 0,
           "fueraDeServicio": 3,
-          "total": 20
+          "total": 18
         },
         {
           "distrito": "5",
           "name": "5",
           "activos": 14,
           "enReparacion": 0,
-          "fueraDeServicio": 5,
-          "total": 19
+          "fueraDeServicio": 1,
+          "total": 15
         },
         {
           "distrito": "6",
           "name": "6",
           "activos": 7,
           "enReparacion": 0,
-          "fueraDeServicio": 1,
-          "total": 8
+          "fueraDeServicio": 2,
+          "total": 9
         },
         {
           "distrito": "7",
           "name": "7",
-          "activos": 10,
+          "activos": 9,
           "enReparacion": 0,
           "fueraDeServicio": 4,
-          "total": 14
+          "total": 13
         },
         {
           "distrito": "8",
           "name": "8",
-          "activos": 14,
+          "activos": 15,
           "enReparacion": 0,
-          "fueraDeServicio": 4,
-          "total": 18
+          "fueraDeServicio": 2,
+          "total": 17
         },
         {
           "distrito": "9",
           "name": "9",
-          "activos": 3,
+          "activos": 6,
           "enReparacion": 0,
-          "fueraDeServicio": 3,
+          "fueraDeServicio": 0,
           "total": 6
         },
         {
@@ -232,24 +232,24 @@
           "name": "10",
           "activos": 7,
           "enReparacion": 0,
-          "fueraDeServicio": 3,
-          "total": 10
+          "fueraDeServicio": 1,
+          "total": 8
         },
         {
           "distrito": "11",
           "name": "11",
-          "activos": 15,
+          "activos": 16,
           "enReparacion": 0,
-          "fueraDeServicio": 6,
-          "total": 21
+          "fueraDeServicio": 2,
+          "total": 18
         },
         {
           "distrito": "12",
           "name": "12",
           "activos": 13,
           "enReparacion": 0,
-          "fueraDeServicio": 0,
-          "total": 13
+          "fueraDeServicio": 1,
+          "total": 14
         },
         {
           "distrito": "13",
@@ -262,18 +262,18 @@
         {
           "distrito": "14",
           "name": "14",
-          "activos": 6,
+          "activos": 5,
           "enReparacion": 0,
           "fueraDeServicio": 1,
-          "total": 7
+          "total": 6
         },
         {
           "distrito": "15",
           "name": "15",
-          "activos": 31,
+          "activos": 32,
           "enReparacion": 0,
-          "fueraDeServicio": 14,
-          "total": 45
+          "fueraDeServicio": 10,
+          "total": 42
         },
         {
           "distrito": "16",
@@ -326,10 +326,10 @@
         {
           "distrito": "22",
           "name": "22",
-          "activos": 8,
+          "activos": 6,
           "enReparacion": 0,
-          "fueraDeServicio": 1,
-          "total": 9
+          "fueraDeServicio": 2,
+          "total": 8
         },
         {
           "distrito": "23",
@@ -405,7 +405,7 @@
         {
           "distrito": "10",
           "name": "10",
-          "cantidad": 14
+          "cantidad": 15
         },
         {
           "distrito": "11",
@@ -450,12 +450,12 @@
         {
           "distrito": "19",
           "name": "19",
-          "cantidad": 6
+          "cantidad": 13
         },
         {
           "distrito": "20",
           "name": "20",
-          "cantidad": 8
+          "cantidad": 14
         },
         {
           "distrito": "21",
@@ -465,7 +465,7 @@
         {
           "distrito": "22",
           "name": "22",
-          "cantidad": 2
+          "cantidad": 6
         },
         {
           "distrito": "23",
@@ -487,10 +487,10 @@
         {
           "dependencia": "Departamente Territorial ESTE",
           "name": "Departamente Territorial ESTE",
-          "activos": 1,
+          "activos": 2,
           "enReparacion": 0,
           "fueraDeServicio": 0,
-          "total": 1
+          "total": 2
         },
         {
           "dependencia": "Departamento Socioeducativo",
@@ -503,10 +503,10 @@
         {
           "dependencia": "Departamento Territorial NORTE",
           "name": "Departamento Territorial NORTE",
-          "activos": 1,
+          "activos": 2,
           "enReparacion": 0,
           "fueraDeServicio": 0,
-          "total": 1
+          "total": 2
         },
         {
           "dependencia": "Departamento Territorial OESTE",
@@ -519,18 +519,26 @@
         {
           "dependencia": "Departamento Territorial SUR",
           "name": "Departamento Territorial SUR",
-          "activos": 1,
-          "enReparacion": 0,
-          "fueraDeServicio": 0,
-          "total": 1
-        },
-        {
-          "dependencia": "División Personal y Logistica",
-          "name": "División Personal y Logistica",
           "activos": 2,
           "enReparacion": 0,
           "fueraDeServicio": 0,
           "total": 2
+        },
+        {
+          "dependencia": "División Personal y Logistica",
+          "name": "División Personal y Logistica",
+          "activos": 0,
+          "enReparacion": 0,
+          "fueraDeServicio": 29,
+          "total": 29
+        },
+        {
+          "dependencia": "E.P.A.T.",
+          "name": "E.P.A.T.",
+          "activos": 21,
+          "enReparacion": 0,
+          "fueraDeServicio": 0,
+          "total": 21
         }
       ],
       "metadata": {
@@ -540,22 +548,22 @@
     },
     "Personal": {
       "type": "personalOperativo",
-      "fileName": "VISUALIZACIÓN tableros recursos (3).xlsx",
+      "fileName": "VISUALIZACIÓN tableros recursos (7).xlsx",
       "sourceSheetName": "Personal",
-      "fechaCarga": "2026-10-05",
-      "fechaCargaLabel": "05 de octubre de 2026",
+      "fechaCarga": "2026-11-05",
+      "fechaCargaLabel": "05 de noviembre de 2026",
       "resumenGeneral": {
         "administrativo": {
-          "jefes": 21,
-          "subalternos": 176,
-          "etac": 65,
-          "civil": 141
+          "jefes": 22,
+          "subalternos": 290,
+          "etac": 51,
+          "civil": 140
         },
         "calle": {
-          "jefes": 48,
-          "subalternos": 1146,
-          "etac": 269,
-          "civil": 296
+          "jefes": 44,
+          "subalternos": 1098,
+          "etac": 241,
+          "civil": 293
         },
         "administracion": null,
         "puertaAPuerta": null,
@@ -566,33 +574,33 @@
           "zona": "Dir Norte",
           "name": "Dir Norte",
           "isTotal": false,
-          "jefesAusentes": 0,
+          "jefesAusentes": 2,
           "jefesPresentes": 2,
-          "subalternosAusentes": 24,
-          "subalternosPresentes": 80,
-          "etacAusentes": 19,
-          "etacPresentes": 21,
+          "subalternosAusentes": 44,
+          "subalternosPresentes": 77,
+          "etacAusentes": 0,
+          "etacPresentes": 10,
           "civilAusentes": 0,
-          "civilPresentes": 5,
-          "presentes": 108,
-          "ausentes": 43,
-          "total": 151
+          "civilPresentes": 4,
+          "presentes": 93,
+          "ausentes": 46,
+          "total": 139
         },
         {
           "zona": "Dir Sur",
           "name": "Dir Sur",
           "isTotal": false,
-          "jefesAusentes": 1,
+          "jefesAusentes": 0,
           "jefesPresentes": 1,
-          "subalternosAusentes": 1,
-          "subalternosPresentes": 7,
-          "etacAusentes": 0,
-          "etacPresentes": 0,
+          "subalternosAusentes": 15,
+          "subalternosPresentes": 90,
+          "etacAusentes": 5,
+          "etacPresentes": 11,
           "civilAusentes": 0,
           "civilPresentes": 0,
-          "presentes": 8,
-          "ausentes": 2,
-          "total": 10
+          "presentes": 102,
+          "ausentes": 20,
+          "total": 122
         },
         {
           "zona": "Dir de Monitoreo",
@@ -646,17 +654,17 @@
           "zona": "TOTAL",
           "name": "TOTAL",
           "isTotal": true,
-          "jefesAusentes": 4,
+          "jefesAusentes": 5,
           "jefesPresentes": 17,
-          "subalternosAusentes": 33,
-          "subalternosPresentes": 143,
-          "etacAusentes": 20,
+          "subalternosAusentes": 67,
+          "subalternosPresentes": 223,
+          "etacAusentes": 6,
           "etacPresentes": 45,
           "civilAusentes": 3,
-          "civilPresentes": 138,
-          "presentes": 343,
-          "ausentes": 60,
-          "total": 403
+          "civilPresentes": 137,
+          "presentes": 422,
+          "ausentes": 81,
+          "total": 503
         }
       ],
       "callePorZona": [
@@ -664,33 +672,33 @@
           "zona": "DIRECCIÓN PREVENCIÓN CIUDADANA NORTE",
           "name": "DIRECCIÓN PREVENCIÓN CIUDADANA NORTE",
           "isTotal": false,
-          "jefesAusentes": 3,
-          "jefesPresentes": 21,
-          "subalternosAusentes": 51,
-          "subalternosPresentes": 455,
-          "etacAusentes": 31,
-          "etacPresentes": 141,
-          "civilAusentes": 10,
-          "civilPresentes": 125,
-          "presentes": 742,
-          "ausentes": 95,
-          "total": 837
+          "jefesAusentes": 0,
+          "jefesPresentes": 23,
+          "subalternosAusentes": 29,
+          "subalternosPresentes": 452,
+          "etacAusentes": 21,
+          "etacPresentes": 126,
+          "civilAusentes": 12,
+          "civilPresentes": 120,
+          "presentes": 721,
+          "ausentes": 62,
+          "total": 783
         },
         {
           "zona": "DIRECCIÓN PREVENCIÓN CIUDADANA SUR",
           "name": "DIRECCIÓN PREVENCIÓN CIUDADANA SUR",
           "isTotal": false,
-          "jefesAusentes": 4,
-          "jefesPresentes": 20,
-          "subalternosAusentes": 45,
-          "subalternosPresentes": 595,
-          "etacAusentes": 7,
-          "etacPresentes": 90,
-          "civilAusentes": 3,
-          "civilPresentes": 158,
-          "presentes": 863,
-          "ausentes": 59,
-          "total": 922
+          "jefesAusentes": 2,
+          "jefesPresentes": 19,
+          "subalternosAusentes": 57,
+          "subalternosPresentes": 560,
+          "etacAusentes": 20,
+          "etacPresentes": 74,
+          "civilAusentes": 11,
+          "civilPresentes": 150,
+          "presentes": 803,
+          "ausentes": 90,
+          "total": 893
         },
         {
           "zona": "DIRECCIÓN MONITOREO CORDOBESES EN ALERTA",
@@ -712,17 +720,17 @@
           "zona": "TOTAL",
           "name": "TOTAL",
           "isTotal": true,
-          "jefesAusentes": 7,
-          "jefesPresentes": 41,
-          "subalternosAusentes": 96,
-          "subalternosPresentes": 1050,
-          "etacAusentes": 38,
-          "etacPresentes": 231,
-          "civilAusentes": 13,
-          "civilPresentes": 283,
-          "presentes": 1605,
-          "ausentes": 154,
-          "total": 1759
+          "jefesAusentes": 2,
+          "jefesPresentes": 42,
+          "subalternosAusentes": 86,
+          "subalternosPresentes": 1012,
+          "etacAusentes": 41,
+          "etacPresentes": 200,
+          "civilAusentes": 23,
+          "civilPresentes": 270,
+          "presentes": 1524,
+          "ausentes": 152,
+          "total": 1676
         }
       ],
       "callePorCuadrante": [
@@ -730,17 +738,17 @@
           "cuadrante": "1 - Quebrada",
           "name": "1 - Quebrada",
           "isTotal": false,
-          "jefesAusentes": 1,
+          "jefesAusentes": 0,
           "jefesPresentes": 2,
-          "subalternosAusentes": 9,
-          "subalternosPresentes": 90,
-          "etacAusentes": 1,
-          "etacPresentes": 9,
-          "civilAusentes": 0,
-          "civilPresentes": 29,
-          "presentes": 130,
-          "ausentes": 11,
-          "total": 141
+          "subalternosAusentes": 8,
+          "subalternosPresentes": 87,
+          "etacAusentes": 3,
+          "etacPresentes": 6,
+          "civilAusentes": 3,
+          "civilPresentes": 27,
+          "presentes": 122,
+          "ausentes": 14,
+          "total": 136
         },
         {
           "cuadrante": "2 - Urca",
@@ -780,31 +788,31 @@
           "isTotal": false,
           "jefesAusentes": 0,
           "jefesPresentes": 2,
-          "subalternosAusentes": 7,
-          "subalternosPresentes": 59,
-          "etacAusentes": 1,
-          "etacPresentes": 21,
-          "civilAusentes": 0,
-          "civilPresentes": 14,
-          "presentes": 96,
-          "ausentes": 8,
-          "total": 104
+          "subalternosAusentes": 2,
+          "subalternosPresentes": 18,
+          "etacAusentes": 2,
+          "etacPresentes": 28,
+          "civilAusentes": 1,
+          "civilPresentes": 8,
+          "presentes": 56,
+          "ausentes": 5,
+          "total": 61
         },
         {
           "cuadrante": "5 - San Vicente",
           "name": "5 - San Vicente",
           "isTotal": false,
-          "jefesAusentes": 1,
+          "jefesAusentes": 0,
           "jefesPresentes": 4,
-          "subalternosAusentes": 17,
-          "subalternosPresentes": 134,
+          "subalternosAusentes": 14,
+          "subalternosPresentes": 127,
           "etacAusentes": 2,
-          "etacPresentes": 11,
-          "civilAusentes": 0,
-          "civilPresentes": 40,
-          "presentes": 189,
-          "ausentes": 20,
-          "total": 209
+          "etacPresentes": 9,
+          "civilAusentes": 1,
+          "civilPresentes": 39,
+          "presentes": 179,
+          "ausentes": 17,
+          "total": 196
         },
         {
           "cuadrante": "6 - Inaudi",
@@ -812,31 +820,31 @@
           "isTotal": false,
           "jefesAusentes": 0,
           "jefesPresentes": 4,
-          "subalternosAusentes": 11,
-          "subalternosPresentes": 139,
-          "etacAusentes": 0,
-          "etacPresentes": 34,
+          "subalternosAusentes": 14,
+          "subalternosPresentes": 131,
+          "etacAusentes": 5,
+          "etacPresentes": 29,
           "civilAusentes": 1,
-          "civilPresentes": 24,
-          "presentes": 201,
-          "ausentes": 12,
-          "total": 213
+          "civilPresentes": 23,
+          "presentes": 187,
+          "ausentes": 20,
+          "total": 207
         },
         {
           "cuadrante": "7 - Caseros",
           "name": "7 - Caseros",
           "isTotal": false,
           "jefesAusentes": 2,
-          "jefesPresentes": 10,
-          "subalternosAusentes": 8,
-          "subalternosPresentes": 232,
-          "etacAusentes": 4,
-          "etacPresentes": 36,
-          "civilAusentes": 2,
-          "civilPresentes": 65,
-          "presentes": 343,
-          "ausentes": 16,
-          "total": 359
+          "jefesPresentes": 9,
+          "subalternosAusentes": 21,
+          "subalternosPresentes": 215,
+          "etacAusentes": 10,
+          "etacPresentes": 30,
+          "civilAusentes": 6,
+          "civilPresentes": 61,
+          "presentes": 315,
+          "ausentes": 39,
+          "total": 354
         },
         {
           "cuadrante": "8 - Pueyrredon",
@@ -858,17 +866,17 @@
           "cuadrante": "TOTAL",
           "name": "TOTAL",
           "isTotal": true,
-          "jefesAusentes": 4,
-          "jefesPresentes": 23,
-          "subalternosAusentes": 55,
-          "subalternosPresentes": 713,
-          "etacAusentes": 20,
-          "etacPresentes": 138,
-          "civilAusentes": 4,
-          "civilPresentes": 178,
-          "presentes": 1052,
-          "ausentes": 83,
-          "total": 1135
+          "jefesAusentes": 2,
+          "jefesPresentes": 22,
+          "subalternosAusentes": 62,
+          "subalternosPresentes": 637,
+          "etacAusentes": 34,
+          "etacPresentes": 129,
+          "civilAusentes": 13,
+          "civilPresentes": 164,
+          "presentes": 952,
+          "ausentes": 111,
+          "total": 1063
         }
       ],
       "callePorDistrito": [
@@ -892,33 +900,33 @@
           "distrito": "2",
           "name": "2",
           "isTotal": false,
-          "jefesAusentes": 1,
+          "jefesAusentes": 0,
           "jefesPresentes": 2,
-          "subalternosAusentes": 9,
-          "subalternosPresentes": 90,
-          "etacAusentes": 1,
-          "etacPresentes": 9,
-          "civilAusentes": 0,
-          "civilPresentes": 29,
-          "presentes": 130,
-          "ausentes": 11,
-          "total": 141
+          "subalternosAusentes": 8,
+          "subalternosPresentes": 87,
+          "etacAusentes": 3,
+          "etacPresentes": 6,
+          "civilAusentes": 3,
+          "civilPresentes": 27,
+          "presentes": 122,
+          "ausentes": 14,
+          "total": 136
         },
         {
           "distrito": "3",
           "name": "3",
           "isTotal": false,
-          "jefesAusentes": 1,
+          "jefesAusentes": 0,
           "jefesPresentes": 2,
-          "subalternosAusentes": 2,
-          "subalternosPresentes": 61,
-          "etacAusentes": 1,
-          "etacPresentes": 15,
-          "civilAusentes": 1,
-          "civilPresentes": 14,
-          "presentes": 92,
-          "ausentes": 5,
-          "total": 97
+          "subalternosAusentes": 7,
+          "subalternosPresentes": 53,
+          "etacAusentes": 4,
+          "etacPresentes": 12,
+          "civilAusentes": 2,
+          "civilPresentes": 13,
+          "presentes": 80,
+          "ausentes": 13,
+          "total": 93
         },
         {
           "distrito": "4",
@@ -926,15 +934,15 @@
           "isTotal": false,
           "jefesAusentes": 0,
           "jefesPresentes": 2,
-          "subalternosAusentes": 4,
-          "subalternosPresentes": 77,
-          "etacAusentes": 0,
-          "etacPresentes": 31,
+          "subalternosAusentes": 7,
+          "subalternosPresentes": 72,
+          "etacAusentes": 4,
+          "etacPresentes": 27,
           "civilAusentes": 0,
           "civilPresentes": 5,
-          "presentes": 115,
-          "ausentes": 4,
-          "total": 119
+          "presentes": 106,
+          "ausentes": 11,
+          "total": 117
         },
         {
           "distrito": "5",
@@ -942,15 +950,15 @@
           "isTotal": false,
           "jefesAusentes": 0,
           "jefesPresentes": 2,
-          "subalternosAusentes": 8,
-          "subalternosPresentes": 76,
-          "etacAusentes": 1,
-          "etacPresentes": 3,
+          "subalternosAusentes": 10,
+          "subalternosPresentes": 70,
+          "etacAusentes": 0,
+          "etacPresentes": 2,
           "civilAusentes": 0,
           "civilPresentes": 25,
-          "presentes": 106,
-          "ausentes": 9,
-          "total": 115
+          "presentes": 99,
+          "ausentes": 10,
+          "total": 109
         },
         {
           "distrito": "6",
@@ -958,31 +966,31 @@
           "isTotal": false,
           "jefesAusentes": 1,
           "jefesPresentes": 2,
-          "subalternosAusentes": 5,
-          "subalternosPresentes": 52,
+          "subalternosAusentes": 3,
+          "subalternosPresentes": 49,
           "etacAusentes": 0,
-          "etacPresentes": 1,
-          "civilAusentes": 0,
-          "civilPresentes": 19,
-          "presentes": 74,
-          "ausentes": 6,
-          "total": 80
+          "etacPresentes": 0,
+          "civilAusentes": 1,
+          "civilPresentes": 18,
+          "presentes": 69,
+          "ausentes": 5,
+          "total": 74
         },
         {
           "distrito": "7",
           "name": "7",
           "isTotal": false,
-          "jefesAusentes": 0,
+          "jefesAusentes": 1,
           "jefesPresentes": 3,
-          "subalternosAusentes": 6,
+          "subalternosAusentes": 4,
           "subalternosPresentes": 51,
-          "etacAusentes": 15,
-          "etacPresentes": 33,
-          "civilAusentes": 0,
-          "civilPresentes": 12,
-          "presentes": 99,
-          "ausentes": 21,
-          "total": 120
+          "etacAusentes": 3,
+          "etacPresentes": 32,
+          "civilAusentes": 1,
+          "civilPresentes": 10,
+          "presentes": 96,
+          "ausentes": 9,
+          "total": 105
         },
         {
           "distrito": "8",
@@ -990,14 +998,14 @@
           "isTotal": false,
           "jefesAusentes": 0,
           "jefesPresentes": 3,
-          "subalternosAusentes": 5,
-          "subalternosPresentes": 53,
+          "subalternosAusentes": 4,
+          "subalternosPresentes": 54,
           "etacAusentes": 2,
-          "etacPresentes": 14,
-          "civilAusentes": 3,
-          "civilPresentes": 11,
-          "presentes": 81,
-          "ausentes": 10,
+          "etacPresentes": 13,
+          "civilAusentes": 2,
+          "civilPresentes": 13,
+          "presentes": 83,
+          "ausentes": 8,
           "total": 91
         },
         {
@@ -1005,16 +1013,16 @@
           "name": "9",
           "isTotal": false,
           "jefesAusentes": 0,
-          "jefesPresentes": 3,
+          "jefesPresentes": 2,
           "subalternosAusentes": 1,
-          "subalternosPresentes": 15,
+          "subalternosPresentes": 14,
           "etacAusentes": 0,
           "etacPresentes": 1,
-          "civilAusentes": 1,
-          "civilPresentes": 2,
-          "presentes": 21,
-          "ausentes": 2,
-          "total": 23
+          "civilAusentes": 0,
+          "civilPresentes": 3,
+          "presentes": 20,
+          "ausentes": 1,
+          "total": 21
         },
         {
           "distrito": "10",
@@ -1023,14 +1031,14 @@
           "jefesAusentes": 0,
           "jefesPresentes": 2,
           "subalternosAusentes": 1,
-          "subalternosPresentes": 39,
-          "etacAusentes": 0,
-          "etacPresentes": 7,
+          "subalternosPresentes": 37,
+          "etacAusentes": 1,
+          "etacPresentes": 6,
           "civilAusentes": 0,
           "civilPresentes": 6,
-          "presentes": 54,
-          "ausentes": 1,
-          "total": 55
+          "presentes": 51,
+          "ausentes": 2,
+          "total": 53
         },
         {
           "distrito": "11",
@@ -1039,46 +1047,46 @@
           "jefesAusentes": 0,
           "jefesPresentes": 2,
           "subalternosAusentes": 7,
-          "subalternosPresentes": 62,
-          "etacAusentes": 0,
-          "etacPresentes": 3,
+          "subalternosPresentes": 59,
+          "etacAusentes": 1,
+          "etacPresentes": 2,
           "civilAusentes": 1,
-          "civilPresentes": 19,
-          "presentes": 86,
-          "ausentes": 8,
-          "total": 94
+          "civilPresentes": 18,
+          "presentes": 81,
+          "ausentes": 9,
+          "total": 90
         },
         {
           "distrito": "12",
           "name": "12",
           "isTotal": false,
-          "jefesAusentes": 1,
+          "jefesAusentes": 0,
           "jefesPresentes": 2,
-          "subalternosAusentes": 9,
-          "subalternosPresentes": 58,
-          "etacAusentes": 1,
-          "etacPresentes": 8,
-          "civilAusentes": 0,
-          "civilPresentes": 15,
-          "presentes": 83,
-          "ausentes": 11,
-          "total": 94
+          "subalternosAusentes": 4,
+          "subalternosPresentes": 57,
+          "etacAusentes": 2,
+          "etacPresentes": 7,
+          "civilAusentes": 1,
+          "civilPresentes": 14,
+          "presentes": 80,
+          "ausentes": 7,
+          "total": 87
         },
         {
           "distrito": "13",
           "name": "13",
           "isTotal": false,
           "jefesAusentes": 0,
-          "jefesPresentes": 2,
-          "subalternosAusentes": 14,
-          "subalternosPresentes": 37,
-          "etacAusentes": 2,
-          "etacPresentes": 8,
-          "civilAusentes": 3,
-          "civilPresentes": 19,
-          "presentes": 66,
-          "ausentes": 19,
-          "total": 85
+          "jefesPresentes": 3,
+          "subalternosAusentes": 12,
+          "subalternosPresentes": 28,
+          "etacAusentes": 1,
+          "etacPresentes": 5,
+          "civilAusentes": 1,
+          "civilPresentes": 17,
+          "presentes": 53,
+          "ausentes": 14,
+          "total": 67
         },
         {
           "distrito": "14",
@@ -1086,15 +1094,15 @@
           "isTotal": false,
           "jefesAusentes": 0,
           "jefesPresentes": 2,
-          "subalternosAusentes": 7,
-          "subalternosPresentes": 66,
+          "subalternosAusentes": 1,
+          "subalternosPresentes": 70,
           "etacAusentes": 4,
           "etacPresentes": 20,
-          "civilAusentes": 0,
-          "civilPresentes": 8,
-          "presentes": 96,
-          "ausentes": 11,
-          "total": 107
+          "civilAusentes": 1,
+          "civilPresentes": 6,
+          "presentes": 98,
+          "ausentes": 6,
+          "total": 104
         },
         {
           "distrito": "15",
@@ -1102,15 +1110,15 @@
           "isTotal": false,
           "jefesAusentes": 0,
           "jefesPresentes": 3,
-          "subalternosAusentes": 9,
-          "subalternosPresentes": 122,
-          "etacAusentes": 6,
-          "etacPresentes": 43,
-          "civilAusentes": 2,
+          "subalternosAusentes": 3,
+          "subalternosPresentes": 125,
+          "etacAusentes": 8,
+          "etacPresentes": 38,
+          "civilAusentes": 3,
           "civilPresentes": 44,
-          "presentes": 212,
-          "ausentes": 17,
-          "total": 229
+          "presentes": 210,
+          "ausentes": 14,
+          "total": 224
         },
         {
           "distrito": "16",
@@ -1165,32 +1173,32 @@
           "name": "19",
           "isTotal": false,
           "jefesAusentes": 1,
-          "jefesPresentes": 1,
-          "subalternosAusentes": 1,
-          "subalternosPresentes": 29,
-          "etacAusentes": 2,
-          "etacPresentes": 11,
+          "jefesPresentes": 2,
+          "subalternosAusentes": 2,
+          "subalternosPresentes": 31,
+          "etacAusentes": 5,
+          "etacPresentes": 8,
           "civilAusentes": 0,
           "civilPresentes": 6,
           "presentes": 47,
-          "ausentes": 4,
-          "total": 51
+          "ausentes": 8,
+          "total": 55
         },
         {
           "distrito": "20",
           "name": "20",
           "isTotal": false,
           "jefesAusentes": 0,
-          "jefesPresentes": 3,
-          "subalternosAusentes": 1,
-          "subalternosPresentes": 56,
-          "etacAusentes": 1,
-          "etacPresentes": 3,
-          "civilAusentes": 1,
-          "civilPresentes": 30,
-          "presentes": 92,
-          "ausentes": 3,
-          "total": 95
+          "jefesPresentes": 2,
+          "subalternosAusentes": 6,
+          "subalternosPresentes": 48,
+          "etacAusentes": 0,
+          "etacPresentes": 4,
+          "civilAusentes": 2,
+          "civilPresentes": 29,
+          "presentes": 83,
+          "ausentes": 8,
+          "total": 91
         },
         {
           "distrito": "21",
@@ -1212,17 +1220,17 @@
           "distrito": "22",
           "name": "22",
           "isTotal": false,
-          "jefesAusentes": 0,
-          "jefesPresentes": 2,
-          "subalternosAusentes": 3,
-          "subalternosPresentes": 47,
+          "jefesAusentes": 1,
+          "jefesPresentes": 1,
+          "subalternosAusentes": 5,
+          "subalternosPresentes": 46,
           "etacAusentes": 0,
           "etacPresentes": 0,
-          "civilAusentes": 0,
-          "civilPresentes": 9,
-          "presentes": 58,
-          "ausentes": 3,
-          "total": 61
+          "civilAusentes": 2,
+          "civilPresentes": 7,
+          "presentes": 54,
+          "ausentes": 8,
+          "total": 62
         },
         {
           "distrito": "23",
@@ -1262,31 +1270,31 @@
           "isTotal": false,
           "jefesAusentes": 1,
           "jefesPresentes": 0,
-          "subalternosAusentes": 9,
-          "subalternosPresentes": 54,
-          "etacAusentes": 2,
-          "etacPresentes": 21,
-          "civilAusentes": 0,
-          "civilPresentes": 12,
-          "presentes": 87,
-          "ausentes": 12,
-          "total": 99
+          "subalternosAusentes": 0,
+          "subalternosPresentes": 61,
+          "etacAusentes": 3,
+          "etacPresentes": 17,
+          "civilAusentes": 2,
+          "civilPresentes": 10,
+          "presentes": 88,
+          "ausentes": 6,
+          "total": 94
         },
         {
           "distrito": "TOTAL",
           "name": "TOTAL",
           "isTotal": true,
-          "jefesAusentes": 6,
-          "jefesPresentes": 38,
-          "subalternosAusentes": 101,
-          "subalternosPresentes": 1045,
-          "etacAusentes": 38,
-          "etacPresentes": 231,
-          "civilAusentes": 12,
-          "civilPresentes": 285,
-          "presentes": 1599,
-          "ausentes": 157,
-          "total": 1756
+          "jefesAusentes": 5,
+          "jefesPresentes": 37,
+          "subalternosAusentes": 85,
+          "subalternosPresentes": 1012,
+          "etacAusentes": 41,
+          "etacPresentes": 200,
+          "civilAusentes": 22,
+          "civilPresentes": 271,
+          "presentes": 1520,
+          "ausentes": 153,
+          "total": 1673
         }
       ],
       "metadata": {
