@@ -35,7 +35,9 @@ export function isMovilesSheetData(sheetData) {
     Array.isArray(sheetData.movilesPorDistrito) &&
     Array.isArray(sheetData.chalecosPorDistrito) &&
     (!sheetData.movilesPorDependencia ||
-      Array.isArray(sheetData.movilesPorDependencia))
+      Array.isArray(sheetData.movilesPorDependencia)) &&
+    (!sheetData.chalecosPorDependencia ||
+      Array.isArray(sheetData.chalecosPorDependencia))
   );
 }
 
@@ -97,6 +99,17 @@ export function parseMovilesSheet(matrix, context = {}) {
       numeric: true,
     }),
   );
+  const chalecosPorDependencia = parseChalecosSection(
+    matrix,
+    'DEPENDENCIA',
+    chalecosHeader.col,
+    chalecosValueCol,
+    'dependencia',
+  ).sort((left, right) =>
+    String(left.name).localeCompare(String(right.name), 'es', {
+      numeric: true,
+    }),
+  );
   const activos = resumenMoviles.activos ?? sumRows(movilesPorZona, 'activos');
   const enReparacion = resumenMoviles.enReparacion ?? sumRows(movilesPorZona, 'enReparacion');
   const fueraDeServicio = resumenMoviles.fueraDeServicio ?? sumRows(movilesPorZona, 'fueraDeServicio');
@@ -113,7 +126,10 @@ export function parseMovilesSheet(matrix, context = {}) {
       enReparacion,
       fueraDeServicio,
       totalMoviles,
-      chalecos: chalecos ?? sumRows(chalecosPorDistrito, 'cantidad'),
+      chalecos: chalecos ?? (
+        sumRows(chalecosPorDistrito, 'cantidad') +
+        sumRows(chalecosPorDependencia, 'cantidad')
+      ),
       porcentajeOperatividad: totalMoviles > 0 ? (activos / totalMoviles) * 100 : 0,
     },
     movilesPorZona,
@@ -123,6 +139,7 @@ export function parseMovilesSheet(matrix, context = {}) {
     movilesPorDistrito,
     chalecosPorDistrito,
     movilesPorDependencia,
+    chalecosPorDependencia,
     metadata: {
       parser: 'movilesParser',
       version: MOVILES_PARSER_VERSION,
@@ -250,7 +267,8 @@ function parseMovilesSection(matrix, sectionName, labelCol, columns, nameKey) {
 }
 
 function parseChalecosSection(matrix, sectionName, labelCol, valueCol, nameKey) {
-  const sectionRowIndex = findSectionRow(matrix, sectionName, labelCol);
+  // Las tablas de moviles y chalecos pueden tener el mismo titulo en filas distintas.
+  const sectionRowIndex = findSectionRow(matrix, sectionName, labelCol, false);
 
   if (sectionRowIndex < 0) {
     return [];
@@ -413,6 +431,7 @@ function convertLegacyRecursosData(sheetData) {
       cantidad: Number(row.value) || 0,
     })),
     movilesPorDependencia: [],
+    chalecosPorDependencia: [],
     metadata: {
       parser: 'movilesParser',
       version: MOVILES_PARSER_VERSION,
@@ -456,7 +475,7 @@ function findCell(matrix, predicate) {
   return null;
 }
 
-function findSectionRow(matrix, sectionName, labelCol) {
+function findSectionRow(matrix, sectionName, labelCol, allowOtherColumns = true) {
   const normalizedSection = normalizeText(sectionName);
   const directMatchIndex = matrix.findIndex((row) => {
     const normalizedCell = normalizeText(row?.[labelCol]);
@@ -468,7 +487,7 @@ function findSectionRow(matrix, sectionName, labelCol) {
     return normalizedCell === normalizedSection;
   });
 
-  if (directMatchIndex >= 0) {
+  if (directMatchIndex >= 0 || !allowOtherColumns) {
     return directMatchIndex;
   }
 
@@ -551,6 +570,7 @@ function createEmptyMovilesData(fileName = '', sourceSheetName = '', fechaCarga 
     movilesPorDistrito: [],
     chalecosPorDistrito: [],
     movilesPorDependencia: [],
+    chalecosPorDependencia: [],
     metadata: {
       parser: 'movilesParser',
       version: MOVILES_PARSER_VERSION,

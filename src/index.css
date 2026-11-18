@@ -1066,6 +1066,18 @@ h2 {
   font-weight: 900;
 }
 
+.compact-row.chalecos-dependencia-row {
+  grid-template-columns: minmax(0, 1fr) minmax(64px, auto);
+}
+
+.chalecos-dependencia-row strong {
+  overflow-wrap: anywhere;
+}
+
+.compact-row.chalecos-dependencia-row span:last-child {
+  text-align: right;
+}
+
 .recursos-wide-card {
   grid-column: 1 / -1;
 }

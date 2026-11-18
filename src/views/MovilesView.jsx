@@ -62,6 +62,8 @@ function MovilesView({ data }) {
     () => filterRows(dependenciaRows, search),
     [dependenciaRows, search],
   );
+  const chalecosDependenciaRows = data?.chalecosPorDependencia ?? [];
+  const filteredChalecosDependenciaRows = filterRows(chalecosDependenciaRows, search);
 
   return (
     <section className="moviles-view">
@@ -152,6 +154,21 @@ function MovilesView({ data }) {
           <DependenciaRows
             rows={filteredDependenciaRows}
             emptyMessage="No hay dependencias para mostrar."
+          />
+        </section>
+      )}
+
+      {chalecosDependenciaRows.length > 0 && (
+        <section className="card compact-list-card">
+          <div className="table-heading">
+            <div>
+              <h2>Chalecos por dependencia</h2>
+              <p>Chalecos asignados a cada dependencia operativa.</p>
+            </div>
+          </div>
+          <ChalecosDependenciaRows
+            rows={filteredChalecosDependenciaRows}
+            isFiltered={Boolean(search.trim())}
           />
         </section>
       )}
@@ -247,6 +264,33 @@ function DependenciaRows({ rows, emptyMessage }) {
           <span>{formatNumber(row.total)}</span>
         </div>
       ))}
+    </div>
+  );
+}
+
+function ChalecosDependenciaRows({ rows, isFiltered }) {
+  if (rows.length === 0) {
+    return <p className="muted">No hay dependencias para mostrar.</p>;
+  }
+
+  const total = rows.reduce((sum, row) => sum + (Number(row.cantidad) || 0), 0);
+
+  return (
+    <div className="compact-row-list">
+      <div className="compact-row chalecos-dependencia-row compact-row-header">
+        <span>Dependencia</span>
+        <span>Chalecos</span>
+      </div>
+      {rows.map((row, index) => (
+        <div className="compact-row chalecos-dependencia-row" key={`${row.name}-${index}`}>
+          <strong>{row.name}</strong>
+          <span>{formatNumber(row.cantidad)}</span>
+        </div>
+      ))}
+      <div className="compact-row chalecos-dependencia-row compact-row-total">
+        <strong>{isFiltered ? 'Total de resultados' : 'Total por dependencias'}</strong>
+        <span>{formatNumber(total)}</span>
+      </div>
     </div>
   );
 }

@@ -1,83 +1,83 @@
 {
   "id": "visualizacion-tableros-recursos",
-  "fileName": "VISUALIZACIÓN tableros recursos (8).xlsx",
+  "fileName": "VISUALIZACIÓN tableros recursos (13).xlsx",
   "sheets": {
     "Móviles": {
       "type": "movilesEquipamiento",
-      "fileName": "VISUALIZACIÓN tableros recursos (8).xlsx",
+      "fileName": "VISUALIZACIÓN tableros recursos (13).xlsx",
       "sourceSheetName": "Moviles",
-      "fechaCarga": "2026-11-12",
-      "fechaCargaLabel": "12 de noviembre de 2026",
+      "fechaCarga": "2026-11-18",
+      "fechaCargaLabel": "18 de noviembre de 2026",
       "resumen": {
-        "activos": 255,
+        "activos": 251,
         "enReparacion": 0,
-        "fueraDeServicio": 58,
-        "totalMoviles": 313,
-        "chalecos": 418,
-        "porcentajeOperatividad": 81.46964856230032
+        "fueraDeServicio": 71,
+        "totalMoviles": 322,
+        "chalecos": 531,
+        "porcentajeOperatividad": 77.95031055900621
       },
       "movilesPorZona": [
         {
           "zona": "Norte",
           "name": "Norte",
-          "activos": 103,
+          "activos": 100,
           "enReparacion": 0,
-          "fueraDeServicio": 18,
+          "fueraDeServicio": 21,
           "total": 121
         },
         {
           "zona": "Sur",
           "name": "Sur",
-          "activos": 123,
+          "activos": 115,
           "enReparacion": 0,
-          "fueraDeServicio": 11,
-          "total": 134
+          "fueraDeServicio": 18,
+          "total": 133
         }
       ],
       "chalecosPorZona": [
         {
           "zona": "Norte",
           "name": "Norte",
-          "cantidad": 225
+          "cantidad": 278
         },
         {
           "zona": "Sur",
           "name": "Sur",
-          "cantidad": 193
+          "cantidad": 225
         }
       ],
       "movilesPorCuadrante": [
         {
           "cuadrante": "1",
           "name": "1",
-          "activos": 19,
+          "activos": 15,
           "enReparacion": 0,
-          "fueraDeServicio": 2,
-          "total": 21
+          "fueraDeServicio": 5,
+          "total": 20
         },
         {
           "cuadrante": "2",
           "name": "2",
-          "activos": 60,
+          "activos": 57,
           "enReparacion": 0,
-          "fueraDeServicio": 8,
-          "total": 68
+          "fueraDeServicio": 10,
+          "total": 67
         },
         {
           "cuadrante": "3",
           "name": "3",
-          "activos": 22,
+          "activos": 20,
           "enReparacion": 0,
-          "fueraDeServicio": 6,
+          "fueraDeServicio": 8,
           "total": 28
         },
         {
           "cuadrante": "4",
           "name": "4",
-          "activos": 15,
+          "activos": 14,
           "enReparacion": 0,
           "fueraDeServicio": 1,
-          "total": 16
+          "total": 15
         },
         {
           "cuadrante": "5",
@@ -90,68 +90,68 @@
         {
           "cuadrante": "6",
           "name": "6",
-          "activos": 32,
+          "activos": 30,
           "enReparacion": 0,
-          "fueraDeServicio": 3,
+          "fueraDeServicio": 5,
           "total": 35
         },
         {
           "cuadrante": "7",
           "name": "7",
-          "activos": 45,
+          "activos": 43,
           "enReparacion": 0,
-          "fueraDeServicio": 4,
+          "fueraDeServicio": 6,
           "total": 49
         },
         {
           "cuadrante": "8",
           "name": "8",
-          "activos": 6,
+          "activos": 9,
           "enReparacion": 0,
-          "fueraDeServicio": 3,
-          "total": 9
+          "fueraDeServicio": 2,
+          "total": 11
         }
       ],
       "chalecosPorCuadrante": [
         {
           "cuadrante": "1",
           "name": "1",
-          "cantidad": 23
+          "cantidad": 33
         },
         {
           "cuadrante": "2",
           "name": "2",
-          "cantidad": 117
+          "cantidad": 155
         },
         {
           "cuadrante": "3",
           "name": "3",
-          "cantidad": 53
+          "cantidad": 51
         },
         {
           "cuadrante": "4",
           "name": "4",
-          "cantidad": 44
+          "cantidad": 50
         },
         {
           "cuadrante": "5",
           "name": "5",
-          "cantidad": 47
+          "cantidad": 55
         },
         {
           "cuadrante": "6",
           "name": "6",
-          "cantidad": 62
+          "cantidad": 70
         },
         {
           "cuadrante": "7",
           "name": "7",
-          "cantidad": 61
+          "cantidad": 67
         },
         {
           "cuadrante": "8",
           "name": "8",
-          "cantidad": 11
+          "cantidad": 22
         }
       ],
       "movilesPorDistrito": [
@@ -166,10 +166,10 @@
         {
           "distrito": "2",
           "name": "2",
-          "activos": 19,
+          "activos": 15,
           "enReparacion": 0,
-          "fueraDeServicio": 2,
-          "total": 21
+          "fueraDeServicio": 5,
+          "total": 20
         },
         {
           "distrito": "3",
@@ -182,9 +182,9 @@
         {
           "distrito": "4",
           "name": "4",
-          "activos": 15,
+          "activos": 14,
           "enReparacion": 0,
-          "fueraDeServicio": 3,
+          "fueraDeServicio": 4,
           "total": 18
         },
         {
@@ -198,49 +198,49 @@
         {
           "distrito": "6",
           "name": "6",
-          "activos": 6,
+          "activos": 9,
           "enReparacion": 0,
-          "fueraDeServicio": 3,
-          "total": 9
+          "fueraDeServicio": 2,
+          "total": 11
         },
         {
           "distrito": "7",
           "name": "7",
-          "activos": 8,
+          "activos": 9,
           "enReparacion": 0,
-          "fueraDeServicio": 4,
-          "total": 12
+          "fueraDeServicio": 5,
+          "total": 14
         },
         {
           "distrito": "8",
           "name": "8",
-          "activos": 15,
+          "activos": 14,
           "enReparacion": 0,
           "fueraDeServicio": 1,
-          "total": 16
+          "total": 15
         },
         {
           "distrito": "9",
           "name": "9",
-          "activos": 5,
+          "activos": 2,
           "enReparacion": 0,
-          "fueraDeServicio": 1,
-          "total": 6
+          "fueraDeServicio": 2,
+          "total": 4
         },
         {
           "distrito": "10",
           "name": "10",
-          "activos": 7,
+          "activos": 6,
           "enReparacion": 0,
-          "fueraDeServicio": 1,
+          "fueraDeServicio": 2,
           "total": 8
         },
         {
           "distrito": "11",
           "name": "11",
-          "activos": 17,
+          "activos": 16,
           "enReparacion": 0,
-          "fueraDeServicio": 0,
+          "fueraDeServicio": 1,
           "total": 17
         },
         {
@@ -270,10 +270,10 @@
         {
           "distrito": "15",
           "name": "15",
-          "activos": 33,
+          "activos": 31,
           "enReparacion": 0,
-          "fueraDeServicio": 5,
-          "total": 38
+          "fueraDeServicio": 6,
+          "total": 37
         },
         {
           "distrito": "16",
@@ -326,9 +326,9 @@
         {
           "distrito": "22",
           "name": "22",
-          "activos": 6,
+          "activos": 5,
           "enReparacion": 0,
-          "fueraDeServicio": 2,
+          "fueraDeServicio": 3,
           "total": 8
         },
         {
@@ -350,9 +350,9 @@
         {
           "distrito": "24 bis",
           "name": "24 bis",
-          "activos": 20,
+          "activos": 19,
           "enReparacion": 0,
-          "fueraDeServicio": 1,
+          "fueraDeServicio": 2,
           "total": 21
         }
       ],
@@ -365,42 +365,42 @@
         {
           "distrito": "2",
           "name": "2",
-          "cantidad": 23
+          "cantidad": 33
         },
         {
           "distrito": "3",
           "name": "3",
-          "cantidad": 13
+          "cantidad": 19
         },
         {
           "distrito": "4",
           "name": "4",
-          "cantidad": 39
+          "cantidad": 43
         },
         {
           "distrito": "5",
           "name": "5",
-          "cantidad": 26
+          "cantidad": 30
         },
         {
           "distrito": "6",
           "name": "6",
-          "cantidad": 11
+          "cantidad": 22
         },
         {
           "distrito": "7",
           "name": "7",
-          "cantidad": 20
+          "cantidad": 45
         },
         {
           "distrito": "8",
           "name": "8",
-          "cantidad": 37
+          "cantidad": 23
         },
         {
           "distrito": "9",
           "name": "9",
-          "cantidad": 33
+          "cantidad": 6
         },
         {
           "distrito": "10",
@@ -410,27 +410,27 @@
         {
           "distrito": "11",
           "name": "11",
-          "cantidad": 23
+          "cantidad": 27
         },
         {
           "distrito": "12",
           "name": "12",
-          "cantidad": 21
+          "cantidad": 25
         },
         {
           "distrito": "13",
           "name": "13",
-          "cantidad": 7
+          "cantidad": 27
         },
         {
           "distrito": "14",
           "name": "14",
-          "cantidad": 25
+          "cantidad": 32
         },
         {
           "distrito": "15",
           "name": "15",
-          "cantidad": 67
+          "cantidad": 92
         },
         {
           "distrito": "16",
@@ -480,17 +480,17 @@
         {
           "distrito": "24 bis",
           "name": "24 bis",
-          "cantidad": 25
+          "cantidad": 31
         }
       ],
       "movilesPorDependencia": [
         {
           "dependencia": "Departamente Territorial ESTE",
           "name": "Departamente Territorial ESTE",
-          "activos": 2,
+          "activos": 1,
           "enReparacion": 0,
           "fueraDeServicio": 0,
-          "total": 2
+          "total": 1
         },
         {
           "dependencia": "Departamento Socioeducativo",
@@ -499,6 +499,14 @@
           "enReparacion": 0,
           "fueraDeServicio": 0,
           "total": 1
+        },
+        {
+          "dependencia": "Departamento Territorial CENTRO",
+          "name": "Departamento Territorial CENTRO",
+          "activos": 2,
+          "enReparacion": 0,
+          "fueraDeServicio": 0,
+          "total": 2
         },
         {
           "dependencia": "Departamento Territorial NORTE",
@@ -527,10 +535,10 @@
         {
           "dependencia": "División Personal y Logistica",
           "name": "División Personal y Logistica",
-          "activos": 0,
+          "activos": 6,
           "enReparacion": 0,
-          "fueraDeServicio": 29,
-          "total": 29
+          "fueraDeServicio": 32,
+          "total": 38
         },
         {
           "dependencia": "E.P.A.T.",
@@ -541,6 +549,38 @@
           "total": 21
         }
       ],
+      "chalecosPorDependencia": [
+        {
+          "dependencia": "DEPARTAMENTO TERRITORIAL CENTRO",
+          "name": "DEPARTAMENTO TERRITORIAL CENTRO",
+          "cantidad": 0
+        },
+        {
+          "dependencia": "DEPARTAMENTO TERRITORIAL ESTE",
+          "name": "DEPARTAMENTO TERRITORIAL ESTE",
+          "cantidad": 3
+        },
+        {
+          "dependencia": "DEPARTAMENTO TERRITORIAL NORTE",
+          "name": "DEPARTAMENTO TERRITORIAL NORTE",
+          "cantidad": 0
+        },
+        {
+          "dependencia": "DEPARTAMENTO TERRITORIAL OESTE",
+          "name": "DEPARTAMENTO TERRITORIAL OESTE",
+          "cantidad": 0
+        },
+        {
+          "dependencia": "DEPARTAMENTO TERRITORIAL SUR",
+          "name": "DEPARTAMENTO TERRITORIAL SUR",
+          "cantidad": 0
+        },
+        {
+          "dependencia": "E.P.A.T.",
+          "name": "E.P.A.T.",
+          "cantidad": 25
+        }
+      ],
       "metadata": {
         "parser": "movilesParser",
         "version": 1
@@ -548,7 +588,7 @@
     },
     "Personal": {
       "type": "personalOperativo",
-      "fileName": "VISUALIZACIÓN tableros recursos (8).xlsx",
+      "fileName": "VISUALIZACIÓN tableros recursos (13).xlsx",
       "sourceSheetName": "Personal",
       "fechaCarga": "2026-11-05",
       "fechaCargaLabel": "05 de noviembre de 2026",

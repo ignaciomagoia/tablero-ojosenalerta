@@ -84,7 +84,9 @@ function countProcessedRows(sheets) {
         (data.movilesPorCuadrante?.length ?? 0) +
         (data.chalecosPorCuadrante?.length ?? 0) +
         (data.movilesPorDistrito?.length ?? 0) +
-        (data.chalecosPorDistrito?.length ?? 0);
+        (data.chalecosPorDistrito?.length ?? 0) +
+        (data.movilesPorDependencia?.length ?? 0) +
+        (data.chalecosPorDependencia?.length ?? 0);
     }
 
     if (data?.type === 'personalOperativo') {
